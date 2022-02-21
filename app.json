@@ -1,0 +1,14 @@
+{
+	"name": "WRAP+ UNLIMITED FOR LIFETIME",
+	"description": "Python Script to Get WRAP+ VPN unlimited for Lifetime ",
+	"repository": "https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED/tree/Heroku",
+        "website": "https://www.caduceus.ml/",
+        "success_url": "https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED",
+	"env": {
+		"warp_id": {
+			"description": "Enter WRAP+ ID",
+			"required": true
+		}
+	},
+    	"stack": "container"
+}
