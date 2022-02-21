@@ -1,12 +1,11 @@
 # WRAP+ UNLIMITED (New Methods!😊)
 <b>Get Unlimited amount of Data in Cloudflare's WRAP+ VPN</b>
 <h2>📑 Features</h2>
-<h4>1.Added Timeout Preventer!😘</h4>
-<h4>2.Get 1GB Per 10 Seconds!🔥</h4>
+<h4>1.Get 1GB Per 10 Seconds!🔥</h4>
 <h2>🪧Before you Procced</h2>
 <p><b>1.Using this code on Google Colab will only work for 24 Hours if Time out preventer is used and that Tab is opened in your Phone or PC.</b></p>
 <p><b>2.If you deploy this Code through Heroku or Railway app then it will run for lifetime!</b></p>
-<h2><b>⚙️ How to use ?</h2>
+<h2><b>⚙️ How to use ?</b></h2>
 <h4><b>1.First Get your Wrap+ ID by going into Settings > Advanced > Diagnostics and copy the ID under CLIENT CONFIGURATION section</b></h4>
 <img src="Img/1.jpg" height="50%" width="40%" alt="1">
 <h2><b>🕹️ Through Google Colab</b></h2>
