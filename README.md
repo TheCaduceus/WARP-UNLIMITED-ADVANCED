@@ -13,10 +13,10 @@
 <h4><b>2.First Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WRAP-UNLIMITED-ADVANCED/blob/main/Wrap_Unlimited_Advanced.ipynb" alt="Open-Colab"> Open Code!</a>
 <h4><b>3.Now Run the Timeout Preventer to prevent Google Colab from getting timeout</b></h4>
 <img src="Img/2.png" alt="2">
-<h4><b>4.Then Run The WRAP+ (1.1.1.1) Code and Enter your Wrap ID as shown in the Image</b></h4>
+<h4><b>4.Then Run The WRAP+ (1.1.1.1) Code and Enter your Wrap ID (Also Hit Enter after it!) as shown in the Image</b></h4>
 <img src="Img/3.png" alt="3">
 <h4><b>5.After that! Let the code run, It will give you 1GB per 10 Seconds. But you have to update the value in the app! To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>
-<h4><b><i>❗You have to manually update the Value in the app as written in above step❗</i></b></p>
+<h4><b><i>❗You have to manually update the Value in the app as written in above step❗</i></b></h4>
 <h2><b>⚡Through Heroku</b></h2>
 <h4><b>1.First open the app deployment page:<a href="https://heroku.com/deploy?template=https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED/tree/Heroku"> Open it!</a></b></h4>
 <h4><b>2.Now Enter a unique App name and your Wrap+ ID and click Deploy as shown in the Image.</b></h4>
@@ -29,5 +29,22 @@
 <h4><b>Now Click on "Login with GitHub" if you are doing it for first time! and set below config var</b></h4>
 <p><i><b>warp_id = Your WRAP ID</b></i></p>
 <h4><b>After it! Click Deploy and once it got Deployed, Enjoy!</b></h4>
-<h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku❗</i></b></p>
+<h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
 <h2><b>🖥️ Host on Computer</b></h2>
+<h4><b>Running this script on your Computer is simple than ABC!</b></h4>
+<h4><b>1.If your PC do not have python! Then install it first: <a href="https://www.python.org/downloads/">Download Python</a></h4>
+<h4><b>2.Now first open the WRAP+ Unlimited Script code and paste it in notepad and save it as "wrap.py" don't forget to type ".py":<a href=""> Show Code</a></b></h4>
+<h4><b>3.After it run the code as shown in the Image and Enter WRAP ID and Hit Enter and Enjoy!</b></h4>
+<img src="Img/6.png" alt="6">
+<h4><b><i>❗The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open.❗</i></b></h4>
+<h2>🎯Points to be Remembered🎯</h2>
+<h4><b>1.You have to manually update the Value in the app.</b></h4>
+<h4><b>2.The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku</b></h4>
+<h4><b>3.On your Computer,The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open.</b></h4>
+<h2><b>🕶️How to use this Data on PC!</b></h2>
+<h4><b>Open the WRAP or 1.1.1.1 app in your Phone and go to Settings > Account > Key and copy the License Key | Now paste that Key in your Wrap app in Windows or MacOS</b></h4>
+<h2>⛑Contact Us!</h2>
+<h4>Join our Update Channel at Telegram:<a href="https://telegram.me/TheCaduceusUPDATE"> Join Now!</a>
+<h4>Directly Contact the Developer using Telegram <a href="https://telegram.me/HelpAutomatted_Bot">@HelpAutomatted_Bot</a></h4>
+<h2>❤️Credits & Thanks</h2>
+<p><a href="https://github.com/TheCaduceus">Dr.Caduceus</a>: For making New Methods.</p>
