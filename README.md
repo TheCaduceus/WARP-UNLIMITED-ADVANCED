@@ -9,7 +9,7 @@
 <h2><b>⚙️ How to use ?</h2>
 <h4><b>1.First Get your Wrap+ ID by going into Settings > Advanced > Diagnostics and copy the ID under CLIENT CONFIGURATION section</b></h4>
 <img src="Img/1.jpg" height="50%" width="40%" alt="1">
-<h2><b>🖥️ Through Google Colab</b></h2>
+<h2><b>🕹️ Through Google Colab</b></h2>
 <h4><b>2.First Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WRAP-UNLIMITED-ADVANCED/blob/main/Wrap_Unlimited_Advanced.ipynb" alt="Open-Colab"> Open Code!</a>
 <h4><b>3.Now Run the Timeout Preventer to prevent Google Colab from getting timeout</b></h4>
 <img src="Img/2.png" alt="2">
@@ -24,3 +24,10 @@
 <h4><b>3.After Deployment! Click "Manage App" button and then click "Resources" Tab and enable the dyno.</b></h4>
 <img src="Img/5.png" alt="5">
 <h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist.</b></h4>
+<h2><b>🧿 Through Railyway App</b></h2>
+<h4><b>First open the App Deployment page on Railway!<a href="https://railway.app/new/template?template=https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED"> Open it!</a></b></h4>
+<h4><b>Now Click on "Login with GitHub" if you are doing it for first time! and set below config var</b></h4>
+<p><i><b>warp_id = Your WRAP ID</b></i></p>
+<h4><b>After it! Click Deploy and once it got Deployed, Enjoy!</b></h4>
+<h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku❗</i></b></p>
+<h2><b>🖥️ Host on Computer</b></h2>
