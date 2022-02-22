@@ -41,6 +41,8 @@
 <h4><b>1.You have to manually update the Value in the app.</b></h4>
 <h4><b>2.The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku</b></h4>
 <h4><b>3.On your Computer,The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open.</b></h4>
+<h4><b>4.This Tricks works on both! That's WRAP or WRAP+.</b></h4>
+<h4><b>5.If you are hosting this Script on your PC or Local System then confirm that it is connected to INTERNET CONNECTION.</b></h4>
 <h2><b>🎮How to use this Data on PC!</b></h2>
 <h4><b>Open the WRAP or 1.1.1.1 app in your Phone and go to Settings > Account > Key and copy the License Key | Now paste that Key in your Wrap app in Windows or MacOS</b></h4>
 <h2>⛑Contact Us!</h2>
