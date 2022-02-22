@@ -36,7 +36,7 @@
 <h4><b>2.Now first open the WRAP+ Unlimited Script code and paste it in notepad and save it as "wrap.py" don't forget to type ".py":<a href="https://raw.githubusercontent.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED/main/wrap.py?token=GHSAT0AAAAAABRR425DT2LKOGQCMWV4Z5ZIYQTXCUA"> Show Code</a></b></h4>
 <h4><b>3.After it run the code as shown in the Image and Enter WRAP ID and Hit Enter and Enjoy!</b></h4>
 <img src="Img/6.png" alt="6">
-<h4><b><i>❗The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open.❗</i></b></h4>
+<h4><b><i>❗The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open. Make sure that your PC or Local System is connected to INTERNET CONNECTION.❗</i></b></h4>
 <h2>🎯Points to be Remembered🎯</h2>
 <h4><b>1.You have to manually update the Value in the app.</b></h4>
 <h4><b>2.The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku</b></h4>
