@@ -24,7 +24,7 @@
 <img src="Img/5.png" alt="5">
 <h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist.</b></h4>
 <h2><b>🧿 Through Railyway App</b></h2>
-<h4><b>First open the App Deployment page on Railway!<a href="https://railway.app/new/template?template=https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED"> Open it!</a></b></h4>
+<h4><b>First open the App Deployment page on Railway!<a href="https://railway.app/new/template?template=https://github.com/TheCaduceus/Backend-Support-Railway-W-UV"> Open it!</a></b></h4>
 <h4><b>Now Click on "Login with GitHub" if you are doing it for first time! and set below config var</b></h4>
 <p><i><b>warp_id = Your WRAP ID</b></i></p>
 <h4><b>After it! Click Deploy and once it got Deployed, Enjoy!</b></h4>
@@ -40,7 +40,7 @@
 <h4><b>1.You have to manually update the Value in the app.</b></h4>
 <h4><b>2.The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku</b></h4>
 <h4><b>3.On your Computer,The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open.</b></h4>
-<h2><b>🕶️How to use this Data on PC!</b></h2>
+<h2><b>🎮How to use this Data on PC!</b></h2>
 <h4><b>Open the WRAP or 1.1.1.1 app in your Phone and go to Settings > Account > Key and copy the License Key | Now paste that Key in your Wrap app in Windows or MacOS</b></h4>
 <h2>⛑Contact Us!</h2>
 <h4>Join our Update Channel at Telegram:<a href="https://telegram.me/TheCaduceusUPDATE"> Join Now!</a>
