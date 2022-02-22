@@ -50,3 +50,4 @@
 <h4>Directly Contact the Developer using Telegram <a href="https://telegram.me/HelpAutomatted_Bot">@HelpAutomatted_Bot</a></h4>
 <h2>❤️Credits & Thanks</h2>
 <p><a href="https://github.com/TheCaduceus">Dr.Caduceus</a>: For making New Methods.</p>
+  <p><a href="https://github.com/l3v11">Levi</a>: For making basic Script.</p>
