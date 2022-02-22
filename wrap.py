@@ -68,6 +68,8 @@ while True:
 			sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
 			sys.stdout.flush()
 			time.sleep(1)
+# Cooldown Timer should be 10 Second
+# Good = Success / Bad = Fail
 	else:
 		b += 1
 		print(f"[#] Total: {g} Good {b} Bad")
