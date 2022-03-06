@@ -24,6 +24,7 @@
 <h4><b>3.After Deployment! Click "Manage App" button and then click "Resources" Tab and enable the dyno.</b></h4>
 <img src="Img/5.png" alt="5">
 <h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist.</b></h4>
+<h4><b><i>❗You have to manually update the Value in the app To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>❗</i></b></h4>
 <h2><b>🧿 Through Railyway App</b></h2>
 <h4><b>First open the App Deployment page on Railway!<a href="https://railway.app/new/template?template=https://github.com/TheCaduceus/Backend-Support-Railway-W-UV"> Open it!</a></b></h4>
 <h4><b>Now Click on "Login with GitHub" if you are doing it for first time! and set below config var</b></h4>
