@@ -38,6 +38,17 @@
 <h4><b>3.After it run the code as shown in the Image and Enter WARP ID and Hit Enter and Enjoy!</b></h4>
 <img src="Img/6.png" alt="6">
 <h4><b><i>❗The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open. Make sure that your PC or Local System is connected to INTERNET CONNECTION.❗</i></b></h4>
+<h2><b>📲 Host on Mobile Phone</b></h2>
+<h4><b>1.First Download the Termux app from Google Play Store.</b></h4>
+<h4><b>2.Now run the following commands in it one by one!</b></h4>
+<p><b>
+  1.pkg install python - This Command will Download Python.<br>
+  2.pkg install git - This Command will Download Git.<br>
+  3.git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED - This Command will clone this Repository in your Device.<br>
+  4.cd WARP-UNLIMITED-ADVANCED - This Command will set Directory to this Repository's created Folder.<br>
+  5.python3 warp.py - This Command will run the main Script.
+  </b></p>
+  <h4><b>3.After above! Now Enter your WARP ID and get started.😚</b></h4>
 <h2>🎯Points to be Remembered🎯</h2>
 <h4><b>1.You have to manually update the Value in the app.</b></h4>
 <h4><b>2.The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku</b></h4>
