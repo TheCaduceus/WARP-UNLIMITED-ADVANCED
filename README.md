@@ -49,7 +49,7 @@
   5.python3 warp.py - This Command will run the main Script.
   </b></p>
   <h4><b>3.After above! Now Enter your WARP ID and get started.😚</b></h4>
-<h2>🎯Points to be Remembered🎯</h2>
+<h2>🎯Points to be Remembere</h2>
 <h4><b>1.You have to manually update the Value in the app.</b></h4>
 <h4><b>2.The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku</b></h4>
 <h4><b>3.On your Computer,The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open.</b></h4>
