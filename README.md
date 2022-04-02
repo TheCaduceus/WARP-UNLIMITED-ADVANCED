@@ -50,7 +50,7 @@
   </b></p>
   <h4><b>3.After above! Now Enter your WARP ID and get started.😚</b></h4>
 <h2><b>📈Update Values</b></h2>
-<h4><b>After Successfully Deploying or Running your Script! You have to update the "Data Reamaining Value in your App."</b></h4>
+<h4><b>After Successfully Deploying or Running your Script! You have to update the "Data Remaining Value in your App."</b></h4>
 <h3><b>📲For Mobile:</b></h3>
 <h4><b>Go to Settings-->Advanced-->Connection Options-->Press Reset Security Keys</b></h4>
 <h3><b>🖥️For PC:<b></h3>
