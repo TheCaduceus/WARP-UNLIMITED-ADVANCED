@@ -16,4 +16,4 @@ jobs:
           stack: "container"
           region: "us"
         env:
-          warp_id: ${{secrets.warp_id}}
+          HD_warp_id: ${{secrets.warp_id}}
