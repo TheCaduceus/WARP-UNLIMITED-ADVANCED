@@ -1,8 +1,4 @@
 icon: https://apps.okteto.com/movies/icon.png
-deploy:
-  - okteto build -t okteto.dev/api:$WARP-UNLIMITED-ADVANCED api
-  - okteto build -t okteto.dev/frontend:$WARP-UNLIMITED-ADVANCED frontend
-  - helm upgrade --install movies chart --set tag=$WARP-UNLIMITED-ADVANCED
 devs:
   - api/okteto.yml
   - frontend/okteto.yml
