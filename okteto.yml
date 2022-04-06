@@ -12,10 +12,10 @@ environment:
   - environment=development
 resources:
   requests:
-    memory: "64Mi"
+    memory: "890Mi"
     cpu: "250m"
   limits:
-    memory: "128Mi"
+    memory: "1008Mi"
     cpu: "500m"
 forward:
   - 8080:80
