@@ -1,4 +1,4 @@
-name: Deploy Clone Bot to Heroku via Github Workflows (EU Region)
+name: Deploy on Heroku
 
 on: workflow_dispatch
 
