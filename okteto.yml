@@ -10,13 +10,13 @@ sync:
 environment:
   - name=$USER
   - environment=development
-resources:
-  requests:
-    memory: "890Mi"
-    cpu: "250m"
-  limits:
-    memory: "1008Mi"
-    cpu: "500m"
+ resources:
+    requests:
+      cpu: 30m
+      memory: 30Mi
+    limits:
+      cpu: 30m
+      memory: 30Mi
 forward:
   - 8080:80
   - 5432:postgres:5432
