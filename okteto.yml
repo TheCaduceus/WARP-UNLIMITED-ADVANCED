@@ -1,4 +1,4 @@
-name: Warp-Unlimited
+name: vote
 selector:
   app.kubernetes.io/part-of: vote
   app.kubernetes.io/component: api
