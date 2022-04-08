@@ -107,5 +107,5 @@
 <h4><b>Join our Update Channel at Telegram:<a href="https://telegram.me/TheCaduceusUPDATE"> Join Now!</a></b></h4>
 <h4><b>Directly Contact the Developer using Telegram <a href="https://telegram.me/HelpAutomatted_Bot">@HelpAutomatted_Bot</a></b></h4>
 <h2><b>❤️Credits & Thanks</b></h2>
-<p><b><a href="https://github.com/ALIILAPRO">ALI-B</a>: The Original Developer of the Script</b></p>
 <p><b><a href="https://github.com/TheCaduceus">Dr.Caduceus</a>: For making New 7 Methods and this all in one Guide.</b></p>
+<p><b><a href="https://github.com/ALIILAPRO">ALI-B</a>: The Original Developer of the Basic Script</b></p>
