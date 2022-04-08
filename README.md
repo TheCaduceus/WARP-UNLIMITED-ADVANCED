@@ -28,7 +28,7 @@
 <img src="Img/5.png" alt="5">
 <h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist.</b></h4>
 <h4><b><i>❗You have to manually update the Value in the app To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>❗</i></b></h4>
-<h2><b>🧿 Through Railyway App</b></h2>
+<!---<h2><b>🧿 Through Railyway App</b></h2>
 <h4><b>1.First Create your Railway Account, either by using Email ID or GitHub Account.</b></h4>
 <img src="Img/2.3.png">
 <h4><b>2.Now Fork this Repository and go to your <a href="https://railway.app/dashboard">Railway Dashboard</a> and click "Create Project"</b></h4>
@@ -36,7 +36,7 @@
 <h4><b>3.After it! Choose "Deploy from Repo"</b></h4>
 <img src="Img/2.5.png">
 <h4><b></b></h4>
-<h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
+<h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>--->
 <h2><b>🪬 Through Okteto</b></h2>
 <h4><b>Okteto is also a best Platform like Railway, people like it because it does not restart your deployed app after 24 Hours unlike Heroku do. There are only some points we need to keep in our mind to use it effectively your will see it in this Section!</b></h4>
 <h4><b>1.First Create your okteto Account, You need one GitHub account as okteto supports only one Method to either Create or Login: <a href="https://cloud.okteto.com/#/login">Create Account</a></b></h4>
