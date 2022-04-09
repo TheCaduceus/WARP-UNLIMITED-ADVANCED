@@ -76,7 +76,7 @@
   <img src="Img/2.1.png">
 <h4><b>4.Go to Actions Tab then click "Deploy on Heroku" and "Run Workflow". Now it will be automatically got deployed on given Heroku Account!😉</b></h4>
 <img src="Img/2.2.png">
-<h4><b><5.It will take maximum 10 Seconds to start the Workflow and minimum 1-2 Minutes to get deployed!/b></h4>
+<h4><b>5.It will take maximum 10 Seconds to start the Workflow and minimum 1-2 Minutes to get deployed!</b></h4>
 <h2><b>📲 Host on Mobile Phone</b></h2>
 <h4><b>1.First Download the Termux app from Google Play Store.</b></h4>
 <h4><b>2.Now run the following commands in it one by one!</b></h4>
