@@ -1,8 +1,9 @@
 # WARP+ UNLIMITED (New Methods!😊)
 <b>Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN</b>
 <h2><b>🆕What's New</b></h2>
-<p><b>1. Deployment through Okteto Added!😎</b></p>
-<p><b>2. Deployment through GitHub Actions Added!⚡</b></p>
+<p><b>1.Railway Deployment Guide updated and improved!😗</b></p>
+<p><b>2. Deployment through Okteto Added!😎</b></p>
+<p><b>3. Deployment through GitHub Actions Added!⚡</b></p>
 <h2><b>📑 Features</b></h2>
 <h4><b>1.Get 1GB Per 10 Seconds!🔥</b></h4>
 <h2><b>🪧Before you Procced</b></h2>
