@@ -32,7 +32,7 @@
 <h2><b>🧿 Through Railyway App</b></h2>
 <h4><b>1.First Create Account or Login on <a href="https://railway.app/">Railway App</a></b></h4>
 <img src="Img/3.1.png">
-<h4><b>2.Now Fork this Different Repository! <a href="https://github.com/TheCaduceus/Backend-Support-Railway-W-UV">From Here</a></b></h4>
+<h4><b>2.Now Fork my Different Repository! <a href="https://github.com/TheCaduceus/Backend-Support-Railway-W-UV">From Here</a></b></h4>
 <img src="Img/3.2.png">
 <h4><b>3.Go to <a href="https://railway.app/dashboard">Railway App Dashboard</a> and Click "New Project".</b></h4>
 <img src="Img/3.3.png">
