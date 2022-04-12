@@ -110,7 +110,7 @@
 <h4><b>4.This Tricks works on both! That's WARP or WARP+.</b></h4>
 <h4><b>5.If you are hosting this Script on your PC or Local System then confirm that it is connected to INTERNET CONNECTION.</b></h4>
 <h4><b>6.Okteto turns sleeping mode on your Deployed app, if its provided Domain don't got pinged within 24 Hours! Please Refer to STEPS 5-9 under Okteto section to know how to prevent it.</b></h4>
-<h2><b>🎮How to use this Data on PC!</b></h2>
+<h2><b>🖥️How to use this Data on PC!</b></h2>
 <h4><b>Open the WARP or 1.1.1.1 app in your Phone and go to Settings > Account > Key and copy the License Key | Now paste that Key in your Warp app in Windows or MacOS</b></h4>
 <h2><b>⛑Contact Us!</b></h2>
 <h4><b>Join our Update Channel at Telegram:<a href="https://telegram.me/TheCaduceusUPDATE"> Join Now!</a></b></h4>
