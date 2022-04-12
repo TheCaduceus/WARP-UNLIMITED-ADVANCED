@@ -30,16 +30,16 @@
 <h4><b><i>❗You have to manually update the Value in the app To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>❗</i></b></h4>
 <h2><b>🧿 Through Railyway App</b></h2>
 <h4><b>1.First Create Account or Login on <a href="https://railway.app/">Railway App</a></b></h4>
-<img src="Img/1.1.png">
+<img src="Img/3.1.png">
 <h4><b>2.Now Fork this Different Repository! <a href="https://github.com/TheCaduceus/Backend-Support-Railway-W-UV">From Here</a></b></h4>
-<img src="Img/1.2.png">
+<img src="Img/3.2.png">
 <h4><b>3.Go to <a href="https://railway.app/dashboard">Railway App Dashboard</a> and Click "New Project".</b></h4>
-<img src="Img/1.3.png">
+<img src="Img/3.3.png">
 <h4><b>4.After it Choose "Deploy from Repo"</b></h4>
-<img src="Img/1.4.png">
+<img src="Img/3.4.png">
 <h4><b>5.Choose the Forked Repository and select "Add Variables"</b></h4>
-<img src="Img/1.5.png">
-<img src="Img/1.6.png">
+<img src="Img/3.5.png">
+<img src="Img/3.6.png">
 <h4><b>5.Finally Everything is done! Now Railway will do everything itself.😌</b></h4>
 <h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
 <h2><b>🪬 Through Okteto</b></h2>
