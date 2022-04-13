@@ -12,7 +12,7 @@
 <p><b>2.If you deploy this Code through Heroku or Railway app then it will run for lifetime!</b></p>
 <p><b>3.It does not matter this trick works on both that's on WARP or WARP+.</b></p>
 <h2><b>⚙️ How to use ?</b></h2>
-<h4><b>1.First Get your Warp+ ID by going into Settings > Advanced > Diagnostics and copy the ID under CLIENT CONFIGURATION section</b></h4>
+<h4><b>1.First Get your WARP/WARP+ ID by going into Settings > Advanced > Diagnostics and copy the ID under CLIENT CONFIGURATION section</b></h4>
 <img src="Img/1.jpg" height="50%" width="40%" alt="1">
 <h2><b>🕹️ Through Google Colab</b></h2>
 <h4><b>2.First Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/Wrap_Unlimited_Advanced.ipynb" alt="Open-Colab"> Open Code!</a>
