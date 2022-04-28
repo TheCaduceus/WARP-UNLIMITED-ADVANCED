@@ -33,7 +33,7 @@
 <h2><b>🧿 Through Railway App</b></h2>
 <h4><b>1.First Create Account or Login on <a href="https://railway.app/">Railway App</a></b></h4>
 <img src="Img/3.1.png">
-<h4><b>2.Now Fork my Different Repository! <a href="https://github.com/TheCaduceus/Backend-Support-Railway-W-UV">From Here</a></b></h4>
+<h4><b>2.Fork my Different Repository! <a href="https://github.com/TheCaduceus/Backend-Support-Railway-W-UV">From Here</a></b></h4>
 <img src="Img/3.2.png">
 <h4><b>3.Go to <a href="https://railway.app/dashboard">Railway App Dashboard</a> and Click "New Project".</b></h4>
 <img src="Img/3.3.png">
@@ -43,6 +43,8 @@
 <img src="Img/3.5.png">
 <img src="Img/3.6.png">
 <h4><b>5.Finally Everything is done! Now Railway will do everything itself.😌</b></h4>
+<h4><b>6.You can also use below given Button to deploy this Project on Railway with just a single click.(Without forking repository)</b></h4>
+<a href="https://railway.app/new/template/M78z7V?referralCode=PFHpF8"><img src="https://railway.app/button.svg" alt="Railway deploy button"></a>
 <h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
 <h2><b>🪬 Through Okteto</b></h2>
 <h4><b>Okteto is also a best Platform like Railway, people like it because it does not restart your deployed app after 24 Hours unlike Heroku do. There are only some points we need to keep in our mind to use it effectively you will see it in this Section!</b></h4>
