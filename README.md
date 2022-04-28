@@ -14,7 +14,7 @@
 <h2><b>⚙️ How to use ?</b></h2>
 <h4><b>1.First Get your WARP/WARP+ ID by going into Settings > Advanced > Diagnostics and copy the ID under CLIENT CONFIGURATION section</b></h4>
 <img src="Img/1.jpg" height="50%" width="40%" alt="1">
-<h2><b>🕹️ Through Google Colab</b></h2>
+<h2><b>🕹️ Run on Google Colab</b></h2>
 <h4><b>2.First Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/Wrap_Unlimited_Advanced.ipynb" alt="Open-Colab"> Open Code!</a>
 <h4><b>3.Now Run the Timeout Preventer to prevent Google Colab from getting timeout</b></h4>
 <img src="Img/2.png" alt="2">
@@ -22,7 +22,7 @@
 <img src="Img/3.png" alt="3">
 <h4><b>5.After that! Let the code run, It will give you 1GB per 10 Seconds. But you have to update the value in the app! To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>
 <h4><b><i>❗You have to manually update the Value in the app as written in above step❗</i></b></h4>
-<h2><b>⚡Through Heroku</b></h2>
+<h2><b>⚡Host on Heroku</b></h2>
 <h4><b>1.First open the app deployment page:<a href="https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/tree/Heroku"> Open it!</a></b></h4>
 <h4><b>2.Now Enter a unique App name and your Warp+ ID and click Deploy as shown in the Image.</b></h4>
 <img src="Img/4.png" alt="4">
@@ -30,7 +30,7 @@
 <img src="Img/5.png" alt="5">
 <h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist.</b></h4>
 <h4><b><i>❗You have to manually update the Value in the app To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>❗</i></b></h4>
-<h2><b>🧿 Through Railway App</b></h2>
+<h2><b>🧿 Host on Railway App</b></h2>
 <h4><b>1.First Create Account or Login on <a href="https://railway.app/">Railway App</a></b></h4>
 <img src="Img/3.1.png">
 <h4><b>2.Fork my Different Repository! <a href="https://github.com/TheCaduceus/Backend-Support-Railway-W-UV">From Here</a></b></h4>
@@ -46,7 +46,7 @@
 <h4><b>6.You can also use below given Button to deploy this Project on Railway with just a single click.(Without forking repository)</b></h4>
 <a href="https://railway.app/new/template/M78z7V?referralCode=PFHpF8"><img src="https://railway.app/button.svg" alt="Railway deploy button"></a>
 <h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
-<h2><b>🪬 Through Okteto</b></h2>
+<h2><b>🪬 Host on Okteto</b></h2>
 <h4><b>Okteto is also a best Platform like Railway, people like it because it does not restart your deployed app after 24 Hours unlike Heroku do. There are only some points we need to keep in our mind to use it effectively you will see it in this Section!</b></h4>
 <h4><b>1.First Create your okteto Account, You need one GitHub account as okteto supports only one Method to either Create or Login: <a href="https://cloud.okteto.com/#/login">Create Account</a></b></h4>
 <img src="Img/1.1.png">
@@ -72,7 +72,7 @@
 <h4><b>3.After it run the code as shown in the Image and Enter WARP ID and Hit Enter and Enjoy!</b></h4>
 <img src="Img/6.png" alt="6">
 <h4><b><i>❗The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open. Make sure that your PC or Local System is connected to INTERNET CONNECTION.❗</i></b></h4>
-<h2><b>🧫 Through GitHub Actions</b></h2>
+<h2><b>🧫 Deploy Through GitHub Actions</b></h2>
 <h4><b>This Method is too much easier and best for users who want to deploy this script multiple times on Heroku without login on Heroku again and again!</b></h4>
 <h4><b>1.First fork my different Repository <a href="https://github.com/TheCaduceus/GA-1OFM-">here</a></b></h4>
 <img src="Img/1.9.png">
