@@ -5,6 +5,7 @@
 <p><b>2.Railway Deployment Guide updated and improved!😗</b></p>
 <p><b>3. Deployment through Okteto Added!😎</b></p>
 <p><b>4. Deployment through GitHub Actions Added!⚡</b></p>
+<p><b>5. Replit & Jupyter Server Method Added!😆</b></p>
 <h2><b>📑 Features</b></h2>
 <h4><b>1.Get 1GB Per 10 Seconds!🔥</b></h4>
 <h2><b>🪧Before you Proceed</b></h2>
@@ -104,6 +105,24 @@
 <h4><b>1.Open the "WARP UNLIMITED" reple:<a href="https://replit.com/@TheCaduceus/WARP-UNLIMITED"> Open it</a></b></h4>
 <h4><b>2.Enter your WARP/WARP+ ID and press Enter to run the script. Enjoy!🙃</b></h4>
 <img src="Img/repl-1.png">
+<h2><b></b></h2>
+<h4><b>This method is best & effective altrenative of "Run on Computer" method! Before using this method, let see how to Download & Setup Jupypter server which is too lightweight.</b></h4>
+<h5><b>Setting up the Jupyter Server:</b></h5>
+<h4><b>1.First install Python:<a href="https://www.python.org/downloads/" alt="Download Python"> From Here</a></b></h4>
+<h4><b>2.Now run the CMD as Administrator and execute following commands one-by-one:</b></h4>
+<p><b>1.pip install jupyter - To install Jupyter<br>
+  2.pip install notebook - To install Notebook<br>
+  3.pip install voila - To install Voila
+  4.python -m notebook - Start Jupyter Server
+</b></p>
+<h4><b>3.Once you start your Server! Then Jupyter will give you its link (as shown in Image), just open it on your Browser.</b></h4>
+<img src="Img/jp-1.png">
+<img src="Img/jp-2.png">
+<h4><b>4.Now Download the "Warp-on-Jupyter-Server.ipynb" file:<a href="https://www.caduceus.ml/WARP-UNLIMITED-ADVANCED/Warp-on-Jupyter-Server.ipynb" alt="Warp-on-Juypter-Server"> From Here only</b></h4>
+<h4><b>5.After downloading it! Locate that file through your Jupyter server and open it as shown in the image and click Run.</b></h4>
+<img src="Img/jp-3.png">
+<h4><b>6.Now enter your WARP/WARP+ ID and press Enter to continue.Enjoy!😉</b></h4>
+<img src="Img/jp.4.png">
 <h2><b>📈Update Values</b></h2>
 <h4><b>After Successfully Deploying or Running your Script! You have to update the "Data Remaining Value in your App."</b></h4>
 <h3><b>📲For Mobile:</b></h3>
