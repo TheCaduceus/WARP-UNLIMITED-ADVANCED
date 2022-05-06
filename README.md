@@ -65,7 +65,7 @@
 <h4><b>8.It will now ask you for Title and URL. Give any title and paste the copied URL and set Execution to after 60 Minutes and press "CREATE" button.</b></h4>
 <img src="Img/1.8.png">
 <h4><b>9.Your Script is now all good and will not cause any problem if you follow above written steps carefully!😎</b></h4>
-<h2><b>🖥️ Host on Computer</b></h2>
+<h2><b>🖥️ Run on Computer</b></h2>
 <h4><b>Running this script on your Computer is simple than ABC!</b></h4>
 <h4><b>1.If your PC do not have python! Then install it first: <a href="https://www.python.org/downloads/">Download Python</a></b></h4>
 <h4><b>2.Now first open the WRAP+ Unlimited Script code and paste it in notepad and save it as "warp.py" don't forget to type ".py":<a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/View-Script/Warp.md"> Show Code</a></b></h4>
