@@ -118,7 +118,7 @@
 <h4><b>3.Once you start your Server! Then Jupyter will give you its link (as shown in Image), just open it on your Browser.</b></h4>
 <img src="Img/jp-1.png">
 <img src="Img/jp-2.png">
-<h4><b>4.Now Download the "Warp-on-Jupyter-Server.ipynb" file:<a href="https://www.caduceus.ml/WARP-UNLIMITED-ADVANCED/Warp-on-Jupyter-Server.ipynb" alt="Warp-on-Juypter-Server"> From Here only</a></b></h4>
+<h4><b>4.Now Download the "Warp-on-Jupyter-Server.ipynb" file:<a href="https://www.caduceus.ml/files/Warp-on-Jupyter-Server.ipynb" alt="Warp-on-Juypter-Server"> From Here only</a></b></h4>
 <h4><b>5.After downloading it! Locate that file through your Jupyter server and open it as shown in the image and click Run.</b></h4>
 <img src="Img/jp-3.png">
 <h4><b>6.Now enter your WARP/WARP+ ID and press Enter to continue.Enjoy!😉</b></h4>
