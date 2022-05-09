@@ -107,7 +107,7 @@
 <h4><b>2.Enter your WARP/WARP+ ID and press Enter to run the script. Enjoy!🙃</b></h4>
 <img src="Img/repl-1.png">
 <h2><b>🧰Run on Jupyter Server</b></h2>
-<h4><b>This method is best & effective altrenative of "Run on Computer" method! Before using this method, let see how to Download & Setup Jupypter server which is too lightweight.</b></h4>
+<h4><b>This method is best & effective alternative of "Run on Computer" method! Before using this method, let see how to Download & Setup Jupypter server which is too lightweight.</b></h4>
 <h5><b>Setting up the Jupyter Server:</b></h5>
 <h4><b>1.First install Python:<a href="https://www.python.org/downloads/" alt="Download Python"> From Here</a></b></h4>
 <h4><b>2.Now run the CMD as Administrator and execute following commands one-by-one:</b></h4>
