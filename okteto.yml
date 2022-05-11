@@ -1,8 +1,0 @@
-version: "2.2.9"
-services:
-  warp:
-    image: python:3
-    worker_name: warp
-    environment:
-      - warp_id=${warp_id}
-    restart: unless-stopped
