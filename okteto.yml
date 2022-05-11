@@ -2,9 +2,7 @@ version: "2.2.9"
 services:
   warp:
     image: python:3
-    container_name: warp
+    web_name: warp
     environment:
       - warp_id=${warp_id}
-    ports:
-      - 8080:8080
     restart: unless-stopped
