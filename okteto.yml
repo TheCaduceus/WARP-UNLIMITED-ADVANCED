@@ -1,5 +1,7 @@
 build:
 name: warp
+selector:
+  app.kubernetes.io/component: api
 image: python:3
 command: ["python", "warp-plus.py"]
 environment:
