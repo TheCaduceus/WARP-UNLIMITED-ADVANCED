@@ -1,28 +1,10 @@
-name: warp
-image: python:3
-command: ["python", "warp-plus.py"]
-workdir: /usr/src/app
-sync:
- - .:/usr/src/app
-environment:
-  - name=$USER
-  - environment=development
-resources:
-  requests:
-    memory: "64Mi"
-    cpu: "250m"
-  limits:
-    memory: "128Mi"
-    cpu: "500m"
-forward:
-  - 8080:80
-  - 5432:postgres:5432
-reverse:
-  - 9000:9001
-securityContext:
-  runAsUser: 1000
-  runAsGroup: 2000
-  fsGroup: 3000
-  capabilities:
-    add:
-    - SYS_PTRACE
+version: "2.2.9"
+services:
+  warp:
+    image: python:3
+    container_name: warp
+    environment:
+      - warp_id=${warp_id}
+    ports:
+      - 8080:8080
+    restart: unless-stopped
