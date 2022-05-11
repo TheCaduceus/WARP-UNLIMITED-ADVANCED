@@ -1,0 +1,6 @@
+build:
+name: warp
+image: python:3
+command: ["python", "warp-plus.py"]
+environment:
+  - warp_id=${warp_id}
