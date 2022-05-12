@@ -1,5 +1,4 @@
 build:
-  docker:
-    worker: Dockerfile
+  docker: Dockerfile
 deploy:
-  worker: bash start.sh
+  -bash start.sh
