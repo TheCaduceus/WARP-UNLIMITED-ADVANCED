@@ -1,3 +1,5 @@
 build:
  image: python3
  dockerfile: Dockerfile
+deploy:
+ - python warp-plus.py
