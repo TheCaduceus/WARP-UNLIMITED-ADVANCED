@@ -1,4 +1,0 @@
-build:
- dockerfile: Dockerfile
-deploy:
- - python warp-plus.py
