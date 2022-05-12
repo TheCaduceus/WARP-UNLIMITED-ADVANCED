@@ -1,0 +1,5 @@
+build:
+  docker:
+    worker: Dockerfile
+deploy:
+  worker: bash start.sh
