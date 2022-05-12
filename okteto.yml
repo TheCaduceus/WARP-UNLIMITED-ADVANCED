@@ -1,4 +1,4 @@
 build:
   docker: Dockerfile
 deploy:
-  -bash start.sh
+  - bash start.sh
