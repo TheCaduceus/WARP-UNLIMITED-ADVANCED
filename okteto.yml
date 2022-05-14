@@ -1,4 +1,4 @@
-name: warp-unlimited-advanced
+name: autocreate
 selector:
   app.kubernetes.io/part-of: thecaduceus
   app.kubernetes.io/component: api
