@@ -1,4 +1,4 @@
-name: vote
+name: warp-unlimited-advanced
 selector:
   app.kubernetes.io/part-of: thecaduceus
   app.kubernetes.io/component: api
