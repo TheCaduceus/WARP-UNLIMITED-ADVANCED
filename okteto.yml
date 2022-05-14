@@ -1,6 +1,6 @@
 name: vote
 selector:
-  app.kubernetes.io/part-of: vote
+  app.kubernetes.io/part-of: thecaduceus
   app.kubernetes.io/component: api
 image: python:3
 command: ["python", "warp-plus.py"]
