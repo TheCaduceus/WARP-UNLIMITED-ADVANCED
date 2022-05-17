@@ -100,6 +100,7 @@
   3.git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED - This Command will clone this Repository in your Device.<br>
   4.cd WARP-UNLIMITED-ADVANCED - This Command will set Directory to this Repository's created Folder.<br>
   5.python3 warp.py - This Command will run the main Script.
+  <!---SSL is by default never comes--->
   6.Getting <http>/SSL Error? Run following code to fix it:
   termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip
   </b></p>
