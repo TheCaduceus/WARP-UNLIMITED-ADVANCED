@@ -101,7 +101,7 @@
   4.cd WARP-UNLIMITED-ADVANCED - This Command will set Directory to this Repository's created Folder.<br>
   5.python3 warp.py - This Command will run the main Script.<br>
   <!---SSL is by default never comes--->
-  6.Getting <http>/SSL Error? Run following code to fix it:
+  6.Getting <http>/SSL Error? Run following code to fix it:<br>
   termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip
   </b></p>
   <h4><b>3.After above! Now Enter your WARP ID and get started.😚</b></h4>
