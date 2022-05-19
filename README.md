@@ -103,6 +103,7 @@
   <!---SSL is by default never comes--->
   6.Getting <http>/SSL Error? Run following code to fix it:<br>
   termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip
+  <img src="Img/Termux-Error-1.jpeg">
   </b></p>
   <h4><b>3.After above! Now Enter your WARP ID and get started.😚</b></h4>
 <h2><b>🎲Run on Replit</b></h2>
