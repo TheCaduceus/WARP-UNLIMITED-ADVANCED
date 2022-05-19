@@ -145,11 +145,13 @@
   <p><b>I will recommend to host/run 3 or less than 3 (<3) scripts for each account because Cloudflare is API have request limits. Hosting/Running too many scripts can cause "Too many Requests" error which indicates that API getting too many requestes from same account and that is why there is a cooldown timer of 10 seconds to prevent this.</b></p>
 <h4><b>2.How to resolve "Too many request" Error?</b></h4>
   <p><b>As already discussed above! Hosting/Running too many scripts for same account cause this. So just switch off the sripts and bring down the number to 3 or >3 scripts for same account.</b></p>
-<h4><b>3.Will this script cause any type of ban?</b></h4>
+<h4><b>3.Will this script cause any type of ban from Cloudflare?</b></h4>
   <p><b>No, this script don't cause ban because it just use the API provided by Cloudflare for referral system. Neither this script create any type of load or bypass any limit set by Cloudflare for there API nor it hack anything or changes any official record.</b></p>
 <h4><b>4.Script not working & producing error as shown in the image in Termux. How to solve?</b></h4>
   <img src="Img/Termux-Error-1.jpeg">
   <p><b>This problem happens due to missing files! you can run the below given command in Termux to fix it easily:<br>termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip</b></p>
+<h4><b>5.Deploying this on Heroku/Rilway/Okteto/Vercel cause any ban?</b></h4>
+  <p><b>No, this script comes in category of Cron-Job because this script just take the WARP/WARP+ ID from user and arrange it in a particular format and start pining it in an interval of 10 seconds.This script is lightweight and don't have any load on system.</b></p>
 <h2><b>🖥️How to use this Data on PC!</b></h2>
 <h4><b>Open the WARP or 1.1.1.1 app in your Phone and go to Settings > Account > Key and copy the License Key | Now paste that Key in your Warp app in Windows or MacOS</b></h4>
 <h2><b>⛑Contact Us!</b></h2>
