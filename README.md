@@ -107,7 +107,7 @@
   </b></p>
   <h4><b>3.After above! Now Enter your WARP ID and get started.😚</b></h4>
 <h2><b>🎲Run on Replit</b></h2>
-<h4><b>1.Open the "WARP UNLIMITED" reple:<a href="https://replit.com/@TheCaduceus/WARP-UNLIMITED"> Open it</a></b></h4>
+<h4><b>1.Open the "WARP UNLIMITED" repl:<a href="https://replit.com/@TheCaduceus/WARP-UNLIMITED"> Open it</a></b></h4>
 <h4><b>2.Enter your WARP/WARP+ ID and press Enter to run the script. Enjoy!🙃</b></h4>
 <img src="Img/repl-1.png">
 <h2><b>🧰Run on Jupyter Server</b></h2>
