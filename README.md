@@ -1,11 +1,11 @@
 # WARP+ UNLIMITED (New Methods!😊)
 <b>Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN</b>
 <h2><b>🆕What's New</b></h2>
-<p><b>1.Termux Problem Fixed! Update the Termux App <a href="https://github.com/termux/termux-app/releases">from here</a>!</b></p>
-<p><b>2.Railway Deployment Guide updated and improved!😗</b></p>
-<p><b>3. Deployment through Okteto Added!😎</b></p>
-<p><b>4. Deployment through GitHub Actions Added!⚡</b></p>
-<p><b>5. Replit & Jupyter Server Method Added!😆</b></p>
+<p><b>1.Now get Hosted Script info on Telegram itself!</b></p>
+<p><b>2.Added Jupyter Server deployment method!</b></p>
+<p><b>3.Termux http/SSL Error now resolved!</b></p>
+<p><b>4.Railway app deployment will now not cause false ban.</b></p>
+<p><b>5.FAQ is now added to clear your doubts.</b></p>
 <h2><b>📑 Features</b></h2>
 <h4><b>1.Get 1GB Per 10 Seconds!🔥</b></h4>
 <h2><b>🪧Before you Proceed</b></h2>
@@ -26,27 +26,31 @@
 <h2><b>⚡Host on Heroku</b></h2>
 <h4><b>1.First Click the below Deploy button.</b></h4>
 <a href="https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/tree/Heroku"><img src="Img/Heroku Deployment Button.png" alt="Deploy on Heroku"></a>
-<h4><b>2.Now Enter a unique App name and your Warp+ ID and click Deploy as shown in the Image.</b></h4>
-<img src="Img/4.png" alt="4">
+<h4><b>2.Now Enter the following values and click "Deploy" button:</b></h4>
+  <p><b>
+    1.App Name: Give a unique name to your app name.<br>
+    2.WARP_ID: Enter your WARP/WARP+ ID.<br>
+    3.SEND_LOG: If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+    4.BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+    5.CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.
+    </b></p>
+<img src="https://user-images.githubusercontent.com/87380104/169484438-7ec8270e-864e-40ef-a0ea-f525cc2c741b.png" alt="4">
 <h4><b>3.After Deployment! Click "Manage App" button and then click "Resources" Tab and enable the dyno.</b></h4>
 <img src="Img/5.png" alt="5">
-<h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist.</b></h4>
+<h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist and you will start getting info about your script if SEND_LOG is enabled.</b></h4>
 <h4><b><i>❗You have to manually update the Value in the app To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>❗</i></b></h4>
 <h2><b>🧿 Host on Railway App</b></h2>
 <h4><b>1.First Create Account or Login on <a href="https://railway.app/">Railway App</a></b></h4>
 <img src="Img/3.1.png">
-<h4><b>2.Fork my Different Repository! <a href="https://github.com/TheCaduceus/Backend-Support-Railway-W-UV">From Here</a></b></h4>
-<img src="Img/3.2.png">
-<h4><b>3.Go to <a href="https://railway.app/dashboard">Railway App Dashboard</a> and Click "New Project".</b></h4>
-<img src="Img/3.3.png">
-<h4><b>4.After it Choose "Deploy from Repo"</b></h4>
-<img src="Img/3.4.png">
-<h4><b>5.Choose the Forked Repository and select "Add Variables" and add "warp_id" as Variable name and your "WARP ID" as its value.</b></h4>
-<img src="Img/3.5.png">
-<img src="Img/3.6.png">
-<h4><b>5.Finally Everything is done! Now Railway will do everything itself.😌</b></h4>
-<h4><b>6.You can also use below given Button to deploy this Project on Railway with just a single click.(Without forking repository)</b></h4>
+<h4><b>2.Now click the following Railway deployment button:</b></h4>
 <a href="https://railway.app/new/template/M78z7V?referralCode=PFHpF8"><img src="https://railway.app/button.svg" alt="Railway deploy button"></a>
+<h4><b>3.After it! Enter the following values:</b></h4>
+<p><b>
+    1.WARP_ID: Enter your WARP/WARP+ ID.<br>
+    2.SEND_LOG: If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+    3.BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+    4.CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.
+    </b></p>
 <h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
 <h2><b>🪬 Host on Okteto (Temporary Not Working!)</b></h2>
 <h4><b>Okteto is also a best Platform like Railway, people like it because it does not restart your deployed app after 24 Hours unlike Heroku do. There are only some points we need to keep in our mind to use it effectively you will see it in this Section!</b></h4>
@@ -54,8 +58,14 @@
 <img src="Img/1.1.png">
 <h4><b>2.Now fork this Repository and go to Okteto and click "Launch Dev Environment" button as shown in the image.</b></h4>
 <img src="Img/1.2.png">
-<h4><b>3.After that, Select GitHub from the pop-up and select your forked repository named "WARP-UNLIMITED-ADVANCED" and choose Branch "Okteto" and add "warp_id" as variable name and enter your Warp ID as its value.See the Image carefully!</b></h4>
-<img src="Img/1.3.png">
+<h4><b>3.After that, Select GitHub from the pop-up and select your forked repository named "WARP-UNLIMITED-ADVANCED" and choose Branch "Okteto" and add following variables carefully!</b></h4>
+<p><b>
+    1.WARP_ID: Enter your WARP/WARP+ ID.<br>
+    2.SEND_LOG: If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+    3.BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+    4.CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.
+    </b></p>
+<img src="https://user-images.githubusercontent.com/87380104/169487986-0aa2896b-44bd-4f78-bd12-eba92bac3a47.png">
 <h4><b>4.Finally! You are ready to click "Launch" button and then okteto will do everything automatically. Enjoy!🎉</b></h4>
 <img src="Img/1.4.png">
 <h4><b>❗Okteto turns sleeping mode on your Deployed app, if its provided Domain don't got pinged within 24 Hours! So to prevent this follow the below steps❗</b></h4><b>5.To prevent your app from going into sleep! Copy its URL provided by the Okteto, to get it click on warp as shown in the image.</b></h4>
@@ -85,10 +95,14 @@
   1.HEROKU_API_KEY - Enter your Heroku API Key as value.<br>
   2.HEROKU_APP_NAME - A unique app name in small letters only.<br>
   3.HEROKU_EMAIL - Your Heroku Email ID.<br>
-  4.warp_id - Enter your warp ID. Keep the Variable name in small letters only "warp_id" otherwise heroku will confuse.<br>
+  4.WARP_ID - Enter your WARP/WARP+ ID. In capital only!<br>
+  5.SEND_LOG - If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+  6.BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+  7.CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.
   </b></p>
   <img src="Img/2.1.png">
-<h4><b>4.Go to Actions Tab then click "Deploy on Heroku" and "Run Workflow". Now it will be automatically got deployed on given Heroku Account!😉</b></h4>
+<h4><b>4.If you want! then at place of creating secrets of SEND_LOG, BOT_TOKEN and CHANNEL_ID. Just write their values in the config.env file given in the repository and directly deploy it by just providing HEROKU_API_KEY, HEROKU_APP_NAME and HEROKU_EMAIL.</b></h4>
+<h4><b>5.Go to Actions Tab then click "Deploy on Heroku" and "Run Workflow". Now it will be automatically got deployed on given Heroku Account!😉</b></h4>
 <img src="Img/2.2.png">
 <h4><b>5.It will take maximum 10 Seconds to start the Workflow and minimum 1-2 Minutes to get deployed!</b></h4>
 <h2><b>📲 Host on Mobile Phone</b></h2>
