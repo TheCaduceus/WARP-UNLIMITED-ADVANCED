@@ -7,8 +7,10 @@ import time
 import os
 import sys
 from vars import Var
-
-referrer = (Var.referrer)
+SEND_LOG = (Var.SEND_LOG)
+BOT_TOKEN = (Var.BOT_TOKEN)
+CHANNEL_ID = (Var.CHANNEL_ID)
+referrer = (Var.WARP_ID)
 
 os.system("title UnlimitedWrapUsage")
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -65,6 +67,8 @@ while True:
 	result = run()
 	if result == 200:
 		g += 1
+		if SEND_LOG == "1":
+                    urllib.request.urlopen("https://api.telegram.org/bot"+ BOT_TOKEN + "/sendMessage?chat_id=" + CHANNEL_ID + "&text=" + "WARP%20ID:%20" + referrer + "%20DATA%20RECEIVED:%20" + str(g) + "GB%20FAILED%20ATTEMPTs:%20" + str(b))
 		print(f"\n[•] WARP+ ID: {referrer}")
 		print(f"[✓] Added: {g} GB")
 		print(f"[#] Total: {g} Good {b} Bad")
