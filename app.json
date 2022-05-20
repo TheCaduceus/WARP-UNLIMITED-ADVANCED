@@ -5,9 +5,21 @@
         "website": "https://www.caduceus.ml/",
         "success_url": "https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED",
 	"env": {
-		"warp_id": {
-			"description": "Enter WRAP+ ID",
+		"WARP_ID": {
+			"description": "Enter your WARP/WRAP+ ID",
 			"required": true
+		},
+		"SEND_LOG": {
+			"description": "If you want log of Script in Telegram Channel or Group. 0 for No and 1 for Yes",
+			"required": true	
+		},
+		"BOT_TOKEN": {
+			"description": "Enter BOT TOKEN (API KEY) from Bot Father. Required only if SEND_LOG is 1",
+			"required": false
+		},
+	        "CHANNEL_ID": {
+			"description": "Enter CHANNEL/GROUP ID with @ like @example. Required only if SEND_LOG is 1",
+			"required": false
 		}
 	},
     	"stack": "container"
