@@ -101,7 +101,7 @@
   7.CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.
   </b></p>
   <img src="Img/2.1.png">
-<h4><b>4.If you want! then at place of creating secrets of WARP_ID,SEND_LOG, BOT_TOKEN and CHANNEL_ID. Just write their values in the config.env file given in the repository and directly deploy it by just providing HEROKU_API_KEY, HEROKU_APP_NAME and HEROKU_EMAIL.</b></h4>
+<h4><b>4.If you want! then at place of creating secrets of WARP_ID,SEND_LOG, BOT_TOKEN and CHANNEL_ID, just write their values in the <a href="https://github.com/TheCaduceus/GA-1OFM-/blob/Heroku/config.env">config.env file</a> given in the repository and directly deploy it by just providing HEROKU_API_KEY, HEROKU_APP_NAME and HEROKU_EMAIL.</b></h4>
 <h4><b>5.Go to Actions Tab then click "Deploy on Heroku" and "Run Workflow". Now it will be automatically got deployed on given Heroku Account!😉</b></h4>
 <img src="Img/2.2.png">
 <h4><b>5.It will take maximum 10 Seconds to start the Workflow and minimum 1-2 Minutes to get deployed!</b></h4>
