@@ -42,7 +42,7 @@
     <p></p>
     HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
-<img src="https://user-images.githubusercontent.com/87380104/169484438-7ec8270e-864e-40ef-a0ea-f525cc2c741b.png" alt="4">
+<img src="https://user-images.githubusercontent.com/87380104/169662727-d4c012d6-ff6a-4505-bc7a-5307b240a186.png" alt="4">
 <h4><b>3.After Deployment! Click "Manage App" button and then click "Resources" Tab and enable the dyno.</b></h4>
 <img src="Img/5.png" alt="5">
 <h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist and you will start getting info about your script if SEND_LOG is enabled.</b></h4>
