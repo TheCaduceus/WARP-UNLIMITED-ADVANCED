@@ -10,3 +10,4 @@ class Var(object):
       SEND_LOG = str(getenv('SEND_LOG'))
       BOT_TOKEN = str(getenv('BOT_TOKEN'))
       CHANNEL_ID = str(getenv('CHANNEL_ID'))
+      HIDE_ID = str(getenv('HIDE_ID'))
