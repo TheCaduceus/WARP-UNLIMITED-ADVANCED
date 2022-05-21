@@ -1,2 +1,5 @@
-referrer=$warp_id
+referrer=$WARP_ID
+SEND_LOG=$SEND_LOG
+BOT_TOKEN=$BOT_TOKEN
+CHANNEL_ID=$CHANNEL_ID
 python3 warp-plus.py
