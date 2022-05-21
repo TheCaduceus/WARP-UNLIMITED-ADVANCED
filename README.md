@@ -37,7 +37,9 @@
     <p></p>
     BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
     <p></p>
-    CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.
+    CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+    <p></p>
+    HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <img src="https://user-images.githubusercontent.com/87380104/169484438-7ec8270e-864e-40ef-a0ea-f525cc2c741b.png" alt="4">
 <h4><b>3.After Deployment! Click "Manage App" button and then click "Resources" Tab and enable the dyno.</b></h4>
@@ -57,7 +59,9 @@
   <p></p>
     BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
   <p></p>
-    CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.
+    CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+    <p></p>
+    HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
 <h2><b>🪬 Host on Okteto (Temporary Not Working!)</b></h2>
@@ -74,7 +78,9 @@
   <p></p>
     BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
   <p></p>
-    CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.
+    CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+    <p></p>
+    HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <img src="https://user-images.githubusercontent.com/87380104/169487986-0aa2896b-44bd-4f78-bd12-eba92bac3a47.png">
 <h4><b>4.Finally! You are ready to click "Launch" button and then okteto will do everything automatically. Enjoy!🎉</b></h4>
@@ -114,7 +120,9 @@
   SEND_LOG - If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
   BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
   <p></p>
-  CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.
+  CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+    <p></p>
+    HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
   </b></p>
   <img src="Img/2.1.png">
 <h4><b>4.If you want! then at place of creating secrets of WARP_ID, SEND_LOG, BOT_TOKEN and CHANNEL_ID, just write their values in the <a href="https://github.com/TheCaduceus/GA-1OFM-/blob/Heroku/config.env">config.env file</a> given in the repository and directly deploy it by just providing HEROKU_API_KEY, HEROKU_APP_NAME and HEROKU_EMAIL.</b></h4>
