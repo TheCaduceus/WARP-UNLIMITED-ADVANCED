@@ -7,7 +7,7 @@
 <p><b>4.Railway app deployment will now not cause false ban.</b></p>
 <p><b>5.FAQ is now added to clear your doubts.</b></p>
 <p><b>6.Now you can set Variables in config.env also.</b></p>
-<p><b>7.HIDE ID option now added to hide your WARP ID in log message send to Telegram.</b></p>
+<p><b>7.HIDE ID option now added to choose if hide your WARP ID or not in log message send to Telegram.</b></p>
 <h2><b>📑 Features</b></h2>
 <h4><b>1.Get 1GB Per 10 Seconds!🔥</b></h4>
 <h2><b>🪧Before you Proceed</b></h2>
