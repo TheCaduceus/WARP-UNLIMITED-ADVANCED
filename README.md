@@ -65,13 +65,14 @@
     HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
-<h2><b>🪬 Host on Okteto (Temporary Not Working!)</b></h2>
+<h2><b>🪬 Host on Okteto</b></h2>
 <h4><b>Okteto is also a best Platform like Railway, people like it because it does not restart your deployed app after 24 Hours unlike Heroku do. There are only some points we need to keep in our mind to use it effectively you will see it in this Section!</b></h4>
 <h4><b>1.First Create your okteto Account, You need one GitHub account as okteto supports only one Method to either Create or Login: <a href="https://cloud.okteto.com/#/login">Create Account</a></b></h4>
 <img src="Img/1.1.png">
-<h4><b>2.Now fork this Repository and go to Okteto and click "Launch Dev Environment" button as shown in the image.</b></h4>
-<img src="Img/1.2.png">
-<h4><b>3.After that, Select GitHub from the pop-up and select your forked repository named "WARP-UNLIMITED-ADVANCED" and choose Branch "Okteto" and add following variables carefully!</b></h4>
+<h4><b>2.Now import this Repository (keep the repository private) and go to Okteto branch and open config.env file.</b></h4>
+<img src="https://user-images.githubusercontent.com/87380104/169828657-d5070f64-bea9-4295-832a-6ba570d9aa52.png">
+
+<h4><b>3.After that, carefully fill the values of given variables:</b></h4>
 <p><b>
     WARP_ID: Enter your WARP/WARP+ ID.<br>
   <p></p>
@@ -83,18 +84,10 @@
     <p></p>
     HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
-<img src="https://user-images.githubusercontent.com/87380104/169487986-0aa2896b-44bd-4f78-bd12-eba92bac3a47.png">
-<h4><b>4.Finally! You are ready to click "Launch" button and then okteto will do everything automatically. Enjoy!🎉</b></h4>
-<img src="Img/1.4.png">
-<h4><b>❗Okteto turns sleeping mode on your Deployed app, if its provided Domain don't got pinged within 24 Hours! So to prevent this follow the below steps❗</b></h4><b>5.To prevent your app from going into sleep! Copy its URL provided by the Okteto, to get it click on warp as shown in the image.</b></h4>
-<img src="Img/1.5.png">
-<h4><b>6.Now go to <a href="https://cron-job.org/en/">Cron Job</a> and click Sign Up and make your Account</b></h4>
-<img src="Img/1.6.png">
-<h4><b>7.After creating your account! Click "CREATE CRONJOB".</b></h4>
-<img src="Img/1.7.png">
-<h4><b>8.It will now ask you for Title and URL. Give any title and paste the copied URL and set Execution to after 60 Minutes and press "CREATE" button.</b></h4>
-<img src="Img/1.8.png">
-<h4><b>9.Your Script is now all good and will not cause any problem if you follow above written steps carefully!😎</b></h4>
+<img src="https://user-images.githubusercontent.com/87380104/169828983-ffb5dd31-fe3d-45e2-b81b-5ef940e54e11.png">
+<h4><b>4.Then go to Okteto click on "Launch Dev Environment", select your repository and change branch from main to okteto.</b></h4>
+<img src="https://user-images.githubusercontent.com/87380104/169829816-932a51f6-8cbf-4d20-975c-dfc62e2b3b62.png">
+<h4><b>5.Finally! Click on Launch button to deploy your repository and Enjoy!😘 and whenever you have to change values then just update config.env file and redeploy it.</b></h4>
 <h2><b>🖥️ Run on Computer</b></h2>
 <h4><b>Running this script on your Computer is simple than ABC!</b></h4>
 <h4><b>1.If your PC not have python, then install it first: <a href="https://www.python.org/downloads/">Download Python</a></b></h4>
@@ -187,7 +180,6 @@
 <h4><b>3.On your Computer,The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open.</b></h4>
 <h4><b>4.This Tricks works on both! That's WARP or WARP+.</b></h4>
 <h4><b>5.If you are hosting this Script on your PC or Local System then confirm that it is connected to INTERNET CONNECTION.</b></h4>
-<h4><b>6.Okteto turns sleeping mode on your Deployed app, if its provided Domain don't got pinged within 24 Hours! Please Refer to STEPS 5-9 under Okteto section to know how to prevent it.</b></h4>
 <h2><b>❓FAQ</b></h2>
 <h4><b>1.How much scripts can I host/run for same account?</b></h4>
   <p><b>I will recommend to host/run 3 or less than 3 (<3) scripts for each account because Cloudflare is API have request limits. Hosting/Running too many scripts can cause "Too many Requests" error which indicates that API getting too many requestes from same account and that is why there is a cooldown timer of 10 seconds to prevent this.</b></p>
