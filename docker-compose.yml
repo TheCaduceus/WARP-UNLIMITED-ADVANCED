@@ -4,10 +4,3 @@ services:
   app:
     build: .
     command: bash start.sh
-    restart: on-failure
-   variables:
-      - name: WARP_ID
-      - name: SEND_LOG
-      - name: BOT_TOKEN
-      - name: CHANNEL_ID
-      - name: HIDE_ID
