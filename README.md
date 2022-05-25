@@ -191,7 +191,7 @@
   <img src="Img/Termux-Error-1.jpeg">
   <p><b>This problem happens due to missing files! you can run the below given command in Termux to fix it easily:<br>termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip</b></p>
 <h4><b>5.Deploying this on Heroku/Railway/Okteto/Vercel cause any ban?</b></h4>
-  <p><b>No, this script comes in category of Cron-Job because this script just take the WARP/WARP+ ID from user and arrange it in a particular format and start pining it in an interval of 10 seconds.This script is lightweight and don't have any load on system.</b></p>
+  <p><b>No, this script comes in category of Cron-Job because this script just take the WARP/WARP+ ID from user and arrange it in a particular format and start pining it in an interval of 10 seconds.This script is lightweight and don't have any load on system. You can refer to <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/5">issue #5</a> for more details on this.</b></p>
 <h2><b>🖥️How to use this Data on PC!</b></h2>
 <h4><b>Open the WARP or 1.1.1.1 app in your Phone and go to Settings > Account > Key and copy the License Key | Now paste that Key in your Warp app in Windows or MacOS</b></h4>
 <h2><b>⛑Contact Us!</b></h2>
