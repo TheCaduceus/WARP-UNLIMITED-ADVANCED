@@ -1,5 +1,5 @@
 # WARP+ UNLIMITED (New Methods!😊)
-<b>Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN, most versatile script translated in our beloved Python!😍</b>
+<b>Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN, most versatile Script translated in our beloved Python!😍</b>
 <h2><b>📑 INDEX</b></h2>
 <h4><b>Easily navigate through out the guide and pick the best method that suits you and your requirements!</b></h4>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#warp-unlimited-new-methods">WARP UNLIMITED ADVANCED</a></b></p>
