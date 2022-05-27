@@ -1,5 +1,30 @@
 # WARP+ UNLIMITED (New Methods!😊)
 <b>Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN</b>
+<h2><b>📑 INDEX</b></h2>
+<h4><b>Easily navigate through out the guide and pick the best method that suits you and your requirements!</b></h4>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#warp-unlimited-new-methods">WARP UNLIMITED ADVANCED</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#whats-new">🆕What's New</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-features">📑 Features</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#before-you-proceed">🪧Before you Proceed</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8F-how-to-use-">⚙️ How to use ?</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#1first-get-your-warpwarp-id-by-going-into-settings--advanced--diagnostics-and-copy-the-id-under-client-configuration-section">->How to get WARP/WARP+ ID?</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8F-run-on-google-colab">->🕹️ Run on Google Colab</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#host-on-heroku">->⚡Host on Heroku</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-railway-app">->🧿 Host on Railway App</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-okteto">->🪬 Host on Okteto</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8F-run-on-computer">->🖥️ Run on Computer</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-deploy-through-github-actions">->🧫 Deploy Through GitHub Actions</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-mobile-phone">->📲 Host on Mobile Phone</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#run-on-replit">->🎲Run on Replit</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#run-on-jupyter-server">->🧰Run on Jupyter Server</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#update-values">📈Update Values</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#for-mobile">->📲For Mobile</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8Ffor-pc">->🖥️For PC</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#points-to-be-remembered">🎯Points to be Remembered</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#faq">❓FAQ</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#%EF%B8%8Fhow-to-use-this-data-on-pc">🖥️How to use this Data on PC?</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#contact-us">⛑Contact Us!</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#%EF%B8%8Fcredits--thanks">❤️Credits & Thanks</a></b></p>
 <h2><b>🆕What's New</b></h2>
 <p><b>1.Now get Hosted Script info on Telegram itself!</b></p>
 <p><b>2.Added Jupyter Server deployment method!</b></p>
