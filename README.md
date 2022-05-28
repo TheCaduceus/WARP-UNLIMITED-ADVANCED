@@ -44,7 +44,7 @@
 <h2><b>⚙️ How to use ?</b></h2>
 <h4><b>1.First Get your WARP/WARP+ ID by going into Settings > Advanced > Diagnostics and copy the ID under CLIENT CONFIGURATION section</b></h4>
 <img src="Img/1.jpg" height="50%" width="40%" alt="1">
-<h2><b>🕹️ Run on Google Colab</b></h2>
+<h2><b>🕹️ Run on Google Collab</b></h2>
 <h4><b>2.First Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/Wrap_Unlimited_Advanced.ipynb" alt="Open-Colab"> Open Code!</a>
 <h4><b>3.Now Run the Timeout Preventer to prevent Google Colab from getting timeout</b></h4>
 <img src="Img/2.png" alt="2">
