@@ -34,6 +34,7 @@
 <p><b>6.Now you can set Variables in config.env also.</b></p>
 <p><b>7.HIDE ID option now added to choose if hide your WARP ID or not in log message send to Telegram.</b></p>
 <p><b>8.Okteto Deployment method now fixed!</b></p>
+<p><b>9.Run on Kaggle method now added!</b></p>
 <h2><b>📑 Features</b></h2>
 <h4><b>1.Get 1GB Per 10 Seconds!🔥</b></h4>
 <h4><b>2.Run this almost everywhere!🤗</b></h4>
@@ -42,15 +43,15 @@
 <p><b>2.If you deploy this Code through Heroku or Railway app and Okteto then it will run for lifetime!</b></p>
 <p><b>3.It does not matter this trick works on both that's on WARP or WARP+.</b></p>
 <h2><b>⚙️ How to use ?</b></h2>
-<h4><b>1.First Get your WARP/WARP+ ID by going into Settings > Advanced > Diagnostics and copy the ID under CLIENT CONFIGURATION section</b></h4>
+<h4><b>0.First Get your WARP/WARP+ ID by going into Settings > Advanced > Diagnostics and copy the ID under CLIENT CONFIGURATION section</b></h4>
 <img src="Img/1.jpg" height="50%" width="40%" alt="1">
 <h2><b>🕹️ Run on Google Collab</b></h2>
-<h4><b>2.First Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/Wrap_Unlimited_Advanced.ipynb" alt="Open-Colab"> Open Code!</a>
-<h4><b>3.Now Run the Timeout Preventer to prevent Google Colab from getting timeout</b></h4>
+<h4><b>1.First Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/Wrap_Unlimited_Advanced.ipynb" alt="Open-Colab"> Open Code!</a>
+<h4><b>2.Now Run the Timeout Preventer to prevent Google Colab from getting timeout</b></h4>
 <img src="Img/2.png" alt="2">
-<h4><b>4.Then Run The WARP+ (1.1.1.1) Code and Enter your Warp ID (Also Hit Enter after it!) as shown in the Image</b></h4>
+<h4><b>3.Then Run The WARP+ (1.1.1.1) Code and Enter your Warp ID (Also Hit Enter after it!) as shown in the Image</b></h4>
 <img src="Img/3.png" alt="3">
-<h4><b>5.After that! Let the code run, It will give you 1GB per 10 Seconds. But you have to update the value in the app! To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>
+<h4><b>4.After that! Let the code run, It will give you 1GB per 10 Seconds. But you have to update the value in the app! To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>
 <h4><b><i>❗You have to manually update the Value in the app as written in above step❗</i></b></h4>
 <h2><b>⚡Host on Heroku</b></h2>
 <h4><b>1.First Click the below Deploy button.</b></h4>
@@ -115,6 +116,13 @@
 <h4><b>4.Then go to Okteto click on "Launch Dev Environment", select your repository and change branch from main to okteto.</b></h4>
 <img src="https://user-images.githubusercontent.com/87380104/169829816-932a51f6-8cbf-4d20-975c-dfc62e2b3b62.png">
 <h4><b>5.Finally! Click on Launch button to deploy your repository and Enjoy!😘 and whenever you have to change values then just update config.env file and redeploy it.</b></h4>
+<h2><b>🧩 Run on Kaggle</b></h2>
+<p><b>Kaggle gives you ability to execute your script at scheduled intervals (if logged in) and it is best alternative of Google Collab.</b></p>
+<h4><b>1.First open my code on Kaggle:<a href="https://www.kaggle.com/code/drcaduceus/warp-unlimited-advanced?scriptVersionId=96821593"> Open Code!</a></b></h4>
+<h4><b>2.Now click on the "Copy & Edit" button as shown in the image.</b></h4>
+<img src="https://user-images.githubusercontent.com/87380104/170821579-db3cc7ce-3f38-4949-9b47-23c953ba2008.png" alt="Run on Kaggle">
+<h4><b>3.After it! click on "Run" button and Enter your WARP/WARP+ ID as shown in the image.</b></h4>
+<img src="https://user-images.githubusercontent.com/87380104/170821758-3cc6942c-6558-4811-b76e-dcbf0ebdeec3.png">
 <h2><b>🖥️ Run on Computer</b></h2>
 <h4><b>Running this script on your Computer is simple than ABC!</b></h4>
 <h4><b>1.If your PC not have python, then install it first: <a href="https://www.python.org/downloads/">Download Python</a></b></h4>
