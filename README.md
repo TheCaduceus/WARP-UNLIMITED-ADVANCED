@@ -14,7 +14,7 @@
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-okteto">->🪬 Host on Okteto</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#-run-on-kaggle">->🧩 Run on Kaggle</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8F-run-on-computer">->🖥️ Run on Computer</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-deploy-through-github-actions">->🧫 Deploy Through GitHub Actions</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-deploy-through-github-actions">->🧫 Deploy through GitHub Actions</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-mobile-phone">->📲 Host on Mobile Phone</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#run-on-replit">->🎲Run on Replit</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#run-on-jupyter-server">->🧰Run on Jupyter Server</a></b></p>
