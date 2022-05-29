@@ -9,9 +9,9 @@
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8F-how-to-use-">⚙️ How to use ?</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#0first-get-your-warpwarp-id-by-going-into-settings--advanced--diagnostics-and-copy-the-id-under-client-configuration-section">->😅How to get WARP/WARP+ ID?</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#%EF%B8%8F-run-on-google-colab">->🕹️ Run on Google Colab</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#host-on-heroku">->⚡Host on Heroku</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-railway-app">->🧿 Host on Railway App</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-okteto">->🪬 Host on Okteto</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#host-on-heroku">->⚡Host on Heroku (24*7)</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-railway-app">->🧿 Host on Railway App (24*7)</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-okteto">->🪬 Host on Okteto (24*7)</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#-run-on-kaggle">->🧩 Run on Kaggle</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8F-run-on-computer">->🖥️ Run on Computer</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-deploy-through-github-actions">->🧫 Deploy through GitHub Actions</a></b></p>
@@ -177,6 +177,7 @@
   <!---SSL is by default never comes--->
   6.Getting http/SSL Error? Run following code to fix it:<br>
   termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip
+  <p></p>
   <img src="Img/Termux-Error-1.jpeg">
   </b></p>
   <h4><b>3.After above! Now Enter your WARP ID and get started.😚</b></h4>
