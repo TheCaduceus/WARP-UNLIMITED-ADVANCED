@@ -15,7 +15,7 @@
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#-run-on-kaggle">->🧩 Run on Kaggle</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8F-run-on-computer">->🖥️ Run on Computer</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-deploy-through-github-actions">->🧫 Deploy through GitHub Actions</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-mobile-phone">->📲 Host on Mobile Phone</a></b></p>
+<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-run-on-mobile-phone">->📲 Run on Mobile Phone</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#run-on-replit">->🎲Run on Replit</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#run-on-jupyter-server">->🧰Run on Jupyter Server</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#update-values">📈Update Values</a></b></p>
@@ -118,7 +118,7 @@
 <img src="https://user-images.githubusercontent.com/87380104/169829816-932a51f6-8cbf-4d20-975c-dfc62e2b3b62.png">
 <h4><b>5.Finally! Click on Launch button to deploy your repository and Enjoy!😘 and whenever you have to change values then just update config.env file and redeploy it.</b></h4>
 <h2><b>🧩 Run on Kaggle</b></h2>
-<p><b>Kaggle gives you ability to execute your script at scheduled intervals (if logged in) and it is best alternative of Google Collab.</b></p>
+<p><b>Kaggle gives you ability to execute your script at scheduled intervals (if logged in) and it is best alternative of Google Colab.</b></p>
 <h4><b>1.First open my code on Kaggle:<a href="https://www.kaggle.com/code/drcaduceus/warp-unlimited-advanced?scriptVersionId=96821593"> Open Code!</a></b></h4>
 <h4><b>2.Now click on the "Copy & Edit" button as shown in the image.</b></h4>
 <img src="https://user-images.githubusercontent.com/87380104/170821579-db3cc7ce-3f38-4949-9b47-23c953ba2008.png" alt="Run on Kaggle">
@@ -148,6 +148,7 @@
   WARP_ID - Enter your WARP/WARP+ ID. In capital only!<br>
   
   SEND_LOG - If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+  <p></p>
   BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
   <p></p>
   CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
@@ -159,7 +160,7 @@
 <h4><b>5.Go to Actions Tab then click "Deploy on Heroku" and "Run Workflow". Now it will be automatically got deployed on given Heroku Account!😉</b></h4>
 <img src="Img/2.2.png">
 <h4><b>5.It will take maximum 10 Seconds to start the Workflow and minimum 1-2 Minutes to get deployed!</b></h4>
-<h2><b>📲 Host on Mobile Phone</b></h2>
+<h2><b>📲 Run on Mobile Phone</b></h2>
 <h4><b>1.First Download the Termux app <a href="https://github.com/termux/termux-app/releases">from here</a>.</b></h4>
 <h4><b>2.Now run the following commands in it one by one!</b></h4>
 <p><b>
@@ -174,7 +175,7 @@
   5.python3 warp.py - This Command will run the main Script.<br>
   <p></p>
   <!---SSL is by default never comes--->
-  6.Getting <http>/SSL Error? Run following code to fix it:<br>
+  6.Getting http/SSL Error? Run following code to fix it:<br>
   termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip
   <img src="Img/Termux-Error-1.jpeg">
   </b></p>
