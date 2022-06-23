@@ -44,6 +44,7 @@
 <p><b>1.Using this code on Google Colab will only work for 24 Hours if Time out preventer is used and that Tab is opened in your Phone or PC.</b></p>
 <p><b>2.If you deploy this Code through Heroku or Railway app and Okteto then it will run for lifetime!</b></p>
 <p><b>3.It does not matter this trick works on both that's on WARP or WARP+.</b></p>
+<p><b>4.Please consider, we are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using Official Cloudflare's API.</b></p>
 <h2><b>⚙️ How to use ?</b></h2>
 <h4><b>0.First Get your WARP/WARP+ ID by going into Settings > Advanced > Diagnostics and copy the ID under CLIENT CONFIGURATION section</b></h4>
 <img src="Img/1.jpg" height="50%" width="40%" alt="1">
