@@ -46,7 +46,7 @@
 <p><b>3.It does not matter this trick works on both that's on WARP or WARP+.</b></p>
 <p><b>4.Please consider, we are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using Official Cloudflare's API.</b></p>
 <h2><b>⚙️ How to use ?</b></h2>
-<h4><b>0.First Get your WARP/WARP+ ID by going into Settings > Advanced > Diagnostics and copy the ID under CLIENT CONFIGURATION section</b></h4>
+<h4><b>0.First Get your WARP/WARP+ ID by going into Settings > Advanced > Diagnostics and copy the ID under <code>CLIENT CONFIGURATION</code> section</b></h4>
 <img src="Img/1.jpg" height="50%" width="40%" alt="1">
 <h2><b>🕹️ Run on Google Colab</b></h2>
 <h4><b>1.First Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/Wrap_Unlimited_Advanced.ipynb" alt="Open-Colab"> Open Code!</a>
@@ -59,25 +59,25 @@
 <h2><b>⚡Host on Heroku</b></h2>
 <h4><b>1.First Click the below Deploy button.</b></h4>
 <a href="https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/tree/Heroku"><img src="Img/Heroku Deployment Button.png" alt="Deploy on Heroku"></a>
-<h4><b>2.Now Enter the following values and click "Deploy" button:</b></h4>
+<h4><b>2.Now Enter the following values and click <code>Deploy</code> button:</b></h4>
   <p><b>
-    App Name: Give a unique name to your app name.<br>
+    <code>App Name:</code> Give a unique name to your app name.<br>
     <p></p>
-    WARP_ID: Enter your WARP/WARP+ ID.<br>
+    <code>WARP_ID:</code> Enter your WARP/WARP+ ID.<br>
     <p></p>
-    SEND_LOG: If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+    <code>SEND_LOG:</code> If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
     <p></p>
-    BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+    <code>BOT_TOKEN:</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
     <p></p>
-    CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+    <code>CHANNEL_ID:</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
     <p></p>
-    HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+    <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <img src="https://user-images.githubusercontent.com/87380104/169662727-d4c012d6-ff6a-4505-bc7a-5307b240a186.png" alt="4">
-<h4><b>3.After Deployment! Click "Manage App" button and then click "Resources" Tab and enable the dyno.</b></h4>
+<h4><b>3.After Deployment! Click <code>Manage App</code> button and then click <code>Resources Tab</code> and enable the dyno.</b></h4>
 <img src="Img/5.png" alt="5">
-<h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist and you will start getting info about your script if SEND_LOG is enabled.</b></h4>
-<h4><b><i>❗You have to manually update the Value in the app To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>❗</i></b></h4>
+<h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist and you will start getting info about your script if <code>SEND_LOG</code> is enabled.</b></h4>
+<h4><b><i>❗You have to manually update the Value in the app To do it<br><code>Go to Settings > Advanced > Connection options</code> and press on Reset security keys</b></h4>❗</i></b></h4>
 <h2><b>🧿 Host on Railway App</b></h2>
 <h4><b>1.First Create Account or Login on <a href="https://railway.app/">Railway App</a></b></h4>
 <img src="Img/3.1.png">
@@ -85,15 +85,15 @@
 <a href="https://railway.app/new/template/M78z7V?referralCode=PFHpF8"><img src="https://railway.app/button.svg" alt="Railway deploy button"></a>
 <h4><b>3.After it! Enter the following values:</b></h4>
 <p><b>
-    WARP_ID: Enter your WARP/WARP+ ID.<br>
+    <code>WARP_ID:</code> Enter your WARP/WARP+ ID.<br>
   <p></p>
-    SEND_LOG: If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+    <code>SEND_LOG:</code> If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
   <p></p>
-    BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+    <code>BOT_TOKEN:</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
   <p></p>
-    CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+    <code>CHANNEL_ID:</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
     <p></p>
-    HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+    >code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
 <h2><b>🪬 Host on Okteto</b></h2>
@@ -105,18 +105,18 @@
 
 <h4><b>3.After that, carefully fill the values of given variables:</b></h4>
 <p><b>
-    WARP_ID: Enter your WARP/WARP+ ID.<br>
+    <code>WARP_ID:</code> Enter your WARP/WARP+ ID.<br>
   <p></p>
-    SEND_LOG: If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+    <code>SEND_LOG:</code> If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
   <p></p>
-    BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+    <code>BOT_TOKEN:</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
   <p></p>
-    CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+    <code>CHANNEL_ID:</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
     <p></p>
-    HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+    <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <img src="https://user-images.githubusercontent.com/87380104/169828983-ffb5dd31-fe3d-45e2-b81b-5ef940e54e11.png">
-<h4><b>4.Then go to Okteto click on "Launch Dev Environment", select your repository and change branch from main to okteto.</b></h4>
+<h4><b>4.Then go to Okteto click on <code>Launch Dev Environment</code>, select your repository and change branch from main to okteto.</b></h4>
 <img src="https://user-images.githubusercontent.com/87380104/169829816-932a51f6-8cbf-4d20-975c-dfc62e2b3b62.png">
 <h4><b>5.Finally! Click on Launch button to deploy your repository and Enjoy!😘 and whenever you have to change values then just update config.env file and redeploy it.</b></h4>
 <h2><b>🧩 Run on Kaggle</b></h2>
@@ -142,44 +142,44 @@
 <img src="Img/2.0.png">
 <h4><b>3.After doing that, create Following Secrets:</b></h4>
 <p><b>
-  HEROKU_API_KEY - Enter your Heroku API Key as value.<br>
+  <code>HEROKU_API_KEY</code> - Enter your Heroku API Key as value.<br>
   
-  HEROKU_APP_NAME - A unique app name in small letters only.<br>
+  <code>HEROKU_APP_NAME</code> - A unique app name in small letters only.<br>
   
-  HEROKU_EMAIL - Your Heroku Email ID.<br>
+  <code>HEROKU_EMAIL</code> - Your Heroku Email ID.<br>
   
-  WARP_ID - Enter your WARP/WARP+ ID. In capital only!<br>
+  <code>WARP_ID</code> - Enter your WARP/WARP+ ID. In capital only!<br>
   
-  SEND_LOG - If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+  <code>SEND_LOG</code> - If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
   <p></p>
-  BOT_TOKEN: Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+  <code>BOT_TOKEN:</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
   <p></p>
-  CHANNEL_ID: Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+  <code>CHANNEL_ID:</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
     <p></p>
-    HIDE_ID: To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+    <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
   </b></p>
   <img src="Img/2.1.png">
-<h4><b>4.If you want! then at place of creating secrets of WARP_ID, SEND_LOG, BOT_TOKEN,CHANNEL_ID and HIDE_ID just write their values in the <a href="https://github.com/TheCaduceus/GA-1OFM-/blob/Heroku/config.env">config.env file</a> given in the repository and directly deploy it by just providing HEROKU_API_KEY, HEROKU_APP_NAME and HEROKU_EMAIL.</b></h4>
-<h4><b>5.Go to Actions Tab then click "Deploy on Heroku" and "Run Workflow". Now it will be automatically got deployed on given Heroku Account!😉</b></h4>
+<h4><b>4.If you want! then at place of creating secrets of WARP_ID, SEND_LOG, BOT_TOKEN,CHANNEL_ID and HIDE_ID just write their values in the <a href="https://github.com/TheCaduceus/GA-1OFM-/blob/Heroku/config.env">config.env file</a> given in the repository and directly deploy it by just providing <code>HEROKU_API_KEY</code> <code>HEROKU_APP_NAME</code> and <code>HEROKU_EMAIL</code>.</b></h4>
+<h4><b>5.Go to Actions Tab then click <code>Deploy on Heroku</code> and <code>Run Workflow</code>. Now it will be automatically got deployed on given Heroku Account!😉</b></h4>
 <img src="Img/2.2.png">
 <h4><b>5.It will take maximum 10 Seconds to start the Workflow and minimum 1-2 Minutes to get deployed!</b></h4>
 <h2><b>📲 Run on Mobile Phone</b></h2>
 <h4><b>1.First Download the Termux app <a href="https://github.com/termux/termux-app/releases">from here</a>.</b></h4>
 <h4><b>2.Now run the following commands in it one by one!</b></h4>
 <p><b>
-  1.pkg install python - This Command will Download Python.<br>
+  1.<code>pkg install python</code> - This Command will Download Python.<br>
   <p></p>
-  2.pkg install git - This Command will Download Git.<br>
+  2.<code>pkg install git</code> - This Command will Download Git.<br>
   <p></p>
-  3.git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED - This Command will clone this Repository in your Device.<br>
+  3.<code>git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED</code> - This Command will clone this Repository in your Device.<br>
   <p></p>
-  4.cd WARP-UNLIMITED-ADVANCED - This Command will set Directory to this Repository's created Folder.<br>
+  4.<code>cd WARP-UNLIMITED-ADVANCED</code> - This Command will set Directory to this Repository's created Folder.<br>
   <p></p>
-  5.python3 warp.py - This Command will run the main Script.<br>
+  5.<code>python3 warp.py</code> - This Command will run the main Script.<br>
   <p></p>
   <!---SSL is by default never comes--->
   6.Getting http/SSL Error? Run following code to fix it:<br>
-  termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip
+  <code>termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip</code>
   <p></p>
   <img src="Img/Termux-Error-1.jpeg">
   </b></p>
@@ -193,13 +193,13 @@
 <h5><b>Setting up the Jupyter Server:</b></h5>
 <h4><b>1.First install Python:<a href="https://www.python.org/downloads/" alt="Download Python"> From Here</a></b></h4>
 <h4><b>2.Now run the CMD as Administrator and execute following commands one-by-one:</b></h4>
-<p><b>1.pip install jupyter - To install Jupyter<br>
+<p><b>1.<code>pip install jupyter</code> - To install Jupyter<br>
   
-  2.pip install notebook - To install Notebook<br>
+  2.<code>pip install notebook</code> - To install Notebook<br>
   
-  3.pip install voila - To install Voila<br>
+  3.<code>pip install voila</code> - To install Voila<br>
   
-  4.python -m notebook - Start Jupyter Server
+  4.<code>python -m notebook</code> - Start Jupyter Server
 </b></p>
 <h4><b>3.Once you start your Server! Then Jupyter will give you its link (as shown in Image), just open it on your Browser.</b></h4>
 <img src="Img/jp-1.png">
@@ -237,7 +237,7 @@
   <p><b>No, this script don't cause ban because it just use the API provided by Cloudflare for referral system. Neither this script create any type of load or bypass any limit set by Cloudflare for there API nor it hack anything or changes any official record illegally.</b></p>
 <h4><b>4.Script not working & producing error as shown in the image in Termux. How to solve?</b></h4>
   <img src="Img/Termux-Error-1.jpeg">
-  <p><b>This problem happens due to missing files! you can run the below given command in Termux to fix it easily:<br>termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip</b></p>
+  <p><b>This problem happens due to missing files! you can run the below given command in Termux to fix it easily:<br><code>termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip</code></b></p>
 <h4><b>5.Deploying this on Heroku/Railway/Okteto/Vercel cause any ban?</b></h4>
   <p><b>No, this script comes in category of Cron-Job because this script just take the WARP/WARP+ ID from user and arrange it in a particular format and start pining it in an interval of 10 seconds.This script is lightweight and don't have any load on system. You can refer to <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/5">issue #5</a> for more details on this.</b></p>
 <h2><b>🖥️How to use this Data on PC?</b></h2>
