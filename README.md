@@ -93,7 +93,7 @@
   <p></p>
     <code>CHANNEL_ID:</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
     <p></p>
-    >code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+    <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
 <h2><b>🪬 Host on Okteto</b></h2>
