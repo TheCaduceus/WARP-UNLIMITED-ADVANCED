@@ -12,7 +12,6 @@
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#host-on-heroku">->⚡Host on Heroku (24*7)</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-railway-app">->🧿 Host on Railway App (24*7)</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-okteto">->🪬 Host on Okteto (24*7)</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#-run-on-kaggle">->🧩 Run on Kaggle</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8F-run-on-computer">->🖥️ Run on Computer</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-deploy-through-github-actions">->🧫 Deploy through GitHub Actions</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-run-on-mobile-phone">->📲 Run on Mobile Phone</a></b></p>
@@ -119,12 +118,6 @@
 <h4><b>4.Then go to Okteto click on <code>Launch Dev Environment</code>, select your repository and change branch from main to okteto.</b></h4>
 <img src="https://user-images.githubusercontent.com/87380104/169829816-932a51f6-8cbf-4d20-975c-dfc62e2b3b62.png">
 <h4><b>5.Finally! Click on Launch button to deploy your repository and Enjoy!😘 and whenever you have to change values then just update config.env file and redeploy it.</b></h4>
-<h2><b>🧩 Run on Kaggle</b></h2>
-<p><b>Kaggle gives you ability to execute your script at scheduled intervals (if logged in) and it is best alternative of Google Colab.</b></p>
-<h4><b>1.First open my code on Kaggle:<a href="https://www.kaggle.com/code/drcaduceus/warp-unlimited-advanced?scriptVersionId=96821593"> Open Code!</a></b></h4>
-<h4><b>2.Now click on the "Copy & Edit" button as shown in the image.</b></h4>
-<img src="https://user-images.githubusercontent.com/87380104/170821579-db3cc7ce-3f38-4949-9b47-23c953ba2008.png" alt="Run on Kaggle">
-<h4><b>3.After it! click on "Run" button and Enter your WARP/WARP+ ID as shown in the image.</b></h4>
 <img src="https://user-images.githubusercontent.com/87380104/170821758-3cc6942c-6558-4811-b76e-dcbf0ebdeec3.png">
 <h2><b>🖥️ Run on Computer</b></h2>
 <h4><b>Running this script on your Computer is simple than ABC!</b></h4>
