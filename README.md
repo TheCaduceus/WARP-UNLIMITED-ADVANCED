@@ -118,7 +118,6 @@
 <h4><b>4.Then go to Okteto click on <code>Launch Dev Environment</code>, select your repository and change branch from main to okteto.</b></h4>
 <img src="https://user-images.githubusercontent.com/87380104/169829816-932a51f6-8cbf-4d20-975c-dfc62e2b3b62.png">
 <h4><b>5.Finally! Click on Launch button to deploy your repository and Enjoy!😘 and whenever you have to change values then just update config.env file and redeploy it.</b></h4>
-<img src="https://user-images.githubusercontent.com/87380104/170821758-3cc6942c-6558-4811-b76e-dcbf0ebdeec3.png">
 <h2><b>🖥️ Run on Computer</b></h2>
 <h4><b>Running this script on your Computer is simple than ABC!</b></h4>
 <h4><b>1.If your PC not have python, then install it first: <a href="https://www.python.org/downloads/">Download Python</a></b></h4>
