@@ -1,0 +1,24 @@
+name: Deploy on Heroku
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          usedocker: false
+          docker_heroku_process_type: worker
+          stack: "container"
+          region: "us"
+        env:
+          HD_WARP_ID: ${{secrets.WARP_ID}}
+          HD_SEND_LOG: ${{secrets.SEND_LOG}}
+          HD_BOT_TOKEN: ${{secrets.BOT_TOKEN}}
+          HD_CHANNEL_ID: ${{secrets.CHANNEL_ID}}
+          HD_HIDE_ID: ${{secrets.HIDE_ID}}
