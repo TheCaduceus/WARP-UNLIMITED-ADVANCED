@@ -1,5 +1,5 @@
-# WARP+ UNLIMITED ADVANCED
-<b>Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN, most versatile Script translated in our beloved Python!😍</b>
+<h1 align="center">♻️WARP UNLIMITED ADVANCED</h1>
+<p align="center"><b>Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN, most versatile Script translated in our beloved Python!😍</b>
 <h2><b>📑 INDEX</b></h2>
 <h4><b>Easily navigate through out the guide and pick the best method that suits you and your requirements!</b></h4>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#warp-unlimited-new-methods">WARP UNLIMITED ADVANCED</a></b></p>
@@ -57,7 +57,7 @@
 <h4><b><i>❗You have to manually update the Value in the app as written in above step❗</i></b></h4>
 <h2><b>⚡Host on Heroku</b></h2>
 <h4><b>1.First Click the below Deploy button.</b></h4>
-<a href="https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/tree/Heroku"><img src="Img/Heroku Deployment Button.png" alt="Deploy on Heroku"></a>
+<a href="https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED"><img src="Img/Heroku Deployment Button.png" alt="Deploy on Heroku"></a>
 <h4><b>2.Now Enter the following values and click <code>Deploy</code> button:</b></h4>
   <p><b>
     <code>App Name:</code> Give a unique name to your app name.<br>
@@ -81,7 +81,7 @@
 <h4><b>1.First Create Account or Login on <a href="https://railway.app/">Railway App</a></b></h4>
 <img src="Img/3.1.png">
 <h4><b>2.Now click the following Railway deployment button:</b></h4>
-<a href="https://railway.app/new/template/M78z7V?referralCode=PFHpF8"><img src="https://railway.app/button.svg" alt="Railway deploy button"></a>
+<a href="https://railway.app/new/template/7H5_dO?referralCode=PbLx8c"><img src="https://railway.app/button.svg" alt="Railway deploy button"></a>
 <h4><b>3.After it! Enter the following values:</b></h4>
 <p><b>
     <code>WARP_ID:</code> Enter your WARP/WARP+ ID.<br>
@@ -94,15 +94,14 @@
     <p></p>
     <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
-<h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.❗</i></b></h4>
+<h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku.</i></b></h4>
 <h2><b>🪬 Host on Okteto</b></h2>
 <h4><b>Okteto is also a best Platform like Railway, people like it because it does not restart your deployed app after 24 Hours unlike Heroku do. There are only some points we need to keep in our mind to use it effectively you will see it in this Section!</b></h4>
 <h4><b>1.First Create your okteto Account, You need one GitHub account as okteto supports only one Method to either Create or Login: <a href="https://cloud.okteto.com/#/login">Create Account</a></b></h4>
 <img src="Img/1.1.png">
-<h4><b>2.Now import this Repository (keep the repository private) and go to <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/okteto">Okteto branch</a> and <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/okteto/config.env"> open config.env file</a>.</b></h4>
-<img src="https://user-images.githubusercontent.com/87380104/169828657-d5070f64-bea9-4295-832a-6ba570d9aa52.png">
-
-<h4><b>3.After that, carefully fill the values of given variables:</b></h4>
+<h4><b>2.Now import this Repository (keep the repository private) and go to <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/okteto">Okteto branch</a> and  deploy this repository on Okteto.</b></h4>
+<img src="https://user-images.githubusercontent.com/87380104/186140671-fc0f44db-d2e5-4559-8090-c19b13ddfbdc.png">
+<h4><b>3.After that, carefully add the variables in Okteto deployment page:</b></h4>
 <p><b>
     <code>WARP_ID:</code> Enter your WARP/WARP+ ID.<br>
   <p></p>
@@ -114,9 +113,9 @@
     <p></p>
     <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
-<img src="https://user-images.githubusercontent.com/87380104/169828983-ffb5dd31-fe3d-45e2-b81b-5ef940e54e11.png">
-<h4><b>4.Then go to Okteto click on <code>Launch Dev Environment</code>, select your repository and change branch from main to okteto.</b></h4>
 <img src="https://user-images.githubusercontent.com/87380104/169829816-932a51f6-8cbf-4d20-975c-dfc62e2b3b62.png">
+<h4><b>4.Then go to Okteto click on <code>Launch Dev Environment</code>, select your repository and change branch from main to okteto.</b></h4>
+
 <h4><b>5.Finally! Click on Launch button to deploy your repository and Enjoy!😘 and whenever you have to change values then just update config.env file and redeploy it.</b></h4>
 <h2><b>🖥️ Run on Computer</b></h2>
 <h4><b>Running this script on your Computer is simple than ABC!</b></h4>
@@ -126,7 +125,7 @@
 <h4><b>3.After it run the code as shown in the Image and Enter WARP ID and Hit Enter and Enjoy!</b></h4>
 <img src="Img/6.png" alt="6">
 <h4><b><i>❗The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open. Make sure that your PC or Local System is connected to INTERNET CONNECTION.❗</i></b></h4>
-<h2><b>🧫 Deploy through GitHub Actions</b></h2>
+<h2><b>🧫 Deploy using GitHub Actions</b></h2>
 <h4><b>This Method is too much easier and best for users who want to deploy this script multiple times on Heroku without login on Heroku again and again!</b></h4>
 <h4><b>1.First fork my different Repository <a href="https://github.com/TheCaduceus/GA-1OFM-">here</a></b></h4>
 <img src="Img/1.9.png">
@@ -151,9 +150,8 @@
     <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
   </b></p>
   <img src="Img/2.1.png">
-<h4><b>4.If you want! then at place of creating secrets of WARP_ID, SEND_LOG, BOT_TOKEN,CHANNEL_ID and HIDE_ID just write their values in the <a href="https://github.com/TheCaduceus/GA-1OFM-/blob/Heroku/config.env">config.env file</a> given in the repository and directly deploy it by just providing <code>HEROKU_API_KEY</code> <code>HEROKU_APP_NAME</code> and <code>HEROKU_EMAIL</code>.</b></h4>
 <h4><b>5.Go to Actions Tab then click <code>Deploy on Heroku</code> and <code>Run Workflow</code>. Now it will be automatically got deployed on given Heroku Account!😉</b></h4>
-<img src="Img/2.2.png">
+<img src="https://user-images.githubusercontent.com/87380104/186141717-dabf5aed-3bfc-4b13-b6e3-542107d58f90.png">
 <h4><b>5.It will take maximum 10 Seconds to start the Workflow and minimum 1-2 Minutes to get deployed!</b></h4>
 <h2><b>📲 Run on Mobile Phone</b></h2>
 <h4><b>1.First Download the Termux app <a href="https://github.com/termux/termux-app/releases">from here</a>.</b></h4>
