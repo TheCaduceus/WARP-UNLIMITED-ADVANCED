@@ -1,0 +1,30 @@
+{
+	"name": "WRAP+ UNLIMITED FOR LIFETIME",
+	"description": "Python Script to Get WRAP+ VPN unlimited for Lifetime ",
+	"repository": "https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED/tree/Heroku",
+        "website": "https://www.caduceus.ml/",
+        "success_url": "https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED",
+	"env": {
+		"WARP_ID": {
+			"description": "Enter your WARP/WRAP+ ID",
+			"required": true
+		},
+		"SEND_LOG": {
+			"description": "If you want log of Script in Telegram Channel or Group. 0 for No and 1 for Yes",
+			"required": true	
+		},
+		"BOT_TOKEN": {
+			"description": "Enter BOT TOKEN (API KEY) from Bot Father. Required only if SEND_LOG is 1",
+			"required": false
+		},
+	        "CHANNEL_ID": {
+			"description": "Enter CHANNEL/GROUP ID with @ like @example. Required only if SEND_LOG is 1",
+			"required": false
+	        },
+	        "HIDE_ID": {
+			"description": "To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes",
+			"required": false
+		}
+	},
+    	"stack": "container"
+}
