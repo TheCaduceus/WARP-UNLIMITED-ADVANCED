@@ -70,7 +70,7 @@
 <h4><b>3.After Deployment! Click <code>Manage App</code> button and then click <code>Resources Tab</code> and enable the dyno.</b></h4>
 <img src="Img/5.png" alt="5">
 <h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist and you will start getting info about your script if <code>SEND_LOG</code> is enabled.</b></h4>
-<h4><b><i>❗You have to manually update the Value in the app To do it<br><code>Go to Settings > Advanced > Connection options</code> and press on Reset security keys</b></h4>❗</i></b></h4>
+<h4><b><i>❗You have to manually update the Value in the app To do it<br><code>Go to Settings > Advanced > Connection options</code> and press on Reset security keys</i></b></h4>
 <h2><b>🧿 Host on Railway App</b></h2>
 <h4><b>1.First Create Account or Login on <a href="https://railway.app/">Railway App</a></b></h4>
 <img src="Img/3.1.png">
@@ -121,7 +121,6 @@
 <h2><b>🧫 Deploy using GitHub Actions</b></h2>
 <h4><b>This Method is too much easier and best for users who want to deploy this script multiple times on Heroku without login on Heroku again and again!</b></h4>
 <h4><b>1.First fork this Repository.</b></h4>
-<img src="Img/1.9.png">
 <img src="https://user-images.githubusercontent.com/87380104/186406404-ce7e7a5f-de99-476b-86a5-219b9c79a835.png">
 <h4><b>2.Now open the settings of your Forked Repository and click Secrets->Actions.</b></h4>
 <img src="Img/2.0.png">
