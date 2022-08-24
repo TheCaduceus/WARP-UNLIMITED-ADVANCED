@@ -30,7 +30,7 @@
 <p><b>1.Fixed Python code for VPS.</b></p>
 <p><b>2.Merged all branch in one.</b></p>
 <p><b>3.Now deployable to almost all platforms.</b></p>
-<p><b>4.Improvements in `.ipynb` file.</b></p>
+<p><b>4.Improvements in <code>.ipynb</code> file.</b></p>
 <p><b>Full Changelog: <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/compare/v3.0.5...v4.0.2"><code>v3.0.5...v4.0.2</code></a></b></p>
 <h2><b>📑 Features</b></h2>
 <h4><b>1.Get 1GB Per 10 Seconds!🔥</b></h4>
@@ -109,12 +109,11 @@
     </b></p>
 <img src="https://user-images.githubusercontent.com/87380104/169829816-932a51f6-8cbf-4d20-975c-dfc62e2b3b62.png">
 <h4><b>4.Then go to Okteto click on <code>Launch Dev Environment</code>, select your repository and change branch from main to okteto.</b></h4>
-
-<h4><b>5.Finally! Click on Launch button to deploy your repository and Enjoy!😘 and whenever you have to change values then just update config.env file and redeploy it.</b></h4>
+<h4><b>5.Finally! Click on Launch button to deploy your repository and Enjoy!😘</b></h4>
 <h2><b>🖥️ Run on Computer</b></h2>
 <h4><b>Running this script on your Computer is simple than ABC!</b></h4>
 <h4><b>1.If your PC not have python, then install it first: <a href="https://www.python.org/downloads/">Download Python</a></b></h4>
-<h4><b>2.Now first open the WRAP+ Unlimited Script code and paste it in notepad and save it as "warp.py" don't forget to type ".py":<a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/WARP.md"> Show Code</a></b></h4>
+<h4><b>2.Now first open the WRAP+ Unlimited Script code and paste it in notepad and save it as <code>Warp.py</code> don't forget to type <code>.py</code>:<a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/WARP.md"> Show Code</a></b></h4>
 <h4><b>✍️NOTE: The script code is available in two different edition->1. Without Telegram logger and 2.With Telegram logger</b></h4>
 <h4><b>3.After it run the code as shown in the Image and Enter WARP ID and Hit Enter and Enjoy!</b></h4>
 <img src="Img/6.png" alt="6">
