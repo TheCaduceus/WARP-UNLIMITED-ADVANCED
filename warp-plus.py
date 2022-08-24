@@ -13,7 +13,7 @@ CHANNEL_ID = (Var.CHANNEL_ID)
 HIDE_ID = (Var.HIDE_ID)
 referrer = (Var.WARP_ID)
 
-os.system("title UnlimitedWrapUsage")
+os.system("title UnlimitedWarpUsage")
 os.system('cls' if os.name == 'nt' else 'clear')
 print ("[+] Dr.Caduceus")
 
