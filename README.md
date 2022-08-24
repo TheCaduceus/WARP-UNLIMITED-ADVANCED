@@ -48,11 +48,9 @@
 <h4><b>0.First Get your WARP/WARP+ ID by going into Settings > Advanced > Diagnostics and copy the ID under <code>CLIENT CONFIGURATION</code> section</b></h4>
 <img src="Img/1.jpg" height="50%" width="40%" alt="1">
 <h2><b>🕹️ Run on Google Colab</b></h2>
-<h4><b>1.First Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/Wrap_Unlimited_Advanced.ipynb" alt="Open-Colab"> Open Code!</a>
-<h4><b>2.Now Run the Timeout Preventer to prevent Google Colab from getting timeout</b></h4>
-<img src="Img/2.png" alt="2">
-<h4><b>3.Then Run The WARP+ (1.1.1.1) Code and Enter your Warp ID (Also Hit Enter after it!) as shown in the Image</b></h4>
-<img src="Img/3.png" alt="3">
+<h4><b>1.First Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/WUA.ipynb"> Open Code!</a></b></h4>
+<h4><b>2.Now enter your <code>WARP_CLIENT_ID</code> and run The WARP+ (1.1.1.1) Code and as shown in the Image</b></h4>
+<img src="https://user-images.githubusercontent.com/87380104/186407247-61234750-e97c-44eb-aa6a-2abf35a69edf.png">
 <h4><b>4.After that! Let the code run, It will give you 1GB per 10 Seconds. But you have to update the value in the app! To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>
 <h4><b><i>❗You have to manually update the Value in the app as written in above step❗</i></b></h4>
 <h2><b>⚡Host on Heroku</b></h2>
@@ -127,8 +125,9 @@
 <h4><b><i>❗The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open. Make sure that your PC or Local System is connected to INTERNET CONNECTION.❗</i></b></h4>
 <h2><b>🧫 Deploy using GitHub Actions</b></h2>
 <h4><b>This Method is too much easier and best for users who want to deploy this script multiple times on Heroku without login on Heroku again and again!</b></h4>
-<h4><b>1.First fork my different Repository <a href="https://github.com/TheCaduceus/GA-1OFM-">here</a></b></h4>
+<h4><b>1.First fork this Repository.</b></h4>
 <img src="Img/1.9.png">
+<img src="https://user-images.githubusercontent.com/87380104/186406404-ce7e7a5f-de99-476b-86a5-219b9c79a835.png">
 <h4><b>2.Now open the settings of your Forked Repository and click Secrets->Actions.</b></h4>
 <img src="Img/2.0.png">
 <h4><b>3.After doing that, create Following Secrets:</b></h4>
