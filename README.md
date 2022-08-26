@@ -53,17 +53,17 @@
 <a href="https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED"><img src="Img/Heroku Deployment Button.png" alt="Deploy on Heroku"></a>
 <h4><b>2.Now Enter the following values and click <code>Deploy</code> button:</b></h4>
   <p><b>
-    <code>App Name:</code> Give a unique name to your app name.<br>
+    <code>App Name</code> Give a unique name to your app name.<br>
     <p></p>
-    <code>WARP_ID:</code> Enter your WARP/WARP+ ID.<br>
+    <code>WARP_ID</code> Enter your WARP/WARP+ ID.<br>
     <p></p>
-    <code>SEND_LOG:</code> If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+    <code>SEND_LOG</code> If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
     <p></p>
-    <code>BOT_TOKEN:</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+    <code>BOT_TOKEN</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
     <p></p>
-    <code>CHANNEL_ID:</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+    <code>CHANNEL_ID</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
     <p></p>
-    <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+    <code>HIDE_ID</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <img src="https://user-images.githubusercontent.com/87380104/169662727-d4c012d6-ff6a-4505-bc7a-5307b240a186.png" alt="4">
 <h4><b>3.After Deployment! Click <code>Manage App</code> button and then click <code>Resources Tab</code> and enable the dyno.</b></h4>
@@ -77,15 +77,15 @@
 <a href="https://railway.app/new/template/7H5_dO?referralCode=PbLx8c"><img src="https://railway.app/button.svg" alt="Railway deploy button"></a>
 <h4><b>3.After it! Enter the following values:</b></h4>
 <p><b>
-    <code>WARP_ID:</code> Enter your WARP/WARP+ ID.<br>
+    <code>WARP_ID</code> Enter your WARP/WARP+ ID.<br>
   <p></p>
-    <code>SEND_LOG:</code> If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+    <code>SEND_LOG</code> If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
   <p></p>
-    <code>BOT_TOKEN:</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+    <code>BOT_TOKEN</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
   <p></p>
-    <code>CHANNEL_ID:</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+    <code>CHANNEL_ID</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
     <p></p>
-    <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+    <code>HIDE_ID</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <h4><b><i>❗The Major Advantage of the Railway app is that, it never restarts. So it will generate more amount of Data in 24 Hours if compared with Heroku.</i></b></h4>
 <h2><b>🪬 Host on Okteto</b></h2>
@@ -96,15 +96,15 @@
 <img src="https://user-images.githubusercontent.com/87380104/186140671-fc0f44db-d2e5-4559-8090-c19b13ddfbdc.png">
 <h4><b>3.After that, carefully add the variables in Okteto deployment page:</b></h4>
 <p><b>
-    <code>WARP_ID:</code> Enter your WARP/WARP+ ID.<br>
+    <code>WARP_ID</code> Enter your WARP/WARP+ ID.<br>
   <p></p>
-    <code>SEND_LOG:</code> If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
+    <code>SEND_LOG</code> If you want to receive info about your deployed script like script working?,amount of data generated or number of failed attempts. 0 for No and 1 for Yes.<br>
   <p></p>
-    <code>BOT_TOKEN:</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
+    <code>BOT_TOKEN</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
   <p></p>
-    <code>CHANNEL_ID:</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+    <code>CHANNEL_ID</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
     <p></p>
-    <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+    <code>HIDE_ID</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
     </b></p>
 <img src="https://user-images.githubusercontent.com/87380104/169829816-932a51f6-8cbf-4d20-975c-dfc62e2b3b62.png">
 <h4><b>4.Then go to Okteto click on <code>Launch Dev Environment</code>, select your repository and change branch from main to okteto.</b></h4>
@@ -138,9 +138,9 @@
   <p></p>
   <code>BOT_TOKEN:</code> Enter BOT API TOKEN from Bot father which will send you the log in your channel or group. Bot must be admin in specific channel or group to send log. Required if SEND_LOG is 1.<br>
   <p></p>
-  <code>CHANNEL_ID:</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
+  <code>CHANNEL_ID</code> Enter Channel/Group ID (Channel/Group must be Public) with @ in which you want log to be send. Like @example or @mychannel.<br>
     <p></p>
-    <code>HIDE_ID:</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+    <code>HIDE_ID</code> To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
   </b></p>
 <img src="https://user-images.githubusercontent.com/87380104/186858244-c3964eae-150f-4f4e-889a-597e792438e0.png">
 <h4><b>5.Go to Actions Tab then click <code>Deploy on Heroku</code> and <code>Run Workflow</code>. Now it will be automatically got deployed on given Heroku Account!😉</b></h4>
@@ -225,7 +225,7 @@
 <h2><b>🖥️How to use this Data on PC?</b></h2>
 <h4><b>Open the WARP or 1.1.1.1 app in your Phone and go to Settings > Account > Key and copy the License Key | Now paste that Key in your Warp app in Windows or MacOS or Linux.</b></h4>
 <h2><b>⛑Contact Us!</b></h2>
-<h4><b>Join our Update Channel at Telegram:<a href="https://telegram.me/TheCaduceusUPDATE"> Join Now!</a></b></h4>
+<h4><b>Join our Update Channel at Telegram:<a href="https://t.me/TheCaduceusOffical"> Join Now!</a></b></h4>
 <h4><b>Directly Contact the Developer using Telegram <a href="https://telegram.me/HelpAutomatted_Bot">@HelpAutomatted_Bot</a></b></h4>
 <h2><b>❤️Credits & Thanks</b></h2>
 <p><b><a href="https://github.com/TheCaduceus">Dr.Caduceus</a>: For heavy modification as well as making New 10 Methods and this all in one Guide.</b></p>
