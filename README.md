@@ -2,30 +2,31 @@
 <p align="center"><b>Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN, most versatile Script translated in our beloved Python!😍</b>
 <h2><b>📑 INDEX</b></h2>
 <h4><b>Easily navigate through out the guide and pick the best method that suits you and your requirements!</b></h4>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#warp-unlimited-new-methods">WARP UNLIMITED ADVANCED</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#whats-new">🆕What's New</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-features">📑 Features</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#before-you-proceed">🪧Before you Proceed</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8F-how-to-use-">⚙️ How to use ?</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#0first-get-your-warpwarp-id-by-going-into-settings--advanced--diagnostics-and-copy-the-id-under-client-configuration-section">->😅How to get WARP/WARP+ ID?</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#%EF%B8%8F-run-on-google-colab">->🕹️ Run on Google Colab</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#host-on-heroku">->⚡Host on Heroku (24*7)</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-railway-app">->🧿 Host on Railway App (24*7)</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-host-on-okteto">->🪬 Host on Okteto (24*7)</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8F-run-on-computer">->🖥️ Run on Computer</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-deploy-through-github-actions">->🧫 Deploy through GitHub Actions</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#-run-on-mobile-phone">->📲 Run on Mobile Phone</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#run-on-replit">->🎲Run on Replit</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#run-on-jupyter-server">->🧰Run on Jupyter Server</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#update-values">📈Update Values</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#for-mobile">->📲For Mobile</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#%EF%B8%8Ffor-pc">->🖥️For PC</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#points-to-be-remembered">🎯Points to be Remembered</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#download-cloudflare-warp-1111">📥Download Cloudflare WARP (1.1.1.1)</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED#faq">❓FAQ</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#%EF%B8%8Fhow-to-use-this-data-on-pc">🖥️How to use this Data on PC?</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#contact-us">⛑Contact Us!</a></b></p>
-<p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#%EF%B8%8Fcredits--thanks">❤️Credits & Thanks</a></b></p>
+<p><b><a href="#warp-unlimited-new-methods">WARP UNLIMITED ADVANCED</a></b></p>
+<p><b><a href="#whats-new">🆕What's New</a></b></p>
+<p><b><a href="#-features">📑 Features</a></b></p>
+<p><b><a href="#before-you-proceed">🪧Before you Proceed</a></b></p>
+<p><b><a href="#%EF%B8%8F-how-to-use-">⚙️ How to use ?</a></b></p>
+<p><b><a href="#0first-get-your-warpwarp-id-by-going-into-settings--advanced--diagnostics-and-copy-the-id-under-client-configuration-section">->😅How to get WARP/WARP+ ID?</a></b></p>
+<p><b><a href="#%EF%B8%8F-run-on-google-colab">->🕹️ Run on Google Colab</a></b></p>
+<p><b><a href="#build-or-deploy-using-docker"></a>->🐳Deploy using Docker</p>
+<p><b><a href="#host-on-heroku">->⚡Host on Heroku (24*7)</a></b></p>
+<p><b><a href="#-host-on-railway-app">->🧿 Host on Railway App (24*7)</a></b></p>
+<p><b><a href="#-host-on-okteto">->🪬 Host on Okteto (24*7)</a></b></p>
+<p><b><a href="#%EF%B8%8F-run-on-computer">->🖥️ Run on Computer</a></b></p>
+<p><b><a href="#-deploy-through-github-actions">->🧫 Deploy through GitHub Actions</a></b></p>
+<p><b><a href="#-run-on-mobile-phone">->📲 Run on Mobile Phone</a></b></p>
+<p><b><a href="#run-on-replit">->🎲Run on Replit</a></b></p>
+<p><b><a href="#run-on-jupyter-server">->🧰Run on Jupyter Server</a></b></p>
+<p><b><a href="#update-values">📈Update Values</a></b></p>
+<p><b><a href="#for-mobile">->📲For Mobile</a></b></p>
+<p><b><a href="#%EF%B8%8Ffor-pc">->🖥️For PC</a></b></p>
+<p><b><a href="#points-to-be-remembered">🎯Points to be Remembered</a></b></p>
+<p><b><a href="#download-cloudflare-warp-1111">📥Download Cloudflare WARP (1.1.1.1)</a></b></p>
+<p><b><a href="#faq">❓FAQ</a></b></p>
+<p><b><a href="#%EF%B8%8Fhow-to-use-this-data-on-pc">🖥️How to use this Data on PC?</a></b></p>
+<p><b><a href="#contact-us">⛑Contact Us!</a></b></p>
+<p><b><a href="#%EF%B8%8Fcredits--thanks">❤️Credits & Thanks</a></b></p>
 <h2><b>🆕What's New</b></h2>
 <p><b>1.New Docker Image!</b></p>
 <p><b>2.Fixed Python code for VPS.</b></p>
