@@ -27,10 +27,11 @@
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#contact-us">⛑Contact Us!</a></b></p>
 <p><b><a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/README.md#%EF%B8%8Fcredits--thanks">❤️Credits & Thanks</a></b></p>
 <h2><b>🆕What's New</b></h2>
-<p><b>1.Fixed Python code for VPS.</b></p>
-<p><b>2.Merged all branch in one.</b></p>
-<p><b>3.Now deployable to almost all platforms.</b></p>
-<p><b>4.Improvements in <code>.ipynb</code> file.</b></p>
+<p><b>1.New Docker Image!</b></p>
+<p><b>2.Fixed Python code for VPS.</b></p>
+<p><b>3.Merged all branch in one.</b></p>
+<p><b>4.Now deployable to almost all platforms.</b></p>
+<p><b>5.Improvements in <code>.ipynb</code> file.</b></p>
 <p><b>Full Changelog: <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/compare/v3.0.5...v4.0.2"><code>v3.0.5...v4.0.2</code></a></b></p>
 <h2><b>📑 Features</b></h2>
 <h4><b>1.Get 1GB Per 10 Seconds!🔥</b></h4>
@@ -48,6 +49,15 @@
 <img src="https://user-images.githubusercontent.com/87380104/186407247-61234750-e97c-44eb-aa6a-2abf35a69edf.png">
 <h4><b>4.After that! Let the code run, It will give you 1GB per 10 Seconds. But you have to update the value in the app! To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>
 <h4><b><i>❗You have to manually update the Value in the app as written in above step❗</i></b></h4>
+<h3><b>🐳Build or Deploy using Docker</b></h3>
+<p><b>WARP UNLIMITED Script can be deployed almost everywhere using Docker because it can be kinda boring to add support or instruction/config file of each platform, so you can use Docker Image everywhere to deploy the script easily.</b></p>
+<h4><b>1.To pull Docker Image:</h4>
+<p><b>-><code>docker pull ghcr.io/thecaduceus/wla:master</code></b></p>
+<h4><b>2.Or, to use as base Image:</b></h4>
+<p><b>-><code>FROM ghcr.io/thecaduceus/wla:master</code></b></p>
+<p><b>⛔NOTE:</b></p>
+<p><b>1.You can make `config.env` to provide required variables.</b></p>
+<p><b>2.Variables must be same as discussed below for each platform.</b></p>
 <h2><b>⚡Host on Heroku</b></h2>
 <h4><b>1.First Click the below Deploy button.</b></h4>
 <a href="https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED"><img src="Img/Heroku Deployment Button.png" alt="Deploy on Heroku"></a>
@@ -113,7 +123,7 @@
 <h2><b>🖥️ Run on Computer</b></h2>
 <h4><b>Running this script on your Computer is simple than ABC!</b></h4>
 <h4><b>1.If your PC not have python, then install it first: <a href="https://www.python.org/downloads/">Download Python</a></b></h4>
-<h4><b>2.Now first open the WRAP+ Unlimited Script code and paste it in notepad and save it as <code>Warp.py</code> don't forget to type <code>.py</code>:<a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/WARP.md"> Show Code</a></b></h4>
+<h4><b>2.Now first open the WARP+ Unlimited Script code and paste it in notepad and save it as <code>Warp.py</code> don't forget to type <code>.py</code>:<a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/WARP.md"> Show Code</a></b></h4>
 <h4><b>✍️NOTE: The script code is available in two different edition->1. Without Telegram logger and 2.With Telegram logger</b></h4>
 <h4><b>3.After it run the code as shown in the Image and Enter WARP ID and Hit Enter and Enjoy!</b></h4>
 <img src="Img/6.png" alt="6">
