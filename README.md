@@ -236,7 +236,7 @@
 <h2><b>🖥️How to use this Data on PC?</b></h2>
 <h4><b>Open the WARP or 1.1.1.1 app in your Phone and go to Settings > Account > Key and copy the License Key | Now paste that Key in your Warp app in Windows or MacOS or Linux.</b></h4>
 <h2><b>⛑Contact Us!</b></h2>
-<h4><b>Join our Update Channel at Telegram:<a href="https://t.me/TheCaduceusOffical"> Join Now!</a></b></h4>
+<h4><b>Join our Update Channel at Telegram:<a href="https://t.me/TheCaduceusOfficial"> Join Now!</a></b></h4>
 <h4><b>Directly Contact the Developer using Telegram <a href="https://telegram.me/HelpAutomatted_Bot">@HelpAutomatted_Bot</a></b></h4>
 <h2><b>❤️Credits & Thanks</b></h2>
 <p><b><a href="https://github.com/TheCaduceus">Dr.Caduceus</a>: For heavy modification as well as making New 10 Methods and this all in one Guide.</b></p>
