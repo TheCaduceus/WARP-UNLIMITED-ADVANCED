@@ -27,6 +27,7 @@
 <p><b><a href="#%EF%B8%8Fhow-to-use-this-data-on-pc">🖥️How to use this Data on PC?</a></b></p>
 <p><b><a href="#contact-us">⛑Contact Us!</a></b></p>
 <p><b><a href="#%EF%B8%8Fcredits--thanks">❤️Credits & Thanks</a></b></p>
+<p><b><a href"#other-projects">🍵Other Projects</a></b></p>
 <h2><b>🆕What's New</b></h2>
 <p><b>1.New Docker Image!</b></p>
 <p><b>2.Fixed Python code for VPS.</b></p>
