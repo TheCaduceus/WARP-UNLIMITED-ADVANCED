@@ -239,3 +239,7 @@
 <h2><b>❤️Credits & Thanks</b></h2>
 <p><b><a href="https://github.com/TheCaduceus">Dr.Caduceus</a>: For heavy modification as well as making New 10 Methods and this all in one Guide.</b></p>
 <p><b><a href="https://github.com/ALIILAPRO">ALI-B</a>: The Original Developer of the Base Script</b></p>
+
+## 🍵Other Projects
+- **<a href="https://drgraph.cf/">Dr.Graph</a>: Online Anonymous Text / Pasting platform without limits.**
+- **<a href="https://drfilestreambot.t.me/">Dr.FileStreamBot</a>: Get Download / Stream links for Telegram files and use as host.**
