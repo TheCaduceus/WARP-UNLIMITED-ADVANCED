@@ -85,7 +85,7 @@ while True:
 ``CHANNEL_ID`` Channel ID or Group ID like @example or @mychannel to which log needs to be send. Channel or Group should be public.<br>
 ``HIDE_ID`` To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
   ```
- import urllib.request
+import httpx
 import json
 import datetime
 import random
@@ -99,11 +99,9 @@ BOT_API_KEY = input("Enter Bot Token:\n")
 CHANNEL_ID = input("Enter Channel ID:\n")
 SEND_LOG = "1" # 0 to Disable
 HIDE_ID = "0" # 1 to Enable
-
-os.system("title WARP UNLIMITED ADVANCED")
-os.system('cls' if os.name == 'nt' else 'clear')
-
 referrer = input("[#] Enter the WARP+ ID:\n")
+MSG_ID = False
+
 def genString(stringLength):
   try:
     letters = string.ascii_letters + string.digits
@@ -135,9 +133,8 @@ def run():
           'Accept-Encoding': 'gzip',
           'User-Agent': 'okhttp/3.12.1'
           }
-    req         = urllib.request.Request(url, data, headers)
-    response    = urllib.request.urlopen(req)
-    status_code = response.getcode()
+    req = httpx.post(url,headers=headers,data=data)
+    status_code = req.status_code
     return status_code
   except Exception as error:
     print("")
@@ -155,22 +152,32 @@ while True:
   result = run()
   if result == 200:
     g += 1
-    if SEND_LOG == "1":
-      if HIDE_ID == "1":
-        urllib.request.urlopen(f"https://api.telegram.org/bot{BOT_API_KEY}/sendMessage?chat_id={CHANNEL_ID}&text=" + "DATA%20RECEIVED:%20" + str(g) + "GB%20FAILED%20ATTEMPT:%20" + str(b))
+    if SEND_LOG == "1" and HIDE_ID == "1":
+      if not MSG_ID:
+        lol = httpx.post("https://api.telegram.org/bot"+ BOT_TOKEN + "/sendMessage?chat_id=" + CHANNEL_ID + "&parse_mode=HTML"+"&text=" + "<b><u>WARP STATISTICS</u></b>%0ADATA%20RECEIVED:%20%0A" + str(g) + "GB%20%0AFAILED:%20%0A" + str(b))
+        get_stats = lol.json()
+        MSG_ID = get_stats["result"]["message_id"]
       else:
-        urllib.request.urlopen(f"https://api.telegram.org/bot{BOT_API_KEY}/sendMessage?chat_id={CHANNEL_ID}&text=WARP%20ID:%20{referrer}%20DATA%20RECEIVED:%20" + str(g) + "GB%20FAILED%20ATTEMPT:%20" + str(b))
+        httpx.post("https://api.telegram.org/bot"+ BOT_TOKEN + "/editMessageText?chat_id=" + CHANNEL_ID +f"&message_id={MSG_ID}"+ "&parse_mode=HTML"+"&text=" + "<b><u>WARP STATISTICS</u></b>%0ADATA%20RECEIVED:%20%0A" + str(g) + "GB%20%0AFAILED:%20%0A" + str(b))
+    else:
+      if not MSG_ID:
+        lol = httpx.post("https://api.telegram.org/bot"+ BOT_TOKEN + "/sendMessage?chat_id=" + CHANNEL_ID + "&parse_mode=HTML"+"&text=" + "<b><u>WARP STATISTICS</u></b>"+"%0AWARP%20ID:%20" + referrer + "%0ADATA%20RECEIVED:%20%0A" + str(g) + "GB%20%0AFAILED:%20%0A" + str(b))
+        get_stats = lol.json()
+        MSG_ID = get_stats["result"]["message_id"]
+      else:
+        httpx.post("https://api.telegram.org/bot"+ BOT_TOKEN + "/editMessageText?chat_id=" + CHANNEL_ID +f"&message_id={MSG_ID}"+ "&parse_mode=HTML"+"&text=" + "<b><u>WARP STATISTICS</u></b>"+"%0AWARP%20ID:%20" + referrer + "%0ADATA%20RECEIVED:%20%0A" + str(g) + "GB%20%0AFAILED:%20%0A" + str(b))
     print(f"\n[•] WARP+ ID: {referrer}")
     print(f"[✓] Added: {g} GB")
     print(f"[#] Total: {g} Good {b} Bad")
-    for i in range(20,-1,-1):
+    for i in range(20,1,-1):
       sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
       sys.stdout.flush()
       time.sleep(1)
+
   else:
     b += 1
     print(f"[#] Total: {g} Good {b} Bad")
-    for i in range(10,-1,-1):
+    for i in range(20,-1,-1):
       sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
       sys.stdout.flush()
       time.sleep(1)
