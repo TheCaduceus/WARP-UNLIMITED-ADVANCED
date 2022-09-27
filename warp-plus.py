@@ -1,4 +1,4 @@
-import urllib.request
+import httpx
 import json
 import datetime
 import random
@@ -12,6 +12,7 @@ BOT_TOKEN = (Var.BOT_TOKEN)
 CHANNEL_ID = (Var.CHANNEL_ID)
 HIDE_ID = (Var.HIDE_ID)
 referrer = (Var.WARP_ID)
+MSG_ID = False
 
 os.system("title UnlimitedWarpUsage")
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -70,16 +71,27 @@ while True:
 		g += 1
 		if(SEND_LOG == "1"):
 			if(HIDE_ID == "1"):
-				urllib.request.urlopen("https://api.telegram.org/bot"+ BOT_TOKEN + "/sendMessage?chat_id=" + CHANNEL_ID + "&text=" + "DATA%20RECEIVED:%20" + str(g) + "GB%20FAILED%20ATTEMPT:%20" + str(b))
+				if not MSG_ID:
+					lol = httpx.post("https://api.telegram.org/bot"+ BOT_TOKEN + "/sendMessage?chat_id=" + CHANNEL_ID + "&parse_mode=HTML"+"&text=" + "<b><u>WARP STATISTICS</u></b>%0ADATA%20RECEIVED:%20%0A" + str(g) + "GB%20%0AFAILED:%20%0A" + str(b))
+					get_stats = lol.json()
+					MSG_ID = get_stats["result"]["message_id"]
+				else:
+					httpx.post("https://api.telegram.org/bot"+ BOT_TOKEN + "/editMessageText?chat_id=" + CHANNEL_ID +f"&message_id={MSG_ID}"+ "&parse_mode=HTML"+"&text=" + "<b><u>WARP STATISTICS</u></b>%0ADATA%20RECEIVED:%20%0A" + str(g) + "GB%20%0AFAILED:%20%0A" + str(b))
 			else:
-				urllib.request.urlopen("https://api.telegram.org/bot"+ BOT_TOKEN + "/sendMessage?chat_id=" + CHANNEL_ID + "&text=" + "WARP%20ID:%20" + referrer + "%20DATA%20RECEIVED:%20" + str(g) + "GB%20FAILED%20ATTEMPT:%20" + str(b))
+				if not MSG_ID:
+					lol = httpx.post("https://api.telegram.org/bot"+ BOT_TOKEN + "/sendMessage?chat_id=" + CHANNEL_ID + "&parse_mode=HTML"+"&text=" + "<b><u>WARP STATISTICS</u></b>"+"%0AWARP%20ID:%20" + referrer + "%0ADATA%20RECEIVED:%20%0A" + str(g) + "GB%20%0AFAILED:%20%0A" + str(b))
+					get_stats = lol.json()
+					MSG_ID = get_stats["result"]["message_id"]
+				else:
+					httpx.post("https://api.telegram.org/bot"+ BOT_TOKEN + "/editMessageText?chat_id=" + CHANNEL_ID +f"&message_id={MSG_ID}"+ "&parse_mode=HTML"+"&text=" + "<b><u>WARP STATISTICS</u></b>"+"%0AWARP%20ID:%20" + referrer + "%0ADATA%20RECEIVED:%20%0A" + str(g) + "GB%20%0AFAILED:%20%0A" + str(b))
 		print(f"\n[•] WARP+ ID: {referrer}")
 		print(f"[✓] Added: {g} GB")
 		print(f"[#] Total: {g} Good {b} Bad")
-		for i in range(20,-1,-1):
+		for i in range(20,1,-1):
 			sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
 			sys.stdout.flush()
 			time.sleep(1)
+
 	else:
 		b += 1
 		print(f"[#] Total: {g} Good {b} Bad")
