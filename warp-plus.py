@@ -49,9 +49,8 @@ def run():
 					'Accept-Encoding': 'gzip',
 					'User-Agent': 'okhttp/3.12.1'
 					}
-		req         = urllib.request.Request(url, data, headers)
-		response    = urllib.request.urlopen(req)
-		status_code = response.getcode()
+		req = httpx.post(url,headers=headers,data=data)
+		status_code = req.status_code
 		return status_code
 	except Exception as error:
 		print("")
