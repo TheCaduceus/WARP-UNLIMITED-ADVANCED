@@ -10,6 +10,8 @@ import string
 import sys
 import time
 import urllib.request
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 os.system("title WARP UNLIMITED ADVANCED")
 os.system('cls' if os.name == 'nt' else 'clear')
 
