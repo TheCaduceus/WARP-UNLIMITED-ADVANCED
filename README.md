@@ -36,7 +36,7 @@
 <p><b>5.Improvements in <code>.ipynb</code> file.</b></p>
 <p><b>Full Changelog: <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/compare/v3.0.5...v4.0.2"><code>v3.0.5...v4.0.2</code></a></b></p>
 <h2><b>📑 Features</b></h2>
-<h4><b>1.Get 1GB Per 10 Seconds!🔥</b></h4>
+<h4><b>1.Get 1GB Per 20 Seconds!🔥</b></h4>
 <h4><b>2.Run this almost everywhere!🤗</b></h4>
 <h2><b>🪧Before you Proceed</b></h2>
 <p><b>1.If you deploy this Code through Heroku or Railway app and Okteto then it will run for lifetime!</b></p>
@@ -49,7 +49,7 @@
 <h4><b>1.Open this Code on Google Colab:<a href="https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/WUA.ipynb"> Open NoteBook</a></b></h4>
 <h4><b>2.Now enter your <code>WARP_CLIENT_ID</code> and run The WARP+ (1.1.1.1) Code and as shown in the Image</b></h4>
 <img src="https://user-images.githubusercontent.com/87380104/186407247-61234750-e97c-44eb-aa6a-2abf35a69edf.png">
-<h4><b>4.After that! Let the code run, It will give you 1GB per 10 Seconds. But you have to update the value in the app! To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>
+<h4><b>4.After that! Let the code run, It will give you 1GB per 20 Seconds. But you have to update the value in the app! To do it<br>Go to Settings > Advanced > Connection options and press on Reset security keys</b></h4>
 <h3><b>🐳Build or Deploy using Docker</b></h3>
 <p><b>WARP UNLIMITED Script can be deployed almost everywhere using Docker because it can be kinda boring to add support or instruction/config file of each platform, so you can use Docker Image everywhere to deploy the script easily.</b></p>
 <h4><b>1.To pull Docker Image:</h4>
@@ -79,7 +79,7 @@
 <img src="https://user-images.githubusercontent.com/87380104/169662727-d4c012d6-ff6a-4505-bc7a-5307b240a186.png" alt="4">
 <h4><b>3.After Deployment! Click <code>Manage App</code> button and then click <code>Resources Tab</code> and enable the dyno.</b></h4>
 <img src="Img/5.png" alt="5">
-<h4><b>4.Enjoy! Now you will get 1GB per 10 Seconds for Lifetime until your Heroku Account exist and you will start getting info about your script if <code>SEND_LOG</code> is enabled.</b></h4>
+<h4><b>4.Enjoy! Now you will get 1GB per 20 Seconds for Lifetime until your Heroku Account exist and you will start getting info about your script if <code>SEND_LOG</code> is enabled.</b></h4>
 <h2><b>🧿 Host on Railway App</b></h2>
 <h4><b>1.First Create Account or Login on <a href="https://railway.app/">Railway App</a></b></h4>
 <img src="Img/3.1.png">
@@ -127,7 +127,7 @@
 <h4><b>✍️NOTE: The script code is available in two different edition->1. Without Telegram logger and 2.With Telegram logger</b></h4>
 <h4><b>3.After it run the code as shown in the Image and Enter WARP ID and Hit Enter and Enjoy!</b></h4>
 <img src="Img/6.png" alt="6">
-<h4><b><i>❗The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open. Make sure that your PC or Local System is connected to INTERNET CONNECTION.</i></b></h4>
+<h4><b><i>❗The Script will run and give you 1GB data / 20 Second until your PC is on and the Window is open. Make sure that your PC or Local System is connected to INTERNET CONNECTION.</i></b></h4>
 <h2><b>🧫 Deploy using GitHub Actions</b></h2>
 <h4><b>This Method is too much easier and best for users who want to deploy this script multiple times on Heroku without login on Heroku again and again!</b></h4>
 <h4><b>1.First fork this Repository.</b></h4>
@@ -210,7 +210,7 @@
 <h2><b>🎯Points to be Remembered</b></h2>
 <h4><b>1.You have to manually update the Value in the app.</b></h4>
 <h4><b>2.The Major Advantage of the Railway app is that, it never restarts. So it will generate more Amount of Data in 24 Hours if compared with Heroku</b></h4>
-<h4><b>3.On your Computer,The Script will run and give you 1GB data / 10 Second until your PC is on and the Window is open.</b></h4>
+<h4><b>3.On your Computer,The Script will run and give you 1GB data / 20 Second until your PC is on and the Window is open.</b></h4>
 <h4><b>4.This Tricks works on both! That's WARP or WARP+.</b></h4>
 <h4><b>5.If you are hosting this Script on your PC or Local System then confirm that it is connected to INTERNET CONNECTION.</b></h4>
 <h2><b>📥Download Cloudflare WARP (1.1.1.1)</b></h2>
@@ -222,7 +222,7 @@
   <p><b>💻Linux:<a href="https://pkg.cloudflareclient.com/"> Download Now!</a></b></p>
   <h2><b>❓FAQ</b></h2>
 <h4><b>1.How much scripts can I host/run for same account?</b></h4>
-  <p><b>I will recommend to host/run 3 or less than 3 (<3) scripts for each account because Cloudflare is API have request limits. Hosting/Running too many scripts can cause "Too many Requests" error which indicates that API getting too many requestes from same account and that is why there is a cooldown timer of 10 seconds to prevent this.</b></p>
+  <p><b>I will recommend to host/run 3 or less than 3 (<3) scripts for each account because Cloudflare is API have request limits. Hosting/Running too many scripts can cause "Too many Requests" error which indicates that API getting too many requestes from same account and that is why there is a cooldown timer of 20 seconds to prevent this.</b></p>
 <h4><b>2.How to resolve "Too many request" Error?</b></h4>
   <p><b>As already discussed above! Hosting/Running too many scripts for same account cause this. So just switch off the scripts and bring down the number to 3 or <3 scripts for same account. Please refer to <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/3">Issue #3</a> for more details on this.</b></p>
 <h4><b>3.Will this script cause any type of ban from Cloudflare?</b></h4>
@@ -231,7 +231,7 @@
   <img src="Img/Termux-Error-1.jpeg">
   <p><b>This problem happens due to missing files! you can run the below given command in Termux to fix it easily:<br><code>termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip</code></b></p>
 <h4><b>5.Deploying this on Heroku/Railway/Okteto/Vercel cause any ban?</b></h4>
-  <p><b>No, this script comes in category of Cron-Job because this script just take the WARP/WARP+ ID from user and arrange it in a particular format and start pining it in an interval of 10 seconds.This script is lightweight and don't have any load on system. You can refer to <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/5">issue #5</a> for more details on this.</b></p>
+  <p><b>No, this script comes in category of Cron-Job because this script just take the WARP/WARP+ ID from user and arrange it in a particular format and start pining it in an interval of 20 seconds.This script is lightweight and don't have any load on system. You can refer to <a href="https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/5">issue #5</a> for more details on this.</b></p>
 <h2><b>🖥️How to use this Data on PC?</b></h2>
 <h4><b>Open the WARP or 1.1.1.1 app in your Phone and go to Settings > Account > Key and copy the License Key | Now paste that Key in your Warp app in Windows or MacOS or Linux.</b></h4>
 <h2><b>⛑Contact Us!</b></h2>
