@@ -1,13 +1,19 @@
-import urllib.request
-import json
+import asyncio
 import datetime
+import json
+import os
 import random
 import string
-import time
-import os
 import sys
+import time
+import urllib.request
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning) 
+os.system("title WARP UNLIMITED ADVANCED")
+os.system('cls' if os.name == 'nt' else 'clear')
 
-referrer = input("[#] Enter the WARP+ ID:\n")
+#referrer = input("[#] Enter the WARP+ ID:\n")
+referrer = "f0c31a55-ac64-473e-8be6-bc586bde633f"
 def genString(stringLength):
   try:
     letters = string.ascii_letters + string.digits
@@ -21,7 +27,7 @@ def digitString(stringLength):
   except Exception as error:
     print(error)
 url = f'https://api.cloudflareclient.com/v0a{digitString(3)}/reg'
-def run():
+async def run():
   try:
     install_id = genString(22)
     body = {"key": "{}=".format(genString(43)),
@@ -49,14 +55,18 @@ def run():
 
 g = 0
 b = 0
+
 while True:
   os.system('cls' if os.name == 'nt' else 'clear')
-  animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
+  animation = ["[□□□□□□□□□□] 0%", "[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
   for i in range(len(animation)):
-    time.sleep(0.2)
+    time.sleep(0.4)
     sys.stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
     sys.stdout.flush()
-  result = run()
+    if i == 1:
+      loop = asyncio.get_event_loop()
+      coroutine = run()
+      result = loop.run_until_complete(coroutine)
   if result == 200:
     g += 1
     print(f"\n[•] WARP+ ID: {referrer}")
