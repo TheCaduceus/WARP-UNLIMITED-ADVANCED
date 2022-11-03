@@ -1,14 +1,15 @@
 ***Without Telegram Logger***<br>
 ``WARP_ID`` Enter your WARP/WARP+ ID<br>
-```
-import urllib.request
-import json
+```python
+import asyncio
 import datetime
+import json
+import os
 import random
 import string
-import time
-import os
 import sys
+import time
+import urllib.request
 os.system("title WARP UNLIMITED ADVANCED")
 os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -26,7 +27,7 @@ def digitString(stringLength):
   except Exception as error:
     print(error)
 url = f'https://api.cloudflareclient.com/v0a{digitString(3)}/reg'
-def run():
+async def run():
   try:
     install_id = genString(22)
     body = {"key": "{}=".format(genString(43)),
@@ -54,14 +55,18 @@ def run():
 
 g = 0
 b = 0
+
 while True:
   os.system('cls' if os.name == 'nt' else 'clear')
   animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
   for i in range(len(animation)):
-    time.sleep(0.2)
+    time.sleep(0.4)
     sys.stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
     sys.stdout.flush()
-  result = run()
+    if i == 5:
+      loop = asyncio.get_event_loop()
+      coroutine = run()
+      result = loop.run_until_complete(coroutine)
   if result == 200:
     g += 1
     print(f"\n[•] WARP+ ID: {referrer}")
@@ -74,17 +79,17 @@ while True:
   else:
     b += 1
     print(f"[#] Total: {g} Good {b} Bad")
-    for i in range(10,-1,-1):
+    for i in range(30,-1,-1):
       sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
       sys.stdout.flush()
       time.sleep(1)
-  ```
+```
 ***With Telegram Logger***<br>
 ``WARP_ID`` Enter your WARP/WARP+ ID.<br>
 ``BOT_TOKEN`` Telegram Bot Token from BotFather.<br>
 ``CHANNEL_ID`` If  Channel or Group is public enter username example @mygroup or @mychannel. If it is private enter CHAT ID example -100XXXXX .<br>
 ``HIDE_ID`` To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
-  ```
+```python
 import httpx
 import json
 import datetime
@@ -180,5 +185,5 @@ while True:
       sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
       sys.stdout.flush()
       time.sleep(1)
-  ```
+```
 <b>Made with 💗 & 🍵 by Dr.Caduceus</b>
