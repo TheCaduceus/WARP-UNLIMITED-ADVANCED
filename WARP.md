@@ -16,7 +16,8 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 os.system("title WARP UNLIMITED ADVANCED")
 os.system("cls" if os.name == "nt" else "clear")
 
-referrer = input("[#] Enter the WARP+ ID:\n")
+#referrer = input("[#] Enter the WARP+ ID:\n")
+referrer = "f0c31a55-ac64-473e-8be6-bc586bde633f"
 g = 0
 b = 0
 
@@ -62,7 +63,7 @@ async def run():
     status_code = response.getcode()
     return status_code
   except Exception as error:
-    print("\n[×] Error:", error)
+    return error
 
 async def animation():
   os.system("cls" if os.name == "nt" else "clear")
@@ -90,6 +91,7 @@ while True:
       time.sleep(1)
   else:
     b += 1
+    print("\n[×] Error:", result)
     print(f"[#] Total: {g} Good {b} Bad")
     for i in range(30,-1,-1):
       sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
@@ -171,7 +173,7 @@ async def run():
     status_code = response.getcode()
     return status_code
   except Exception as error:
-    print("\n[×] Error:", error)
+    return error
 
 async def animation():
   os.system("cls" if os.name == "nt" else "clear")
@@ -211,9 +213,9 @@ while True:
       sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
       sys.stdout.flush()
       time.sleep(1)
-
   else:
     b += 1
+    print("\n[×] Error:", result)
     print(f"[#] Total: {g} Good {b} Bad")
     for i in range(20,-1,-1):
       sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
