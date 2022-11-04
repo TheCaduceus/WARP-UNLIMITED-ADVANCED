@@ -66,6 +66,7 @@ async def run():
     return error
 
 async def animation():
+  cooldown = 0.4
   os.system("cls" if os.name == "nt" else "clear")
   animation = ["[□□□□□□□□□□] 0%", "[■□□□□□□□□□] 10%", "[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
   for i in range(len(animation)):
@@ -73,7 +74,9 @@ async def animation():
     sys.stdout.flush()
     if i == 1:
       result = await run()
-    await asyncio.sleep(0.4)
+      if result != 200:
+        cooldown = 0.1
+    await asyncio.sleep(cooldown)
   return result
 
 while True:
@@ -176,6 +179,7 @@ async def run():
     return error
 
 async def animation():
+  cooldown = 0.4
   os.system("cls" if os.name == "nt" else "clear")
   animation = ["[□□□□□□□□□□] 0%", "[■□□□□□□□□□] 10%", "[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
   for i in range(len(animation)):
@@ -183,7 +187,9 @@ async def animation():
     sys.stdout.flush()
     if i == 1:
       result = await run()
-    await asyncio.sleep(0.4)
+      if result != 200:
+        cooldown = 0.1
+    await asyncio.sleep(cooldown)
   return result
 
 while True:
