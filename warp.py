@@ -1,33 +1,34 @@
 import asyncio
-import datetime
-import json
 import os
-import random
-import string
-import sys
-import time
 import urllib.request
-import warnings
+from datetime import datetime
+from json import dumps
+from random import choice
+from string import ascii_letters, digits
+from sys import stdout
+from time import sleep
+from warnings import filterwarnings
 
-warnings.filterwarnings("ignore", category=DeprecationWarning) 
+filterwarnings("ignore", category=DeprecationWarning)
 os.system("title WARP UNLIMITED ADVANCED")
 os.system("cls" if os.name == "nt" else "clear")
 
 referrer = input("[#] Enter the WARP+ ID:\n")
+
 g = 0
 b = 0
 
 def genString(stringLength):
   try:
-    letters = string.ascii_letters + string.digits
-    return ''.join(random.choice(letters) for i in range(stringLength))
+    letters = ascii_letters + digits
+    return ''.join(choice(letters) for i in range(stringLength))
   except Exception as error:
     print(error)
 
 def digitString(stringLength):
   try:
-    digit = string.digits
-    return ''.join((random.choice(digit) for i in range(stringLength)))
+    digit = digits
+    return ''.join((choice(digit) for i in range(stringLength)))
   except Exception as error:
     print(error)
 
@@ -42,11 +43,11 @@ async def run():
       "fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
       "referrer": referrer,
       "warp_enabled": False,
-      "tos": datetime.datetime.now().isoformat()[:-3] + "+02:00",
+      "tos": datetime.now().isoformat()[:-3] + "+02:00",
       "type": "Android",
       "locale": "es_ES"
     }
-    data = json.dumps(body).encode("utf8")
+    data = dumps(body).encode("utf8")
     headers = {
       "Content-Type": "application/json; charset=UTF-8",
       "Host": "api.cloudflareclient.com",
@@ -62,13 +63,13 @@ async def run():
     return error
 
 async def animation():
-  cooldown = 0.4
+  cooldown = 0.3
   os.system("cls" if os.name == "nt" else "clear")
   animation = ["[□□□□□□□□□□] 0%", "[■□□□□□□□□□] 10%", "[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
   for i in range(len(animation)):
-    sys.stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
-    sys.stdout.flush()
-    if i == 1:
+    stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
+    stdout.flush()
+    if i == 2:
       result = await run()
       if result != 200:
         cooldown = 0.1
@@ -85,14 +86,14 @@ while True:
     print(f"[✓] Added: {g} GB")
     print(f"[#] Total: {g} Good {b} Bad")
     for i in range(20,-1,-1):
-      sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
-      sys.stdout.flush()
-      time.sleep(1)
+      stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
+      stdout.flush()
+      sleep(1)
   else:
     b += 1
     print("\n[×] Error:", result)
     print(f"[#] Total: {g} Good {b} Bad")
     for i in range(30,-1,-1):
-      sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
-      sys.stdout.flush()
-      time.sleep(1)
+      stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
+      stdout.flush()
+      sleep(1)
