@@ -1,5 +1,5 @@
-***Without Telegram Logger***<br>
-``WARP_ID`` Enter your WARP/WARP+ ID<br>
+***Without Telegram Logger***  
+``WARP_ID`` Enter your WARP/WARP+ ID
 ```python
 import asyncio
 import os
@@ -102,12 +102,12 @@ while True:
       sleep(1)
 
 ```
-
-***With Telegram Logger***<br>
-``WARP_ID`` Enter your WARP/WARP+ ID.<br>
-``BOT_TOKEN`` Telegram Bot Token from BotFather.<br>
-``CHANNEL_ID`` If  Channel or Group is public enter username example @mygroup or @mychannel. If it is private enter CHAT ID example -100XXXXX .<br>
-``HIDE_ID`` To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+  
+***With Telegram Logger***  
+`WARP_ID` Enter your WARP/WARP+ ID  
+`BOT_TOKEN` Telegram Bot Token from BotFather  
+`CHANNEL_ID` If  Channel or Group is public enter username example @mygroup or @mychannel. If it is private enter CHAT ID example -100XXXXX  
+`HIDE_ID` To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes
 ```python
 import asyncio
 import os
@@ -229,4 +229,5 @@ while True:
       sleep(1)
 
 ```
-<b>Made with 💗 & 🍵 by Dr.Caduceus</b>
+
+**Made with 💗 & 🍵 by Dr.Caduceus**
