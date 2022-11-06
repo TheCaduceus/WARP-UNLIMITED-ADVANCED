@@ -145,7 +145,8 @@
 #### **1. If your PC don't have python, then install it first: [Download Python](https://www.python.org/downloads/)**
 #### **2. Now first open the WARP+ Unlimited Script code and paste it in notepad and save it as `Warp.py`, don't forget to type `.py`: [Show Code](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/WARP.md)**
 #### **✍️ NOTE: The script code is available in two different versions → 1. Without Telegram logger and 2. With Telegram logger**
-#### **3. After it run the code as shown in the Image, Enter WARP ID, Hit Enter and Enjoy !**
+#### **3. Open a terminal and write `pip install nest-asyncio` then hit enter**
+#### **4. After it run the code as shown in the Image, Enter WARP ID, Hit Enter and Enjoy !**
 ![6](./Img/6.png)
 #### ***❗ The Script will run and give you 1GB data / 20 Second while your PC is on and the Window is open. Make sure that your PC or Local System is connected to INTERNET CONNECTION.***
 
@@ -178,10 +179,11 @@
 #### **2. Now run the following commands in it one by one!**
 1. `pkg install python` - This Command will Download Python.
 2. `pkg install git` - This Command will Download Git.
-3. `git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED` - This Command will clone this Repository in your Device.
-4. `cd WARP-UNLIMITED-ADVANCED` - This Command will set Directory to this Repository's created Folder.
-5. `python3 warp.py` - This Command will run the main Script.
-6. Getting http/SSL Error ? Run following code to fix it:  
+3. `pip install nest-asyncio` - This Command will Download nest-asyncio.
+4. `git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED` - This Command will clone this Repository in your Device.
+5. `cd WARP-UNLIMITED-ADVANCED` - This Command will set Directory to this Repository's created Folder.
+6. `python3 warp.py` - This Command will run the main Script.
+7. Getting http/SSL Error ? Run following code to fix it:  
 `termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip`
 ![](./Img/Termux-Error-1.jpeg)
 #### **3. After doing the above things, Enter your WARP ID and get started. 😚**

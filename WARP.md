@@ -12,6 +12,9 @@ from sys import stdout
 from time import sleep
 from warnings import filterwarnings
 
+from nest_asyncio import apply
+
+apply()
 filterwarnings("ignore", category=DeprecationWarning) 
 os.system("title WARP UNLIMITED ADVANCED")
 os.system("cls" if os.name == "nt" else "clear")
@@ -121,6 +124,7 @@ from time import sleep
 from warnings import filterwarnings
 
 import httpx
+from nest_asyncio import apply
 
 # Variables
 BOT_TOKEN = input("Enter Bot Token:\n")
@@ -130,6 +134,7 @@ HIDE_ID = "0" # 1 to Enable
 referrer = input("[#] Enter the WARP+ ID:\n")
 MSG_ID = False
 
+apply()
 filterwarnings("ignore", category=DeprecationWarning)
 g = 0
 b = 0

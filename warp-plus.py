@@ -10,6 +10,7 @@ from time import sleep
 from warnings import filterwarnings
 
 import httpx
+from nest_asyncio import apply
 from vars import Var
 
 # Variables
@@ -20,6 +21,7 @@ HIDE_ID = (Var.HIDE_ID)
 referrer = (Var.WARP_ID)
 MSG_ID = False
 
+apply()
 filterwarnings("ignore", category=DeprecationWarning)
 g = 0
 b = 0
