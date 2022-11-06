@@ -1,107 +1,131 @@
-***Without Telegram Logger***<br>
-``WARP_ID`` Enter your WARP/WARP+ ID<br>
+***Without Telegram Logger***  
+``WARP_ID`` Enter your WARP/WARP+ ID
 ```python
 import asyncio
-import datetime
-import json
 import os
-import random
-import string
-import sys
-import time
 import urllib.request
-import warnings
-warnings.filterwarnings("ignore", category=DeprecationWarning) 
-os.system("title WARP UNLIMITED ADVANCED")
-os.system('cls' if os.name == 'nt' else 'clear')
+from datetime import datetime
+from json import dumps
+from random import choice
+from string import ascii_letters, digits
+from sys import stdout
+from time import sleep
+from warnings import filterwarnings
 
-#referrer = input("[#] Enter the WARP+ ID:\n")
-referrer = "f0c31a55-ac64-473e-8be6-bc586bde633f"
-def genString(stringLength):
-  try:
-    letters = string.ascii_letters + string.digits
-    return ''.join(random.choice(letters) for i in range(stringLength))
-  except Exception as error:
-    print(error)
-def digitString(stringLength):
-  try:
-    digit = string.digits
-    return ''.join((random.choice(digit) for i in range(stringLength)))
-  except Exception as error:
-    print(error)
-url = f'https://api.cloudflareclient.com/v0a{digitString(3)}/reg'
-async def run():
-  try:
-    install_id = genString(22)
-    body = {"key": "{}=".format(genString(43)),
-        "install_id": install_id,
-        "fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
-        "referrer": referrer,
-        "warp_enabled": False,
-        "tos": datetime.datetime.now().isoformat()[:-3] + "+02:00",
-        "type": "Android",
-        "locale": "es_ES"}
-    data = json.dumps(body).encode('utf8')
-    headers = {'Content-Type': 'application/json; charset=UTF-8',
-          'Host': 'api.cloudflareclient.com',
-          'Connection': 'Keep-Alive',
-          'Accept-Encoding': 'gzip',
-          'User-Agent': 'okhttp/3.12.1'
-          }
-    req         = urllib.request.Request(url, data, headers)
-    response    = urllib.request.urlopen(req)
-    status_code = response.getcode()
-    return status_code
-  except Exception as error:
-    print("")
-    print("[×] Error:", error)
+from nest_asyncio import apply
+
+apply()
+filterwarnings("ignore", category=DeprecationWarning) 
+os.system("title WARP UNLIMITED ADVANCED")
+os.system("cls" if os.name == "nt" else "clear")
+
+referrer = input("[#] Enter the WARP+ ID:\n")
 
 g = 0
 b = 0
 
-while True:
-  os.system('cls' if os.name == 'nt' else 'clear')
-  animation = ["[□□□□□□□□□□] 0%", "[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
+def genString(stringLength):
+  try:
+    letters = ascii_letters + digits
+    return ''.join(choice(letters) for i in range(stringLength))
+  except Exception as error:
+    print(error)
+
+def digitString(stringLength):
+  try:
+    digit = digits
+    return ''.join((choice(digit) for i in range(stringLength)))
+  except Exception as error:
+    print(error)
+
+url = f"https://api.cloudflareclient.com/v0a{digitString(3)}/reg"
+
+async def run():
+  try:
+    install_id = genString(22)
+    body = {
+      "key": "{}=".format(genString(43)),
+      "install_id": install_id,
+      "fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
+      "referrer": referrer,
+      "warp_enabled": False,
+      "tos": datetime.now().isoformat()[:-3] + "+02:00",
+      "type": "Android",
+      "locale": "es_ES"
+    }
+    data = dumps(body).encode("utf8")
+    headers = {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Host": "api.cloudflareclient.com",
+      "Connection": "Keep-Alive",
+      "Accept-Encoding": "gzip",
+      "User-Agent": "okhttp/3.12.1"
+    }
+    req = urllib.request.Request(url, data, headers)
+    response = urllib.request.urlopen(req)
+    status_code = response.getcode()
+    return status_code
+  except Exception as error:
+    return error
+
+async def animation():
+  cooldown = 0.3
+  os.system("cls" if os.name == "nt" else "clear")
+  animation = ["[□□□□□□□□□□] 0%", "[■□□□□□□□□□] 10%", "[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
   for i in range(len(animation)):
-    time.sleep(0.4)
-    sys.stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
-    sys.stdout.flush()
-    if i == 1:
-      loop = asyncio.get_event_loop()
-      coroutine = run()
-      result = loop.run_until_complete(coroutine)
+    stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
+    stdout.flush()
+    if i == 2:
+      result = await run()
+      if result != 200:
+        cooldown = 0.1
+    await asyncio.sleep(cooldown)
+  return result
+
+while True:
+  anim = asyncio.get_event_loop()
+  anim_coroutine = animation()
+  result = anim.run_until_complete(anim_coroutine)
   if result == 200:
     g += 1
     print(f"\n[•] WARP+ ID: {referrer}")
     print(f"[✓] Added: {g} GB")
     print(f"[#] Total: {g} Good {b} Bad")
     for i in range(20,-1,-1):
-      sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
-      sys.stdout.flush()
-      time.sleep(1)
+      stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
+      stdout.flush()
+      sleep(1)
   else:
     b += 1
+    print("\n[×] Error:", result)
     print(f"[#] Total: {g} Good {b} Bad")
     for i in range(30,-1,-1):
-      sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
-      sys.stdout.flush()
-      time.sleep(1)
+      stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
+      stdout.flush()
+      sleep(1)
 
 ```
-***With Telegram Logger***<br>
-``WARP_ID`` Enter your WARP/WARP+ ID.<br>
-``BOT_TOKEN`` Telegram Bot Token from BotFather.<br>
-``CHANNEL_ID`` If  Channel or Group is public enter username example @mygroup or @mychannel. If it is private enter CHAT ID example -100XXXXX .<br>
-``HIDE_ID`` To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes.
+  
+***With Telegram Logger***  
+`WARP_ID` Enter your WARP/WARP+ ID  
+`BOT_TOKEN` Telegram Bot Token from BotFather  
+`CHANNEL_ID` If  Channel or Group is public enter username example @mygroup or @mychannel. If it is private enter CHAT ID example -100XXXXX  
+`HIDE_ID` To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes
 ```python
-import httpx
-import json
-import datetime
-import random
-import string
-import time
+import asyncio
 import os
-import sys
+import urllib.request
+from datetime import datetime
+from json import dumps
+from random import choice
+from string import ascii_letters, digits
+from sys import stdout
+from time import sleep
+from warnings import filterwarnings
+
+import httpx
+from nest_asyncio import apply
+
 # Variables
 BOT_TOKEN = input("Enter Bot Token:\n")
 CHANNEL_ID = input("Enter Channel ID:\n")
@@ -110,54 +134,73 @@ HIDE_ID = "0" # 1 to Enable
 referrer = input("[#] Enter the WARP+ ID:\n")
 MSG_ID = False
 
-def genString(stringLength):
-  try:
-    letters = string.ascii_letters + string.digits
-    return ''.join(random.choice(letters) for i in range(stringLength))
-  except Exception as error:
-    print(error)
-def digitString(stringLength):
-  try:
-    digit = string.digits
-    return ''.join((random.choice(digit) for i in range(stringLength)))
-  except Exception as error:
-    print(error)
-url = f'https://api.cloudflareclient.com/v0a{digitString(3)}/reg'
-def run():
-  try:
-    install_id = genString(22)
-    body = {"key": "{}=".format(genString(43)),
-        "install_id": install_id,
-        "fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
-        "referrer": referrer,
-        "warp_enabled": False,
-        "tos": datetime.datetime.now().isoformat()[:-3] + "+02:00",
-        "type": "Android",
-        "locale": "es_ES"}
-    data = json.dumps(body).encode('utf8')
-    headers = {'Content-Type': 'application/json; charset=UTF-8',
-          'Host': 'api.cloudflareclient.com',
-          'Connection': 'Keep-Alive',
-          'Accept-Encoding': 'gzip',
-          'User-Agent': 'okhttp/3.12.1'
-          }
-    req = httpx.post(url,headers=headers,data=data)
-    status_code = req.status_code
-    return status_code
-  except Exception as error:
-    print("")
-    print("[×] Error:", error)
-
+apply()
+filterwarnings("ignore", category=DeprecationWarning)
 g = 0
 b = 0
-while True:
-  os.system('cls' if os.name == 'nt' else 'clear')
-  animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
+
+def genString(stringLength):
+  try:
+    letters = ascii_letters + digits
+    return ''.join(choice(letters) for i in range(stringLength))
+  except Exception as error:
+    print(error)
+
+def digitString(stringLength):
+  try:
+    digit = digits
+    return ''.join((choice(digit) for i in range(stringLength)))
+  except Exception as error:
+    print(error)
+
+url = f"https://api.cloudflareclient.com/v0a{digitString(3)}/reg"
+
+async def run():
+  try:
+    install_id = genString(22)
+    body = {
+      "key": "{}=".format(genString(43)),
+      "install_id": install_id,
+      "fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
+      "referrer": referrer,
+      "warp_enabled": False,
+      "tos": datetime.now().isoformat()[:-3] + "+02:00",
+      "type": "Android",
+      "locale": "es_ES"
+    }
+    data = dumps(body).encode("utf8")
+    headers = {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Host": "api.cloudflareclient.com",
+      "Connection": "Keep-Alive",
+      "Accept-Encoding": "gzip",
+      "User-Agent": "okhttp/3.12.1"
+    }
+    req = urllib.request.Request(url, data, headers)
+    response = urllib.request.urlopen(req)
+    status_code = response.getcode()
+    return status_code
+  except Exception as error:
+    return error
+
+async def animation():
+  cooldown = 0.3
+  os.system("cls" if os.name == "nt" else "clear")
+  animation = ["[□□□□□□□□□□] 0%", "[■□□□□□□□□□] 10%", "[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
   for i in range(len(animation)):
-    time.sleep(0.2)
-    sys.stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
-    sys.stdout.flush()
-  result = run()
+    stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
+    stdout.flush()
+    if i == 2:
+      result = await run()
+      if result != 200:
+        cooldown = 0.1
+    await asyncio.sleep(cooldown)
+  return result
+
+while True:
+  anim = asyncio.get_event_loop()
+  anim_coroutine = animation()
+  result = anim.run_until_complete(anim_coroutine)
   if result == 200:
     g += 1
     if SEND_LOG == "1" and HIDE_ID == "1":
@@ -178,16 +221,18 @@ while True:
     print(f"[✓] Added: {g} GB")
     print(f"[#] Total: {g} Good {b} Bad")
     for i in range(20,1,-1):
-      sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
-      sys.stdout.flush()
-      time.sleep(1)
-
+      stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
+      stdout.flush()
+      sleep(1)
   else:
     b += 1
+    print("\n[×] Error:", result)
     print(f"[#] Total: {g} Good {b} Bad")
-    for i in range(20,-1,-1):
-      sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
-      sys.stdout.flush()
-      time.sleep(1)
+    for i in range(30,-1,-1):
+      stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
+      stdout.flush()
+      sleep(1)
+
 ```
-<b>Made with 💗 & 🍵 by Dr.Caduceus</b>
+
+**Made with 💗 & 🍵 by Dr.Caduceus**

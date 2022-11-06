@@ -1,4 +1,5 @@
-requests
-python-dotenv
-tgcrypto
 httpx
+python-dotenv
+nest-asyncio
+requests
+tgcrypto
