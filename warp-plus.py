@@ -1,6 +1,8 @@
 import asyncio
 import os
 import urllib.request
+import httpx
+from config import Vars
 from datetime import datetime
 from json import dumps
 from random import choice
@@ -8,17 +10,15 @@ from string import ascii_letters, digits
 from sys import stdout
 from time import sleep
 from warnings import filterwarnings
-
-import httpx
 from nest_asyncio import apply
-from vars import Var
 
 # Variables
-SEND_LOG = (Var.SEND_LOG)
-BOT_TOKEN = (Var.BOT_TOKEN)
-CHANNEL_ID = (Var.CHANNEL_ID)
-HIDE_ID = (Var.HIDE_ID)
-referrer = (Var.WARP_ID)
+referrer = Vars[0]
+SEND_LOG = Vars[1]
+CHANNEL_ID = Vars[2]
+BOT_TOKEN = Vars[3]
+HIDE_ID = Vars[4]
+
 MSG_ID = False
 
 apply()
