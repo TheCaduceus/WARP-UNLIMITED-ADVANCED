@@ -40,52 +40,52 @@ def check():
 	else:
 		log.info(f"Python Version: {py_ver[0]}.{py_ver[1]}.{py_ver[2]}")
 
-    if not Vars[0]:
-        log.error("WARP_ID not found!")
-        raise ValueError('WARP_ID cannot be empty!')
-    else:
-        log.info("Found WARP_ID.")
-
-    if not Vars[1]:
-        log.warning("SEND_LOG value is empty, hence disabled.")
-        SEND_LOG = "0"
-    else:
-        if SEND_LOG == "0" or SEND_LOG == "1":
-        	log.info(f"SEND_LOG: {Vars[1]}")
-        else:
-        	log.info("Provided SEND_LOG value is invalid! hence changed to 0 (disabled).")
-        	SEND_LOG = "0"
-
-    if not Vars[2]:
-    	if SEND_LOG == "1":
-    		log.warning("SEND_LOG is enabled but CHAT_ID not provided! hence disabled.")
-    		SEND_LOG = "0"
+    	if not Vars[0]:
+        	log.error("WARP_ID not found!")
+        	raise ValueError('WARP_ID cannot be empty!')
     	else:
-    		pass
-    else:
-    	log.info(f"Found CHAT_ID: {Vars[2]}")
+        	log.info("Found WARP_ID.")
 
-    if not Vars[3]:
-        if SEND_LOG == "1":
-        	log.warning("SEND_LOG is enabled but BOT_TOKEN not provided! hence disabled.")
+    	if not Vars[1]:
+        	log.warning("SEND_LOG value is empty, hence disabled.")
         	SEND_LOG = "0"
-        else:
-        	pass
-    else:
-        log.info("Found BOT_TOKEN")
+    	else:
+        	if SEND_LOG == "0" or SEND_LOG == "1":
+        		log.info(f"SEND_LOG: {Vars[1]}")
+        	else:
+        		log.info("Provided SEND_LOG value is invalid! hence changed to 0 (disabled).")
+        		SEND_LOG = "0"
 
-    if not Vars[4]:
-        log.warning("HIDE_ID is not provided! hence value changed to default (0).")
-    else:
-        if HIDE_ID == "1" or HIDE_ID == "0":
-        	log.info(f"Found HIDE_ID: {Vars[4]}")
-        else:
-        	log.warning("HIDE_ID value is invalid! hence changed to default (0).")
+    	if not Vars[2]:
+    		if SEND_LOG == "1":
+    			log.warning("SEND_LOG is enabled but CHAT_ID not provided! hence disabled.")
+    			SEND_LOG = "0"
+    		else:
+    			pass
+    	else:
+    		log.info(f"Found CHAT_ID: {Vars[2]}")
+
+    	if not Vars[3]:
+        	if SEND_LOG == "1":
+        		log.warning("SEND_LOG is enabled but BOT_TOKEN not provided! hence disabled.")
+        		SEND_LOG = "0"
+        	else:
+        		pass
+    	else:
+        	log.info("Found BOT_TOKEN")
+
+    	if not Vars[4]:
+        	log.warning("HIDE_ID is not provided! hence value changed to default (0).")
+    	else:
+        	if HIDE_ID == "1" or HIDE_ID == "0":
+        		log.info(f"Found HIDE_ID: {Vars[4]}")
+        	else:
+        		log.warning("HIDE_ID value is invalid! hence changed to default (0).")
     
-    if Get_ENV == False:
-        log.info("Got Values from config file!")
-    else:
-        log.info("Got Values from System Environment!")
+    	if Get_ENV == False:
+        	log.info("Got Values from config file!")
+    	else:
+        	log.info("Got Values from System Environment!")
 
 if Get_ENV == False:
     log.info("Getting Values from Config.py file...")
