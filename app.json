@@ -17,7 +17,7 @@
 			"description": "Enter BOT TOKEN (API KEY) from Bot Father. Required only if SEND_LOG is 1",
 			"required": false
 		},
-	        "CHANNEL_ID": {
+	        "CHAT_ID": {
 			"description": "Enter CHANNEL/GROUP ID with @ like @example. Required only if SEND_LOG is 1",
 			"required": false
 	        },
