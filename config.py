@@ -1,13 +1,13 @@
 # To get values from Environment
-ENV = False  # or True
+ENV = True  # or True
 
 # Ask for values during each run
 INTERACTIVE_MODE = False  # or True
 
-# Required if Get_ENV == False
+# Required if ENV == False
 Vars = [
   # WARP_ID
-  "1",
+  "",
   # SEND_LOG, Want to receive log on Telegram?
   # 1 = Yes or 0 = No
   "",
@@ -66,7 +66,10 @@ def check():
     log.error("WARP_ID not found!")
     raise ValueError('WARP_ID cannot be empty!')
   else:
-    log.info("Found WARP_ID.")
+    key_length = len(Vars[0])
+    final_length = key_length - 11
+    hidden_key = "*" * final_length + Vars[0][-11:]
+    log.info(f"Found WARP_CLIENT_ID: {hidden_key}")
 
   if not Vars[1]:
     log.warning("SEND_LOG value is empty, hence disabled.")
@@ -149,4 +152,4 @@ else:
     raise ValueError(
       "INTERACTIVE_MODE value is invalid! should be True or False (bool) only")
   else:
-    log.warning("Something went wrong!")
+    log.warning("Something went wrong!") # 0.1% still XD
