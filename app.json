@@ -10,19 +10,19 @@
 			"required": true
 		},
 		"SEND_LOG": {
-			"description": "If you want log of Script in Telegram Channel or Group. 0 for No and 1 for Yes",
+			"description": "Get notification on Telegram regarding total data generated, total attempts & failed attempts. 0 = No & 1 = Yes.",
 			"required": true	
 		},
 		"BOT_TOKEN": {
-			"description": "Enter BOT TOKEN (API KEY) from Bot Father. Required only if SEND_LOG is 1",
+			"description": "Enter Telegram BOT API Token from @BotFather. Required if SEND_LOG is True.",
 			"required": false
 		},
 	        "CHAT_ID": {
-			"description": "Enter CHANNEL/GROUP ID with @ like @example. Required only if SEND_LOG is 1",
+			"description": "Enter CHAT_ID on which you want log message to be sent. It can be Chat ID (mostly for private chats) like -1001877005515 or Chat Username like @mychannel or @mygroup.",
 			"required": false
 	        },
 	        "HIDE_ID": {
-			"description": "To hide WARP_ID in the log message send to Telegram Channel or Group. 0 for No and 1 for Yes",
+			"description": "To hide your WARP CLIENT ID from log message sent to your chat. 0 = No & 1 = Yes.",
 			"required": false
 		}
 	},
