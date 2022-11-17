@@ -2,7 +2,7 @@
 <a name="warp-unlimited-new-methods"></a>
 
 # ♻️ WARP UNLIMITED ADVANCED
-**Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN, most versatile Script translated in our beloved Python ! 😍**
+**Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN, most versatile code translated in our beloved Python ! 😍**
 </div>
 
 ## **📑 INDEX**
@@ -26,20 +26,20 @@
 + [**📥 Download Cloudflare WARP (1.1.1.1)**](#download-cloudflare-warp-1111)
 + [**❓FAQ**](#faq)
 + [**🖥️ How to use this Data on PC ?**](#how-to-use-this-data-on-pc)
-+ [**⛑ Contact Us !**](#contact-us)
++ [**⛑ Contact Us**](#contact-us)
 + [**❤️ Credits & Thanks**](#credits-thanks)
 + [**🍵 Other Projects**](#other-projects)
 
 <a name="whats-new"></a>
 
 ## **🆕 What's New**
-**1. All new Interactive mode !** <br>
+**1. New Interactive mode!** <br>
 **2. Get values from System Environment.** <br>
 **3. Log Events inside `runtime-log.txt`** <br>
-**4. Fixed error when SEND_LOG is not enabled.** <br>
-**5. Updated repl for [replit.com](https://replit.com).** <br>
+**4. Fixed error when `SEND_LOG` is not enabled & `BOT_TOKEN` not provided.** <br>
+**5. New repl for [replit.com](https://replit.com).** <br>
 **6. Added building instructions in `Dockerfile` for Docker Image.** <br>
-**7. Fixed the broken code due to which script was not working.** <br>
+**7. Fixed the broken code due to which program was not working.** <br>
 **8. Bot will now not flood chat with multiple messages, will edit same message continuously.** <br>
 **Full Changelog: [`v4.0.2...v4.5.7`](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/compare/v4.0.2...v4.5.7)**
 
@@ -54,7 +54,7 @@
 
 ## **🪧 Before you Proceed**
 **1. If you deploy this Code through Heroku, Railway app or Okteto then it will run for lifetime !**  
-**2. It doesn't matter if you have WARP or WARP+, this trick works on both.**  
+**2. It doesn't matter if you have WARP or WARP+, this program works for both.**  
 **3. We are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using Official Cloudflare's API.**
 
 <a name="how-to-use"></a>
@@ -65,21 +65,21 @@
 
 <a name="variables"></a>
 ## **✏️ Variables**
-**1.Below given variables should be filled in config.py file or can be set as Environment Variables, while you can also enable `INTERACTIVE_MODE` to enter new values during each run.**
-- **`ENV`: Set it to `True` if you let script get values from system environment or `False` if you are filling it in `config.py` itself or incase of `INTERACTIVE_MODE` `bool`**
-- **`INTERACTIVE_MODE`: Set it to `True` if you want script to ask for new values during each run or simply `False`. `bool`**
+**Below given variables should be filled in config.py file or can be set as Environment Variables, while you can also enable `INTERACTIVE_MODE` to enter new values during each run.**
+- **`ENV`: Set it to `True` if you let program get values from system environment or `False` if you are filling it in `config.py` itself or incase of `INTERACTIVE_MODE` `bool`**
+- **`INTERACTIVE_MODE`: Set it to `True` if you want program to ask for new values during each run or simply `False`. `bool`**
 - **`WARP_ID`: Enter your WARP CLIENT ID. [How to get?](#how-to-use) `str`**
-- **`SEND_LOG`: Get notification on Telegram regarding total data generated, total attempts & failed attempts. `0` = No & `1` = Yes `str`**
+- **`SEND_LOG`: Get notification on Telegram regarding total data generated, total attempts & failed attempts. `0` = No & `1` = Yes. `str`**
 - **`BOT_TOKEN`: Enter Telegram BOT API Token from [@BotFather](https://botfather.t.me/). Required if `SEND_LOG` is `True`. `str`**
 - **`CHAT_ID`: Enter CHAT_ID on which you want log message to be sent. It can be Chat ID (mostly for private chats) like `-1001877005515` or Chat Username like `@mychannel` or `@mygroup`. `str`**
-- **`HIDE_ID`: To hide your WARP CLIENT ID from log message sent to your chat.**
+- **`HIDE_ID`: To hide your WARP CLIENT ID from log message sent to your chat. `0` = No & `1` = Yes. `str`**
 
 <a name="run-on-google-colab"></a>
 
 ## **🕹️ Run on Google Colab**
 #### **1. Open Code on Google Colab: [Open NoteBook](https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/ipynb/Colab.ipynb)**  
 #### **2. Now enter your `WARP_CLIENT_ID` and run The WARP (1.1.1.1) Code as shown in the Image *(click on the Play button on top-left corner)***
-![3](./Img/3.png)
+![3](./Img/3.jpg)
   
 <a name="host-on-heroku"></a>
 
@@ -92,7 +92,7 @@
 #### **3. After Deployment, Click `Manage App` button and then click `Resources Tab` and enable the dyno.**
 ![5](./Img/5.png)
 
-#### **4. Enjoy! Now you will get 1GB per 20 Seconds for Lifetime while your Heroku Account exist and you will start getting info about your script if `SEND_LOG` is enabled.**
+#### **4. Enjoy! Now you will get 1GB per 20 Seconds for Lifetime while your Heroku Account exist.**
 
 <a name="host-on-railway"></a>
 
@@ -101,7 +101,7 @@
 ![](./Img/3.1.png)
 
 #### **2. Now click the following Railway deployment button:**
-[![Railway deploy button](https://railway.app/button.svg)](https://railway.app/new/template/7H5_dO?referralCode=PbLx8c)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/e0er7k?referralCode=PFHpF8)
 
 #### **3. Now, enter the values as discussed above and click `Deploy` button.**
 
@@ -116,13 +116,12 @@
 #### **3. After that, carefully add the values as discussed above in Okteto deployment page.**
 ![](./Img/Launch_okteto.png)
 #### **4. Finally, Click on Launch button to deploy your repository and Enjoy ! 😘**
-#### **5. Additionally, you can setup cron-job using [Cron-Job.org](https://cron-job.org) to automatically restart your script once it sleeps after 24 hours.**
+#### **5. Additionally, you can setup cron-job using [Cron-Job.org](https://cron-job.org) to automatically restart your program once it sleeps after 24 hours.**
 
 <a name="run-on-computer"></a>
 
 ## **🖥️ Run on Computer/VPS**
-#### **Running this script on your Computer is simple as ABC!**
-#### **1. If your PC don't have python & git, then install them first: [Download Python](https://www.python.org/downloads/) [Download Git](https://git-scm.com/downloads)**
+#### **1. If your PC don't have python & git, then install them first: [Python](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads)**
 #### **2. Download Repository:**
 ```
 git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED.git
@@ -144,12 +143,11 @@ cat runtime-log.txt
 <a name="deploy-using-github-actions"></a>
 
 ## **🧫 Deploy using GitHub Actions**
-#### **This Method is very easy and the best for users who want to deploy the program multiple times on Heroku without login on Heroku again and again !**
 #### **1. First fork this Repository.**
 ![](./Img/3.2.png)
 #### **2. Now open the settings of your Forked Repository and click Secrets → Actions.**
 ![](./Img/2.0.png)
-#### **3. After doing that, create following values as  secret + values [discussed here](#variables).:**
+#### **3. After doing that, create following values as secret + values [discussed here](#variables):**
 + `HEROKU_API_KEY` - Enter your Heroku API Key as value.
 + `HEROKU_APP_NAME` - A unique app name in small letters only.
 + `HEROKU_EMAIL` - Your Heroku Email ID.
@@ -188,19 +186,18 @@ python warp.py
 termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip
 ```
 ![](./Img/Termux-Error-1.jpeg)
-#### **3. After doing the above things, Enter your WARP ID and get started. 😚**
+#### **3. After doing the above steps, Enter your WARP ID and get started. 😚**
 
 <a name="run-on-replit"></a>
 
 ## **🎲 Run on Replit**
-#### **1. Open the "WARP UNLIMITED" repl: [Open it](https://replit.com/@TheCaduceus/WARP-UNLIMITED)**
-#### **2. Enter your WARP/WARP+ ID and press Enter to run the script. Enjoy ! 🙃**
-![](./Img/repl-1.png)
+#### **1. Open our repl: [Open it](https://replit.com/@TheCaduceus/WARP-UNLIMITED)**
+#### **2. Enter your WARP CLIENT ID and press enter to run the program.**
+![](./Img/repl-2.png)
 
 <a name="run-on-jupyter-server"></a>
 
 ## **🧰 Run on Jupyter Server**
-#### **This method is best & effective alternative of "Run on Computer" method! Before using this method, let see how to Download & Setup Jupyter server which is pretty lightweight.**
 ##### **Setting up the Jupyter Server:**
 #### **1. First install Python with PIP: [from here](https://www.python.org/downloads/)**
 #### **2. Now run the CMD as Administrator and execute following commands one-by-one:**
@@ -223,7 +220,7 @@ python -m notebook`
 #### **3. Once you started your Server, Jupyter will give you its link (as shown in Image), just open it in your Browser.**
 ![](./Img/jp-1.png)
 ![](./Img/jp-2.png)
-#### **4. Now Download the "Server.ipynb" file: [from here only](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/ipynb(s)/Server.ipynb)**
+#### **4. Now Download the "Server.ipynb" file: [from here only](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/ipynb/Server.ipynb)**
 #### **5. After downloading it, Locate that file through your Jupyter server and open it as shown in the image and click Run.**
 ![](./Img/jp-3.png)
 #### **6. Now enter your WARP CLIENT ID and press Enter to continue.**
@@ -263,7 +260,7 @@ python -m notebook`
 **As already discussed above, Hosting/Running too many instances for same account cause this. So just switch off some instances and bring down the number to 3 or < 3 instances for the same account. Please refer to [Issue #3](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/3) for more details on this.**
 #### **3. Will this program cause any kind of ban from Cloudflare?**
 **No, this program don't cause ban because it just use the API provided by Cloudflare for referral system. Neither this program create any type of load or bypass any limit set by Cloudflare for there API nor it hacks anything or changes any official record illegally.**
-#### **4. Script isn't working & producing error as shown in the image in Termux. How to solve ?**
+#### **4. Program isn't working & producing error as shown in the image in Termux. How to solve ?**
 ![](./Img/Termux-Error-1.jpeg)  
 **This problem happens due to missing files! you can run the below given command in Termux to fix it easily:**  
 `termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip`
