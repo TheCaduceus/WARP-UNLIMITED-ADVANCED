@@ -42,6 +42,8 @@
 **7. Fixed the broken code due to which program was not working.** <br>
 **8. Bot will now not flood chat with multiple messages, will edit same message continuously.** <br>
 **9. Changed `CHANNEL_ID` to `CHAT_ID`.**
+**10. Replaced `config.env` with `config.py`**
+**11. Fixed Okteto deployment.**
 
 <a name="features"></a>
 
