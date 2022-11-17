@@ -143,9 +143,9 @@ cat runtime-log.txt
 
 ## **🧫 Deploy using GitHub Actions**
 #### **1. First fork this Repository.**
-![](./Img/3.2.png)
+![](./Img/3.2.jpeg)
 #### **2. Now open the settings of your Forked Repository and click Secrets → Actions.**
-![](./Img/2.0.png)
+![](./Img/2.0.jpeg)
 #### **3. After doing that, create following values as secret + values [discussed here](#variables):**
 + `HEROKU_API_KEY` - Enter your Heroku API Key as value.
 + `HEROKU_APP_NAME` - A unique app name in small letters only.
