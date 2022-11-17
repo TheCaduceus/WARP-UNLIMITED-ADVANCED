@@ -6,7 +6,7 @@
         "success_url": "https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED",
 	"env": {
 		"WARP_ID": {
-			"description": "Enter your WARP/WRAP+ ID",
+			"description": "Enter your WARP CLIENT ID.",
 			"required": true
 		},
 		"SEND_LOG": {
