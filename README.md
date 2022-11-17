@@ -16,7 +16,7 @@
 + [**→ ⚡ Host on Heroku (24×7)**](#host-on-heroku)
 + [**→ 🧿 Host on Railway (24×7)**](#host-on-railway)
 + [**→ 🪬 Host on Okteto (24×7)**](#host-on-okteto)
-+ [**→ 🖥️ Run on Computer**](#run-on-computer)
++ [**→ 🖥️ Run on Computer/VPS**](#run-on-computer)
 + [**→ 🧫 Deploy through GitHub Actions**](#deploy-using-github-actions)
 + [**→ 📲 Run on Mobile Phone**](#run-on-mobile-phone)
 + [**→ 🎲 Run on Replit**](#run-on-replit)
@@ -41,7 +41,7 @@
 **6. Added building instructions in `Dockerfile` for Docker Image.** <br>
 **7. Fixed the broken code due to which program was not working.** <br>
 **8. Bot will now not flood chat with multiple messages, will edit same message continuously.** <br>
-**Full Changelog: [`v4.0.2...v4.5.7`](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/compare/v4.0.2...v4.5.7)**
+**9. Changed `CHANNEL_ID` to `CHAT_ID`.**
 
 <a name="features"></a>
 
@@ -150,9 +150,8 @@ cat runtime-log.txt
 + `HEROKU_API_KEY` - Enter your Heroku API Key as value.
 + `HEROKU_APP_NAME` - A unique app name in small letters only.
 + `HEROKU_EMAIL` - Your Heroku Email ID.
-![](./Img/Repo_Sercet.png)
+
 #### **5. Go to Actions Tab then click `Deploy on Heroku` and `Run Workflow`. Now it will be automatically got deployed on given Heroku Account ! 😉**
-![](./Img/2.2.png)
 #### **5. It will take maximum 10 Seconds to start the Workflow and minimum 1-2 Minutes to get deployed !**
 
 <a name="run-on-mobile-phone"></a>
