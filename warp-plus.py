@@ -1,6 +1,9 @@
 import asyncio
 import os
 import urllib.request
+import httpx
+
+from config import Vars
 from datetime import datetime
 from json import dumps
 from random import choice
@@ -8,17 +11,28 @@ from string import ascii_letters, digits
 from sys import stdout
 from time import sleep
 from warnings import filterwarnings
-
-import httpx
 from nest_asyncio import apply
-from vars import Var
 
-# Variables
-SEND_LOG = (Var.SEND_LOG)
-BOT_TOKEN = (Var.BOT_TOKEN)
-CHANNEL_ID = (Var.CHANNEL_ID)
-HIDE_ID = (Var.HIDE_ID)
-referrer = (Var.WARP_ID)
+if Vars[5] == True:
+  while True:
+    referrer = input("Enter WARP CLIENT ID:\n")
+    resp = input(f"ID:{referrer}\nDo you want to continue with this ID? 1 = Yes or 0 = No")
+    if resp == "1":
+      break
+    else:
+      pass
+  SEND_LOG = input("Do you want to get log on Telegram?\n1 = Yes or 0 = No")
+  if SEND_LOG == "1":
+    CHANNEL_ID = input("Enter CHAT ID, in which you want log message to be sent:\n")
+    BOT_TOKEN = input("Enter BOT_TOKEN, through which log message will be sent:\n")
+    HIDE_ID = input("Do you want to hide WARP CLIENT ID in log message? 1 = Yes or 0 = No:\n")
+else:
+  referrer = Vars[0]
+  SEND_LOG = Vars[1]
+  CHANNEL_ID = Vars[2]
+  BOT_TOKEN = Vars[3]
+  HIDE_ID = Vars[4]
+
 MSG_ID = False
 
 apply()
@@ -97,13 +111,15 @@ while True:
         MSG_ID = get_stats["result"]["message_id"]
       else:
         httpx.post(f"https://api.telegram.org/bot{BOT_TOKEN}/editMessageText?chat_id={CHANNEL_ID}&message_id={MSG_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}")
-    else:
+    elif SEND_LOG == "1" and HIDE_ID =="0":
       if not MSG_ID:
         lol = httpx.post(f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{referrer}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}")
         get_stats = lol.json()
         MSG_ID = get_stats["result"]["message_id"]
       else:
         httpx.post(f"https://api.telegram.org/bot{BOT_TOKEN}/editMessageText?chat_id={CHANNEL_ID}&message_id={MSG_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{referrer}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}")
+    else:
+      pass
     print(f"\n[•] WARP+ ID: {referrer}")
     print(f"[✓] Added: {g} GB")
     print(f"[#] Total: {g} Good {b} Bad")

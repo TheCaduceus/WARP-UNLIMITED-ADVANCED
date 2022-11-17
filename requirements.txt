@@ -1,5 +1,4 @@
 httpx
-python-dotenv
 nest-asyncio
 requests
 tgcrypto
