@@ -1,5 +1,5 @@
 # To get values from Environment
-ENV = True  # or True
+ENV = False  # or True
 
 # Ask for values during each run
 INTERACTIVE_MODE = False  # or True
