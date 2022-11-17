@@ -114,8 +114,7 @@
 #### **2. Now import this Repository and deploy it on Okteto.**
 ![](./Img/Import.png)
 #### **3. After that, carefully add the values as discussed above in Okteto deployment page.**
-![](./Img/Launch_okteto.png)
-#### **4. Finally, Click on Launch button to deploy your repository and Enjoy ! 😘**
+#### **4. Finally, Click on Launch button to deploy your repository.**
 #### **5. Additionally, you can setup cron-job using [Cron-Job.org](https://cron-job.org) to automatically restart your program once it sleeps after 24 hours.**
 
 <a name="run-on-computer"></a>
@@ -193,7 +192,8 @@ termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade &&
 ## **🎲 Run on Replit**
 #### **1. Open our repl: [Open it](https://replit.com/@TheCaduceus/WARP-UNLIMITED)**
 #### **2. Enter your WARP CLIENT ID and press enter to run the program.**
-![](./Img/repl-2.png)
+![](./Img/repl-2.jpg)
+### **3. Additionally, you can fork the repl & edit `config.py` to enable / disable required features.**
 
 <a name="run-on-jupyter-server"></a>
 
