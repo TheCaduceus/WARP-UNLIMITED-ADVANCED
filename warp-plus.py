@@ -16,12 +16,12 @@ from nest_asyncio import apply
 if Vars[5] == True:
   while True:
     referrer = input("Enter WARP CLIENT ID:\n")
-    resp = input(f"ID:{referrer}\nDo you want to continue with this ID? 1 = Yes or 0 = No")
+    resp = input(f"ID:{referrer}\nDo you want to continue with this ID? 1 = Yes or 0 = No\n")
     if resp == "1":
       break
     else:
       pass
-  SEND_LOG = input("Do you want to get log on Telegram?\n1 = Yes or 0 = No")
+  SEND_LOG = input("Do you want to get log on Telegram? 1 = Yes or 0 = No\n")
   if SEND_LOG == "1":
     CHANNEL_ID = input("Enter CHAT ID, in which you want log message to be sent:\n")
     BOT_TOKEN = input("Enter BOT_TOKEN, through which log message will be sent:\n")
