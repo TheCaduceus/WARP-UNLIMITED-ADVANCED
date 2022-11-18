@@ -11,7 +11,7 @@
 + [**🆕 What's New**](#whats-new)
 + [**📑 Features**](#features)
 + [**🪧 Before you Proceed**](#before-you-proceed)
-+ [**⚙️ How to use ? 😅 How to get WAR CLIENT ID ?**](#how-to-use)
++ [**⚙️ How to use ? 😅 How to get WARP CLIENT ID ?**](#how-to-use)
 + [**→ 🕹️ Run on Google Colab**](#run-on-google-colab)
 + [**→ ⚡ Host on Heroku (24×7)**](#host-on-heroku)
 + [**→ 🧿 Host on Railway (24×7)**](#host-on-railway)
@@ -64,7 +64,7 @@
 <a name="how-to-use"></a>
 
 ## **⚙️ How to use ?**
-#### **0. First Get your WARP/WARP+ ID by going into `Settings > Advanced > Diagnostics` and copy the ID under `CLIENT CONFIGURATION` section *(note that you can get that ID only in the mobile app, not on the desktop app)***
+#### **0. First Get your WARP CLIENT ID by going into `Settings > Advanced > Diagnostics` and copy the ID under `CLIENT CONFIGURATION` section *(note that you can get that ID only in the mobile app, not on the desktop app)***
 <img src="Img/1.jpg" height="70%" width="40%" alt="1">
 
 <a name="variables"></a>
