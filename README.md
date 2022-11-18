@@ -57,8 +57,8 @@
 <a name="before-you-proceed"></a>
 
 ## **🪧 Before you Proceed** 
-**1. It doesn't matter if you have WARP or WARP+, this program works for both.**  
-**2. We are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using Official Cloudflare's API.**
+**1. It doesn't matter if you have WARP or WARP+, this program works for both.** <br>
+**2. We are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using Official Cloudflare's API.**<br>
 **3.Recommended Python Version: `3.7.x`, `3.8.x`, `3.9.x` and `3.10.x`.**
 
 <a name="how-to-use"></a>
