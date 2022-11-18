@@ -8,7 +8,7 @@ services:
       - WARP_ID=${WARP_ID}
       - SEND_LOG=${SEND_LOG}
       - BOT_TOKEN=${BOT_TOKEN}
-      - CHANNEL_ID=${CHANNEL_ID}
+      - CHAT_ID=${CHAT_ID}
       - HIDE_ID=${HIDE_ID}
     ports:
       - 8080:8080
