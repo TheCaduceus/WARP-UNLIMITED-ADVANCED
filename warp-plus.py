@@ -36,7 +36,7 @@ else:
 MSG_ID = False
 
 if HIDE_ID == "1":
-	key_length = len(referrer)
+    key_length = len(referrer)
     final_length = key_length - 11
     hidden_key = "*" * final_length + referrer[-11:]
 
