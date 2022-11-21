@@ -44,7 +44,7 @@ else:
 
 MSG_ID = False
 
-if SEND_LOG = "1" and HIDE_ID == "1":
+if SEND_LOG == "1" and HIDE_ID == "1":
   key_length = len(referrer) - 11
   hidden_key = "*" * key_length + referrer[-11:]
 
