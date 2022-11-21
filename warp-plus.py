@@ -13,6 +13,9 @@ from time import sleep
 from warnings import filterwarnings
 from nest_asyncio import apply
 
+# Default
+HIDE_ID = "0"
+
 if Vars[5] == True:
   while True:
     referrer = input("Enter WARP CLIENT ID:\n")
