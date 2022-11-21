@@ -3,7 +3,7 @@ import os
 import urllib.request
 import httpx
 
-from config import Vars
+from config import Vars, log
 from datetime import datetime
 from json import dumps
 from random import choice
@@ -16,16 +16,22 @@ from nest_asyncio import apply
 if Vars[5] == True:
   while True:
     referrer = input("Enter WARP CLIENT ID:\n")
-    resp = input(f"ID:{referrer}\nDo you want to continue with this ID? 1 = Yes or 0 = No\n")
+    resp = input(
+      f"ID:{referrer}\nDo you want to continue with this ID? 1 = Yes or 0 = No\n"
+    )
     if resp == "1":
       break
     else:
       pass
   SEND_LOG = input("Do you want to get log on Telegram? 1 = Yes or 0 = No\n")
   if SEND_LOG == "1":
-    CHANNEL_ID = input("Enter CHAT ID, in which you want log message to be sent:\n")
-    BOT_TOKEN = input("Enter BOT_TOKEN, through which log message will be sent:\n")
-    HIDE_ID = input("Do you want to hide WARP CLIENT ID in log message? 1 = Yes or 0 = No:\n")
+    CHANNEL_ID = input(
+      "Enter CHAT ID, in which you want log message to be sent:\n")
+    BOT_TOKEN = input(
+      "Enter BOT_TOKEN, through which log message will be sent:\n")
+    HIDE_ID = input(
+      "Do you want to hide WARP CLIENT ID in log message? 1 = Yes or 0 = No:\n"
+    )
 else:
   referrer = Vars[0]
   SEND_LOG = Vars[1]
@@ -36,13 +42,14 @@ else:
 MSG_ID = False
 
 if HIDE_ID == "1":
-    key_length = len(referrer) - 11
-    hidden_key = "*" * key_length + referrer[-11:]
+  key_length = len(referrer) - 11
+  hidden_key = "*" * key_length + referrer[-11:]
 
 apply()
 filterwarnings("ignore", category=DeprecationWarning)
 g = 0
 b = 0
+
 
 def genString(stringLength):
   try:
@@ -51,6 +58,7 @@ def genString(stringLength):
   except Exception as error:
     print(error)
 
+
 def digitString(stringLength):
   try:
     digit = digits
@@ -58,7 +66,9 @@ def digitString(stringLength):
   except Exception as error:
     print(error)
 
+
 url = f"https://api.cloudflareclient.com/v0a{digitString(3)}/reg"
+
 
 async def run():
   try:
@@ -88,10 +98,16 @@ async def run():
   except Exception as error:
     return error
 
+
 async def animation():
   cooldown = 0.3
   os.system("cls" if os.name == "nt" else "clear")
-  animation = ["[□□□□□□□□□□] 0%", "[■□□□□□□□□□] 10%", "[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
+  animation = [
+    "[□□□□□□□□□□] 0%", "[■□□□□□□□□□] 10%", "[■■□□□□□□□□] 20%",
+    "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%",
+    "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%",
+    "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"
+  ]
   for i in range(len(animation)):
     stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
     stdout.flush()
@@ -102,6 +118,7 @@ async def animation():
     await asyncio.sleep(cooldown)
   return result
 
+
 while True:
   anim = asyncio.get_event_loop()
   anim_coroutine = animation()
@@ -110,24 +127,40 @@ while True:
     g += 1
     if SEND_LOG == "1" and HIDE_ID == "1":
       if not MSG_ID:
-        lol = httpx.post(f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{hidden_key}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}")
-        get_stats = lol.json()
-        MSG_ID = get_stats["result"]["message_id"]
+        api_resp = httpx.post(
+          f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{hidden_key}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}"
+        )
+        get_stats = api_resp.json()
+        try:
+          MSG_ID = get_stats["result"]["message_id"]
+        except KeyError:
+          log.error(f"API Response: {get_stats}")
+          raise
       else:
-        httpx.post(f"https://api.telegram.org/bot{BOT_TOKEN}/editMessageText?chat_id={CHANNEL_ID}&message_id={MSG_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{hidden_key}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}")
-    elif SEND_LOG == "1" and HIDE_ID =="0":
+        httpx.post(
+          f"https://api.telegram.org/bot{BOT_TOKEN}/editMessageText?chat_id={CHANNEL_ID}&message_id={MSG_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{hidden_key}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}"
+        )
+    elif SEND_LOG == "1" and HIDE_ID == "0":
       if not MSG_ID:
-        lol = httpx.post(f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{referrer}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}")
-        get_stats = lol.json()
-        MSG_ID = get_stats["result"]["message_id"]
+        api_resp = httpx.post(
+          f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{referrer}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}"
+        )
+        get_stats = api_resp.json()
+        try:
+          MSG_ID = get_stats["result"]["message_id"]
+        except KeyError:
+          log.error(f"API Response: {get_stats}")
+          raise
       else:
-        httpx.post(f"https://api.telegram.org/bot{BOT_TOKEN}/editMessageText?chat_id={CHANNEL_ID}&message_id={MSG_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{referrer}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}")
+        httpx.post(
+          f"https://api.telegram.org/bot{BOT_TOKEN}/editMessageText?chat_id={CHANNEL_ID}&message_id={MSG_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{referrer}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}"
+        )
     else:
       pass
     print(f"\n[•] WARP+ ID: {referrer}")
     print(f"[✓] Added: {g} GB")
     print(f"[#] Total: {g} Good {b} Bad")
-    for i in range(20,1,-1):
+    for i in range(20, 1, -1):
       stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
       stdout.flush()
       sleep(1)
@@ -135,7 +168,7 @@ while True:
     b += 1
     print("\n[×] Error:", result)
     print(f"[#] Total: {g} Good {b} Bad")
-    for i in range(30,-1,-1):
+    for i in range(30, -1, -1):
       stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
       stdout.flush()
       sleep(1)
