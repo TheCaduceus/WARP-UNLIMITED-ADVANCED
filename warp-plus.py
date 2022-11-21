@@ -13,6 +13,9 @@ from time import sleep
 from warnings import filterwarnings
 from nest_asyncio import apply
 
+# Default
+HIDE_ID = "0"
+
 if Vars[5] == True:
   while True:
     referrer = input("Enter WARP CLIENT ID:\n")
@@ -41,7 +44,7 @@ else:
 
 MSG_ID = False
 
-if HIDE_ID == "1":
+if SEND_LOG = "1" and HIDE_ID == "1":
   key_length = len(referrer) - 11
   hidden_key = "*" * key_length + referrer[-11:]
 
