@@ -13,8 +13,6 @@ from nest_asyncio import apply
 
 apply()
 filterwarnings("ignore", category=DeprecationWarning)
-os.system("title WARP UNLIMITED ADVANCED")
-os.system("cls" if os.name == "nt" else "clear")
 
 referrer = input("[#] Enter the WARP+ ID:\n")
 
@@ -41,12 +39,12 @@ async def run():
   try:
     install_id = genString(22)
     body = {
-      "key": "{}=".format(genString(43)),
+      "key": f"{genString(43)}=",
       "install_id": install_id,
-      "fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
+      "fcm_token": f"{install_id}:APA91b{genString(134)}",
       "referrer": referrer,
       "warp_enabled": False,
-      "tos": datetime.now().isoformat()[:-3] + "+02:00",
+      "tos": f"{datetime.now().isoformat()[:-3]}+02:00",
       "type": "Android",
       "locale": "es_ES"
     }
