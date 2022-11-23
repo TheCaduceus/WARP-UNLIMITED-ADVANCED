@@ -59,7 +59,7 @@
 ## **🪧 Before you Proceed** 
 **1. It doesn't matter if you have WARP or WARP+, this program works for both.** <br>
 **2. We are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using Official Cloudflare's API.**<br>
-**3.Recommended Python Version: `3.7.x`, `3.8.x`, `3.9.x` and `3.10.x`.**
+**3.Recommended Python Version: `3.7.x`, `3.8.x`, `3.9.x`,`3.10.x` & `3.11.x`.**
 
 <a name="how-to-use"></a>
 
@@ -271,7 +271,7 @@ termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade &&
 ```
 #### **5. Does deploying this on Heroku/Railway/Okteto cause any ban?**
 **No, this program comes in category of Cron-Job because this program just take the WARP CLIENT ID from user and arrange it in a particular format and start pinging it in an interval of 20 seconds. This program is lightweight and don't have any load on system. You can refer to [Issue #5](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/5) for more details on this.**
-### **6. I deployed it on a platform that allow setting Environment Variables, but program not accepting it?**
+#### **6. I deployed it on a platform that allow setting Environment Variables, but program not accepting it?**
 **Before deploying it on any platform which allow users to set variables in system environment, just make sure you enable `ENV` mode & disable `INTERACTIVE_MODE`.**
 #### **7. Why use this program? we can simply use any mod of WARP app?**
 **WARP+ is for lifting the speed cap imposed by Cloudflare on free users which is server-side limit and it can't be bypassed by just modifying client-side code. So, availabe mods of WARP is fake? yes, they are just showing premium branding while doing nothing in reality.**
