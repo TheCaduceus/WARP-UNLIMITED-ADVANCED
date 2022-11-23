@@ -50,11 +50,11 @@ log.info(f"Current Log file: {Log_file}")
 py_ver = sys.version_info
 if py_ver[0] == 3 and py_ver[1] < 7:
   log.warning(
-    f"You are using Python 3.{py_ver[1]}.{py_ver[2]}, please upgrade it to 3.10.x to avoid any error."
+    f"You are using Python 3.{py_ver[1]}.{py_ver[2]}, please upgrade it to 3.11.x to avoid any error."
     )
 elif py_ver[0] > 3:
   log.warning(
-    f"You are using Python {py_ver[0]}.{py_ver[1]}.{py_ver[2]}, please use 3.10.x to avoid any error."
+    f"You are using Python {py_ver[0]}.{py_ver[1]}.{py_ver[2]}, please use 3.11.x to avoid any error."
     )
 else:
   log.info(f"Python Version: {py_ver[0]}.{py_ver[1]}.{py_ver[2]}")
