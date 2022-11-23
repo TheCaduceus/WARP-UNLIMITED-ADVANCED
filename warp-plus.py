@@ -24,8 +24,6 @@ if Vars[5] == True:
     )
     if resp == "1":
       break
-    else:
-      pass
   SEND_LOG = input("Do you want to get log on Telegram? 1 = Yes or 0 = No\n")
   if SEND_LOG == "1":
     CHANNEL_ID = input(
@@ -57,7 +55,7 @@ b = 0
 def genString(stringLength):
   try:
     letters = ascii_letters + digits
-    return ''.join(choice(letters) for i in range(stringLength))
+    return ''.join(choice(letters) for _ in range(stringLength))
   except Exception as error:
     print(error)
 
@@ -65,7 +63,7 @@ def genString(stringLength):
 def digitString(stringLength):
   try:
     digit = digits
-    return ''.join((choice(digit) for i in range(stringLength)))
+    return ''.join(choice(digit) for _ in range(stringLength))
   except Exception as error:
     print(error)
 
@@ -77,14 +75,14 @@ async def run():
   try:
     install_id = genString(22)
     body = {
-      "key": "{}=".format(genString(43)),
-      "install_id": install_id,
-      "fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
-      "referrer": referrer,
-      "warp_enabled": False,
-      "tos": datetime.now().isoformat()[:-3] + "+02:00",
-      "type": "Android",
-      "locale": "es_ES"
+        "key": f"{genString(43)}=",
+        "install_id": install_id,
+        "fcm_token": f"{install_id}:APA91b{genString(134)}",
+        "referrer": referrer,
+        "warp_enabled": False,
+        "tos": f"{datetime.now().isoformat()[:-3]}+02:00",
+        "type": "Android",
+        "locale": "es_ES",
     }
     data = dumps(body).encode("utf8")
     headers = {
@@ -96,8 +94,7 @@ async def run():
     }
     req = urllib.request.Request(url, data, headers)
     response = urllib.request.urlopen(req)
-    status_code = response.getcode()
-    return status_code
+    return response.getcode()
   except Exception as error:
     return error
 
@@ -131,7 +128,7 @@ while True:
     if SEND_LOG == "1" and HIDE_ID == "1":
       if not MSG_ID:
         api_resp = httpx.post(
-          f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{hidden_key}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}"
+            f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{hidden_key}%0ADATA%20RECEIVED:%20%0A{g}GB%20%0AFAILED:%20%0A{str(b)}"
         )
         get_stats = api_resp.json()
         try:
@@ -141,12 +138,12 @@ while True:
           raise
       else:
         httpx.post(
-          f"https://api.telegram.org/bot{BOT_TOKEN}/editMessageText?chat_id={CHANNEL_ID}&message_id={MSG_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{hidden_key}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}"
+            f"https://api.telegram.org/bot{BOT_TOKEN}/editMessageText?chat_id={CHANNEL_ID}&message_id={MSG_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{hidden_key}%0ADATA%20RECEIVED:%20%0A{g}GB%20%0AFAILED:%20%0A{str(b)}"
         )
     elif SEND_LOG == "1" and HIDE_ID == "0":
       if not MSG_ID:
         api_resp = httpx.post(
-          f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{referrer}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}"
+            f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{referrer}%0ADATA%20RECEIVED:%20%0A{g}GB%20%0AFAILED:%20%0A{str(b)}"
         )
         get_stats = api_resp.json()
         try:
@@ -158,8 +155,6 @@ while True:
         httpx.post(
           f"https://api.telegram.org/bot{BOT_TOKEN}/editMessageText?chat_id={CHANNEL_ID}&message_id={MSG_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{referrer}%0ADATA%20RECEIVED:%20%0A{str(g)}GB%20%0AFAILED:%20%0A{str(b)}"
         )
-    else:
-      pass
     print(f"\n[•] WARP+ ID: {referrer}")
     print(f"[✓] Added: {g} GB")
     print(f"[#] Total: {g} Good {b} Bad")

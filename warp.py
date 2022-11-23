@@ -24,14 +24,14 @@ b = 0
 def genString(stringLength):
   try:
     letters = ascii_letters + digits
-    return ''.join(choice(letters) for i in range(stringLength))
+    return ''.join(choice(letters) for _ in range(stringLength))
   except Exception as error:
     print(error)
 
 def digitString(stringLength):
   try:
     digit = digits
-    return ''.join((choice(digit) for i in range(stringLength)))
+    return ''.join(choice(digit) for _ in range(stringLength))
   except Exception as error:
     print(error)
 
@@ -41,14 +41,14 @@ async def run():
   try:
     install_id = genString(22)
     body = {
-      "key": "{}=".format(genString(43)),
-      "install_id": install_id,
-      "fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
-      "referrer": referrer,
-      "warp_enabled": False,
-      "tos": datetime.now().isoformat()[:-3] + "+02:00",
-      "type": "Android",
-      "locale": "es_ES"
+        "key": f"{genString(43)}=",
+        "install_id": install_id,
+        "fcm_token": f"{install_id}:APA91b{genString(134)}",
+        "referrer": referrer,
+        "warp_enabled": False,
+        "tos": f"{datetime.now().isoformat()[:-3]}+02:00",
+        "type": "Android",
+        "locale": "es_ES",
     }
     data = dumps(body).encode("utf8")
     headers = {
@@ -60,8 +60,7 @@ async def run():
     }
     req = urllib.request.Request(url, data, headers)
     response = urllib.request.urlopen(req)
-    status_code = response.getcode()
-    return status_code
+    return response.getcode()
   except Exception as error:
     return error
 
