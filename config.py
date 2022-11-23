@@ -65,16 +65,15 @@ def check():
     log.error("WARP_ID not found!")
     raise ValueError('WARP_ID cannot be empty!')
   else:
-    key_length = len(Vars[0])
-    final_length = key_length - 11
-    hidden_key = "*" * final_length + Vars[0][-11:]
+    key_length = len(referrer) - 11
+    hidden_key = "*" * key_length + referrer[-11:]
     log.info(f"Found WARP_CLIENT_ID: {hidden_key}")
 
   if not Vars[1]:
     log.warning("SEND_LOG value is empty, hence disabled.")
     Vars[1] = "0"
   else:
-    if Vars[1] == "0" or Vars[1] == "1":
+    if Vars[1] in ["0","1"]:
       log.info(f"SEND_LOG: {Vars[1]}")
     else:
       log.info(
@@ -101,9 +100,9 @@ def check():
 
   if not Vars[4] and Vars[1] == "1":
     log.warning(
-      "HIDE_ID value  not provided! hence value changed to default (0).")
+      "HIDE_ID value not provided! hence value changed to default (0).")
   else:
-    if Vars[4] == "1" or Vars[4] == "0":
+    if Vars[4] in ["0","1"]:
       log.info(f"Found HIDE_ID: {Vars[4]}")
     elif Vars[4] and SEND_LOG == "1":
       log.warning("HIDE_ID value is invalid! hence changed to default (0).")
@@ -137,18 +136,21 @@ elif ENV == True and INTERACTIVE_MODE == False:
 
   check()
 else:
-  if ENV != True and ENV != False:
+  if ENV not in [True,False]
     log.warning(
-      "Given ENV value is invalid, it can be True or False (bool) only!")
+      "Given ENV value is invalid, it can be True or False (bool) only!"
+    )
     log.info(f"{ENV}: {type(ENV)}")
     raise ValueError(
-      "ENV value is invalid! should be True or False (bool) only!")
-  elif INTERACTIVE_MODE != True and INTERACTIVE_MODE != False:
+      "ENV value is invalid! should be True or False (bool) only!"
+    )
+  elif INTERACTIVE_MODE not in [True,False]:
     log.warning(
       "Given INTERACTIVE_MODE value in invalid, it can be True or False (bool) only!"
     )
     log.info(f"{INTERACTIVE_MODE}: {type(INTERACTIVE_MODE)}")
     raise ValueError(
-      "INTERACTIVE_MODE value is invalid! should be True or False (bool) only")
+      "INTERACTIVE_MODE value is invalid! should be True or False (bool) only"
+    )
   else:
     log.warning("Something went wrong!") # 0.1% still XD
