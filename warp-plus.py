@@ -44,7 +44,7 @@ else:
 
 MSG_ID = False
 
-if SEND_LOG == "1" and HIDE_ID == "1":
+if HIDE_ID == "1":
   key_length = len(referrer) - 11
   hidden_key = "*" * key_length + referrer[-11:]
 
@@ -77,12 +77,12 @@ async def run():
   try:
     install_id = genString(22)
     body = {
-      "key": "{}=".format(genString(43)),
+      "key": f"{genString(43)}=",
       "install_id": install_id,
-      "fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
+      "fcm_token": f"{install_id}:APA91b{genString(134)}",
       "referrer": referrer,
       "warp_enabled": False,
-      "tos": datetime.now().isoformat()[:-3] + "+02:00",
+      "tos": f"{datetime.now().isoformat()[:-3]}+02:00",
       "type": "Android",
       "locale": "es_ES"
     }
