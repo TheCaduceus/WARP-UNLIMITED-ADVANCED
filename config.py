@@ -136,7 +136,7 @@ elif ENV == True and INTERACTIVE_MODE == False:
 
   check()
 else:
-  if ENV not in [True,False]
+  if ENV not in [True,False]:
     log.warning(
       "Given ENV value is invalid, it can be True or False (bool) only!"
     )
