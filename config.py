@@ -1,5 +1,5 @@
 # To get values from Environment
-ENV = True  # or False
+ENV = False  # or True
 
 # Ask for values during each run
 INTERACTIVE_MODE = False  # or True
@@ -65,8 +65,8 @@ def check():
     log.error("WARP_ID not found!")
     raise ValueError('WARP_ID cannot be empty!')
   else:
-    key_length = len(referrer) - 11
-    hidden_key = "*" * key_length + referrer[-11:]
+    key_length = len(Vars[0]) - 11
+    hidden_key = "*" * key_length + Vars[0][-11:]
     log.info(f"Found WARP_CLIENT_ID: {hidden_key}")
 
   if not Vars[1]:
