@@ -31,9 +31,6 @@ Log_file = 'runtime-log.txt'
 
 if os.path.exists(Log_file):
   os.remove(Log_file)
-else:
-  pass
-
 # Setup Logger
 log.basicConfig(
   level=log.INFO,
@@ -72,43 +69,34 @@ def check():
   if not Vars[1]:
     log.warning("SEND_LOG value is empty, hence disabled.")
     Vars[1] = "0"
+  elif Vars[1] in ["0","1"]:
+    log.info(f"SEND_LOG: {Vars[1]}")
   else:
-    if Vars[1] in ["0","1"]:
-      log.info(f"SEND_LOG: {Vars[1]}")
-    else:
-      log.info(
-        "Provided SEND_LOG value is invalid! hence changed to 0 (disabled).")
-      Vars[1] = "0"
+    log.info(
+      "Provided SEND_LOG value is invalid! hence changed to 0 (disabled).")
+    Vars[1] = "0"
 
   if not Vars[2] and Vars[1] == "1":
     log.warning(
       "SEND_LOG is enabled but CHAT_ID not provided! hence disabled.")
     Vars[1] = "0"
-  elif not Vars[2] and Vars[1] == "0":
-    pass
-  else:
+  elif Vars[2] or Vars[1] != "0":
     log.info(f"Found CHAT_ID: {Vars[2]}")
 
   if not Vars[3] and Vars[1] == "1":
     log.warning(
       "SEND_LOG is enabled but BOT_TOKEN not provided! hence disabled.")
     Vars[1] = "0"
-  elif not Vars[3] and Vars[1] == "0":
-    pass
-  else:
+  elif Vars[3] or Vars[1] != "0":
     log.info("Found BOT_TOKEN")
 
   if not Vars[4] and Vars[1] == "1":
     log.warning(
       "HIDE_ID value not provided! hence value changed to default (0).")
-  else:
-    if Vars[4] in ["0","1"]:
-      log.info(f"Found HIDE_ID: {Vars[4]}")
-    elif Vars[4] and SEND_LOG == "1":
-      log.warning("HIDE_ID value is invalid! hence changed to default (0).")
-    else:
-      pass
-
+  elif Vars[4] in ["0","1"]:
+    log.info(f"Found HIDE_ID: {Vars[4]}")
+  elif Vars[4] and SEND_LOG == "1":
+    log.warning("HIDE_ID value is invalid! hence changed to default (0).")
   if ENV == False:
     log.info("Got Values from config.py file!")
   else:
@@ -135,22 +123,21 @@ elif ENV == True and INTERACTIVE_MODE == False:
   Vars = [WARP_ID, SEND_LOG, CHAT_ID, BOT_TOKEN, HIDE_ID, INTERACTIVE_MODE]
 
   check()
+elif ENV not in [True,False]:
+  log.warning(
+    "Given ENV value is invalid, it can be True or False (bool) only!"
+  )
+  log.info(f"{ENV}: {type(ENV)}")
+  raise ValueError(
+    "ENV value is invalid! should be True or False (bool) only!"
+  )
+elif INTERACTIVE_MODE not in [True,False]:
+  log.warning(
+    "Given INTERACTIVE_MODE value in invalid, it can be True or False (bool) only!"
+  )
+  log.info(f"{INTERACTIVE_MODE}: {type(INTERACTIVE_MODE)}")
+  raise ValueError(
+    "INTERACTIVE_MODE value is invalid! should be True or False (bool) only"
+  )
 else:
-  if ENV not in [True,False]:
-    log.warning(
-      "Given ENV value is invalid, it can be True or False (bool) only!"
-    )
-    log.info(f"{ENV}: {type(ENV)}")
-    raise ValueError(
-      "ENV value is invalid! should be True or False (bool) only!"
-    )
-  elif INTERACTIVE_MODE not in [True,False]:
-    log.warning(
-      "Given INTERACTIVE_MODE value in invalid, it can be True or False (bool) only!"
-    )
-    log.info(f"{INTERACTIVE_MODE}: {type(INTERACTIVE_MODE)}")
-    raise ValueError(
-      "INTERACTIVE_MODE value is invalid! should be True or False (bool) only"
-    )
-  else:
-    log.warning("Something went wrong!") # 0.1% still XD
+  log.warning("Something went wrong!") # 0.1% still XD
