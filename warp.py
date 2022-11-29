@@ -22,14 +22,14 @@ b = 0
 def genString(stringLength):
   try:
     letters = ascii_letters + digits
-    return ''.join(choice(letters) for i in range(stringLength))
+    return ''.join(choice(letters) for _ in range(stringLength))
   except Exception as error:
     print(error)
 
 def digitString(stringLength):
   try:
     digit = digits
-    return ''.join((choice(digit) for i in range(stringLength)))
+    return ''.join(choice(digit) for _ in range(stringLength))
   except Exception as error:
     print(error)
 
@@ -58,8 +58,7 @@ async def run():
     }
     req = urllib.request.Request(url, data, headers)
     response = urllib.request.urlopen(req)
-    status_code = response.getcode()
-    return status_code
+    return response.getcode()
   except Exception as error:
     return error
 
