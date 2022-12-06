@@ -13,7 +13,7 @@
 + [**🪧 Before you Proceed**](#before-you-proceed)
 + [**⚙️ How to use ? 😅 How to get WARP CLIENT ID ?**](#how-to-use)
 + [**→ 🕹️ Run on Google Colab**](#run-on-google-colab)
-+ <b><a href="#deploy-to-koyeb">→ <img src="https://user-images.githubusercontent.com/87380104/205833766-633843a2-d802-4c72-8732-70d826d5c144.png" height="15" width="15">  Deploy to Koyeb (24x7)</a></b>
++ <b><a href="#deploy-to-koyeb">→ <img src="https://user-images.githubusercontent.com/87380104/205833766-633843a2-d802-4c72-8732-70d826d5c144.png" height="15" width="15">  Deploy on Koyeb (24x7)</a></b>
 + [**→ ⚡ Host on Heroku (24×7)**](#host-on-heroku)
 + [**→ 🧿 Host on Railway (24×7)**](#host-on-railway)
 + [**→ 🪬 Host on Okteto (24×7)**](#host-on-okteto)
@@ -46,8 +46,8 @@
 **10. Replaced `config.env` with `config.py`** <br>
 **11. Fixed Okteto deployment.** <br>
 **12. Updated `README.md` as per v4.5.7** <br>
-**13. Moved all `.ipynb` files to ipynb folder.**
-**14. Deploy to Koyeb for free.**
+**13. Moved all `.ipynb` files to ipynb folder.**<br>
+**14. Deploy on Koyeb totally for free.**
 
 <a name="features"></a>
 
@@ -89,7 +89,7 @@
 
 <a name="deploy-to-koyeb"></a>
 
-<h2> <b><img src="https://user-images.githubusercontent.com/87380104/205833766-633843a2-d802-4c72-8732-70d826d5c144.png" height="20" width="20">  Deploy to Koyeb</b> </h2>
+<h2> <b><img src="https://user-images.githubusercontent.com/87380104/205833766-633843a2-d802-4c72-8732-70d826d5c144.png" height="20" width="20">  Deploy on Koyeb</b> </h2>
 
 <b>Run program totally for free on Koyeb with single click deployment button!</b>
 #### **1. Click the following one-click deployment button:**
@@ -186,13 +186,13 @@ pkg install python
 ```
 pkg install git
 ```
-3. Install requirements:
-```
-pip install -r requirements.txt
-```
-4. Download Repository:
+3. Download Repository:
 ```
 git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED.git
+```
+4. Install requirements:
+```
+pip install -r requirements.txt
 ```
 6. Run the program:
 ```
