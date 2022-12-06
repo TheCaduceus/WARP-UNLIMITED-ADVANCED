@@ -13,7 +13,7 @@
 + [**🪧 Before you Proceed**](#before-you-proceed)
 + [**⚙️ How to use ? 😅 How to get WARP CLIENT ID ?**](#how-to-use)
 + [**→ 🕹️ Run on Google Colab**](#run-on-google-colab)
-+ <b><a href="deploy-to-koyeb">→ <img src="https://user-images.githubusercontent.com/87380104/205833766-633843a2-d802-4c72-8732-70d826d5c144.png" height="15" width="15">  Deploy to Koyeb (24*7)</a></b>
++ <b><a href="#deploy-to-koyeb">→ <img src="https://user-images.githubusercontent.com/87380104/205833766-633843a2-d802-4c72-8732-70d826d5c144.png" height="15" width="15">  Deploy to Koyeb (24x7)</a></b>
 + [**→ ⚡ Host on Heroku (24×7)**](#host-on-heroku)
 + [**→ 🧿 Host on Railway (24×7)**](#host-on-railway)
 + [**→ 🪬 Host on Okteto (24×7)**](#host-on-okteto)
@@ -94,7 +94,7 @@
 <b>Run program totally for free on Koyeb with single click deployment button!</b>
 #### **1. Click the following one-click deployment button:**
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=docker&image=ghcr.io/thecaduceus/warp-unlimited-docker:koyeb&name=warpunlimitedadvanced&ports=8080;http;/&env[WARP_ID]=Enter-WARP-ID&env[SEND_LOG]=0&env[CHAT_ID]=Enter-CHAT-ID&env[BOT_TOKEN]=Enter-BOT-TOKEN&env[HIDE_ID]=Enter-Value)
-#### **2. Fill the given variables as [discussed above](variables) and click `Deploy`.**
+#### **2. Fill the given variables as [discussed above](#variables) and click `Deploy`.**
 ![image](https://user-images.githubusercontent.com/87380104/205840843-2a22d443-c864-4435-935e-9078a8091f73.png)
 #### **3. While deployment, you can choose `Nano` instance type since it requires <256 RAM.**
 ![image](https://user-images.githubusercontent.com/87380104/205841570-6a43c020-eecf-4574-8c53-41f9454b5d79.png)
