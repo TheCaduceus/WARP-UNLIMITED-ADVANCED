@@ -13,6 +13,7 @@
 + [**🪧 Before you Proceed**](#before-you-proceed)
 + [**⚙️ How to use ? 😅 How to get WARP CLIENT ID ?**](#how-to-use)
 + [**→ 🕹️ Run on Google Colab**](#run-on-google-colab)
++ <b><a href="deploy-to-koyeb">→ <img src="https://user-images.githubusercontent.com/87380104/205833766-633843a2-d802-4c72-8732-70d826d5c144.png" height="15" width="15">  Deploy to Koyeb (24*7)</a></b>
 + [**→ ⚡ Host on Heroku (24×7)**](#host-on-heroku)
 + [**→ 🧿 Host on Railway (24×7)**](#host-on-railway)
 + [**→ 🪬 Host on Okteto (24×7)**](#host-on-okteto)
@@ -46,6 +47,7 @@
 **11. Fixed Okteto deployment.** <br>
 **12. Updated `README.md` as per v4.5.7** <br>
 **13. Moved all `.ipynb` files to ipynb folder.**
+**14. Deploy to Koyeb for free.**
 
 <a name="features"></a>
 
@@ -84,11 +86,24 @@
 #### **1. Open Code on Google Colab: [Open NoteBook](https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/ipynb/Colab.ipynb)**  
 #### **2. Now enter your `WARP_CLIENT_ID` and run The WARP (1.1.1.1) Code as shown in the Image *(click on the Play button on top-left corner)***
 ![3](./Img/3.jpg)
-  
+
+<a name="deploy-to-koyeb"></a>
+
+<h2> <b><img src="https://user-images.githubusercontent.com/87380104/205833766-633843a2-d802-4c72-8732-70d826d5c144.png" height="20" width="20">  Deploy to Koyeb</b> </h2>
+
+<b>Run program totally for free on Koyeb with single click deployment button!</b>
+#### **1. Click the following one-click deployment button:**
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=docker&image=ghcr.io/thecaduceus/warp-unlimited-docker:koyeb&name=warpunlimitedadvanced&ports=8080;http;/&env[WARP_ID]=Enter-WARP-ID&env[SEND_LOG]=0&env[CHAT_ID]=Enter-CHAT-ID&env[BOT_TOKEN]=Enter-BOT-TOKEN&env[HIDE_ID]=Enter-Value)
+#### **2. Fill the given variables as [discussed above](variables) and click `Deploy`.**
+![image](https://user-images.githubusercontent.com/87380104/205840843-2a22d443-c864-4435-935e-9078a8091f73.png)
+#### **3. While deployment, you can choose `Nano` instance type since it requires <256 RAM.**
+![image](https://user-images.githubusercontent.com/87380104/205841570-6a43c020-eecf-4574-8c53-41f9454b5d79.png)
+#### **⛔NOTE: This method uses ready-to-use Docker Image made specially for Koyeb, hence any change requires building of new image with NPM's `http-server` or `Flask` to listen on port `8000` & `8080`.**
+
 <a name="host-on-heroku"></a>
 
 ## **⚡Host on Heroku**
-#### **1.First click the below deploy button.**
+#### **1. First click the below deploy button.**
 [![Deploy on Heroku](./Img/Heroku%20Deployment%20Button.png)](https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/tree/sys-env)
 #### **2. Now, enter the values as discussed above and click `Deploy` button.**
 ![4](./Img/Heroku_Vars.png)
