@@ -22,7 +22,7 @@
 + [**→ 📲 Run on Mobile Phone**](#run-on-mobile-phone)
 + [**→ 🎲 Run on Replit**](#run-on-replit)
 + [**→ 🧰 Run on Jupyter Server**](#run-on-jupyter-server)
-+ [**→ 📈 Update Values (📲 For Mobile & 🖥️ For PC)**](#update-values)
++ [**→ 📈 Update Values (📲 For Mobile & 🖥️ For Windows/Linux)**](#update-values)
 + [**🎯 Points to be Remembered**](#points-to-be-remembered)
 + [**📥 Download Cloudflare WARP (1.1.1.1)**](#download-cloudflare-warp-1111)
 + [**❓FAQ**](#faq)
@@ -249,8 +249,10 @@ python -m notebook
 #### **After deploying or running this program, you have to update the "Data Remaining" value in your App.**
 ### **📲 For Mobile:**
 #### **Go to `Settings → Advanced → Connection Options → Press Reset Security Keys`**
-### **🖥️ For PC:**
+### **🖥️ For Windows:**
 #### **Just again enter your Activation key! For getting Activation key, Open App in `Mobile → Settings → Account → Copy Key`**
+### **🐧 For Linux:**
+#### **Get your account ID in the Mobile App (`Settings → Account → Copy Key`), then open a terminal and type `warp-cli set-license {the key you copied}`**
 
 <a name="points-to-be-remembered"></a>
 
