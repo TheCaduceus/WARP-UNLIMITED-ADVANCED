@@ -2,7 +2,7 @@
 ENV = False  # or True
 
 # Ask for values during each run
-INTERACTIVE_MODE = False  # or True
+INTERACTIVE_MODE = true  # or false
 
 # Required if ENV == False
 Vars = [
