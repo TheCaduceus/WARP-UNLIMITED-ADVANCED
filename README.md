@@ -2,7 +2,7 @@
 <a name="warp-unlimited-new-methods"></a>
 
 # ♻️ WARP UNLIMITED ADVANCED
-**Get Unlimited amount of Data in Cloudflare's WARP/WARP+ VPN, most versatile code translated in our beloved Python ! 😍**
+**Get unlimited amount of data in Cloudflare's WARP, most versatile code translated in our beloved Python! ethically of course.**
 </div>
 
 ## **📑 INDEX**
@@ -52,32 +52,32 @@
 <a name="features"></a>
 
 ## **📑 Features**
-#### **1. Get 1GB Per 20 Seconds ! 🔥**
+#### **1. Get 1GB per 20 seconds ! 🔥**
 #### **2. Run this almost everywhere ! 🤗**
-#### **3. Get Notification on Telegram. 🔔**
+#### **3. Get notification on Telegram. 🔔**
 
 <a name="before-you-proceed"></a>
 
 ## **🪧 Before you Proceed** 
 **1. It doesn't matter if you have WARP or WARP+, this program works for both.** <br>
 **2. We are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using Official Cloudflare's API.**<br>
-**3.Recommended Python Version: `3.7.x`, `3.8.x`, `3.9.x`,`3.10.x` & `3.11.x`.**
+**3.Recommended Python Version: `3.7.x`...`3.11.x`.**
 
 <a name="how-to-use"></a>
 
 ## **⚙️ How to use ?**
-#### **0. First Get your WARP CLIENT ID by going into `Settings > Advanced > Diagnostics` and copy the ID under `CLIENT CONFIGURATION` section *(note that you can get that ID only in the mobile app, not on the desktop app)***
+#### **0. First Get your WARP CLIENT ID by navigating to *App > Settings > Advanced > Diagnostics* and copy the ID under *CLIENT CONFIGURATION* section *(note that you can get that ID only in the mobile app, not on the desktop app)***
 <img src="Img/1.jpg" height="70%" width="40%" alt="1">
 
 <a name="variables"></a>
 ## **✏️ Variables**
-**Below given variables should be filled in `config.py` file or can be set as Environment Variables, while you can also enable `INTERACTIVE_MODE` to enter new values during each run.**
-- **`ENV`: Set it to `True` if you let program get values from system environment or `False` if you are filling it in `config.py` itself or incase of `INTERACTIVE_MODE` `bool`**
+**Below given variables should be filled in `config.py` file or can be passed as Environment Variables (ENVs), added to this you can also enable `INTERACTIVE_MODE` to enter new values during each run.**
+- **`ENV`: Set it to `True` to let program get values from system environment or `False` if you are filling it in `config.py` itself or in case of `INTERACTIVE_MODE` `bool`**
 - **`INTERACTIVE_MODE`: Set it to `True` if you want program to ask for new values during each run or simply `False`. `bool`**
 - **`WARP_ID`: Enter your WARP CLIENT ID. [How to get?](#how-to-use) `str`**
 - **`SEND_LOG`: Get notification on Telegram regarding total data generated, total attempts & failed attempts. `0` = No & `1` = Yes. `str`**
 - **`BOT_TOKEN`: Enter Telegram BOT API Token from [@BotFather](https://botfather.t.me/). Required if `SEND_LOG` is `True`. `str`**
-- **`CHAT_ID`: Enter CHAT_ID on which you want log message to be sent. It can be Chat ID (mostly for private chats) like `-1001877005515` or Chat Username like `@mychannel` or `@mygroup`. `str`**
+- **`CHAT_ID`: Enter CHAT_ID on which you want log message to be sent. It can be group/channel ID (mostly for private chats) like `-1001877005515` or group/channel Username like `@mychannel` or `@mygroup`. `str`**
 - **`HIDE_ID`: To hide your WARP CLIENT ID from log message sent to your chat. `0` = No & `1` = Yes. `str`**
 
 <a name="run-on-google-colab"></a>
@@ -139,7 +139,20 @@
 <a name="run-on-computer"></a>
 
 ## **🖥️ Run on Computer/VPS**
-#### **1. If your PC don't have python & git, then install them first: [Python](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads)**
+#### **1. If your PC not have python & git installed, then install them first:**
+**For Windows: (WinGet)**
+```
+winget install python3.10
+winget install Git.Git
+```
+**For Linux: (APT)**
+```
+sudo apt-get update && sudo apt-get install -y python3.10 git
+```
+**For Mac: (HomeBrew)**
+```
+brew install python@3.10 git
+```
 #### **2. Download Repository:**
 ```
 git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED.git
@@ -171,7 +184,7 @@ cat runtime-log.txt
 + `HEROKU_EMAIL` - Your Heroku Email ID.
 
 #### **4. Go to Actions Tab then click `Deploy on Heroku` and `Run Workflow`. Now it will be automatically get deployed on given Heroku Account.**
-#### **5. It will take maximum 10 Seconds to start the Workflow and minimum 1-2 Minutes to get deployed !**
+#### **5. It will take maximum 10 Seconds to start the Workflow and minimum 1-2 minutes to get deployed !**
 
 <a name="run-on-mobile-phone"></a>
 
@@ -208,7 +221,7 @@ termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade &&
 <a name="run-on-replit"></a>
 
 ## **🎲 Run on Replit**
-#### **1. Open our repl: [Open it](https://replit.com/@TheCaduceus/WARP-UNLIMITED)**
+#### **1. Open repl: [Open it](https://replit.com/@TheCaduceus/WARP-UNLIMITED)**
 #### **2. Enter your WARP CLIENT ID and press enter to run the program.**
 ![](./Img/repl-2.jpg)
 #### **3. Additionally, you can fork the repl & edit `config.py` to enable / disable required features.**
@@ -227,11 +240,7 @@ pip install jupyter
 ```
 pip install notebook
 ```
-3. To install Voila:
-```
-pip install voila
-```
-4. Start Jupyter Server:
+3. Start Jupyter Server:
 ```
 python -m notebook
 ```
@@ -248,11 +257,14 @@ python -m notebook
 ## **📈 Update Values**
 #### **After deploying or running this program, you have to update the "Data Remaining" value in your App.**
 ### **📲 For Mobile:**
-#### **Go to `Settings → Advanced → Connection Options → Press Reset Security Keys`**
+#### **Go to *Settings → Advanced → Connection Options → Press Reset Security Keys***
 ### **🖥️ For Windows:**
-#### **Just again enter your Activation key! For getting Activation key, Open App in `Mobile → Settings → Account → Copy Key`**
+#### **Just again enter your activation key! For getting activation key, navigate to *App → Settings → Account → Copy Key`***
 ### **🐧 For Linux:**
-#### **Get your account ID in the Mobile App (`Settings → Account → Copy Key`), then open a terminal and type `warp-cli set-license {the key you copied}`**
+#### **Get activation key in the mobile app (*Settings → Account → Copy Key*), then open terminal and execute:**
+```
+warp-cli set-license $KEY_HERE
+```
 
 <a name="points-to-be-remembered"></a>
 
@@ -275,28 +287,28 @@ python -m notebook
 
 ## **❓FAQ**
 #### **1. How many instances of the program I can run simultaneously for same account ?**
-**I will recommend to host/run 3 or less than 3 (< 3) instances for each account because Cloudflare's API have request limits. Hosting/Running too many instances can cause "Too many Requests" error which indicates that API is getting too many requestes from the same account and that's why there is a cooldown timer of 20 seconds to prevent this.**
+I will recommend to host/run 3 or less than 3 (< 3) instances for each account because Cloudflare's API have request limits. Hosting/Running too many instances can cause "Too many Requests" error which indicates that API is getting too many requestes from the same account and that's why there is a cooldown timer of 20 seconds to prevent this.
 #### **2. How to resolve "Too many request" Error ?**
-**As already discussed above, Hosting/Running too many instances for same account cause this. So just switch off some instances and bring down the number to 3 or < 3 instances for the same account. Please refer to [Issue #3](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/3) for more details on this.**
+As already discussed above, Hosting/Running too many instances for same account cause this. So just switch off some instances and bring down the number to 3 or < 3 instances for the same account. Please refer to [Issue #3](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/3) for more details on this.
 #### **3. Will this program cause any kind of ban from Cloudflare?**
-**No, this program don't cause ban because it just use the API provided by Cloudflare for referral system. Neither this program create any type of load or bypass any limit set by Cloudflare for their API nor it hacks anything or changes any official record illegally.**
+No, this program NOT cause ban because it just use the API provided by Cloudflare for referral system. Neither this program create any type of load or bypass any limit set by Cloudflare for their API nor it hacks anything or changes any official record illegally.
 #### **4. Program isn't working & producing error as shown in the image in Termux. How to solve ?**
 ![](./Img/Termux-Error-1.jpeg)  
-**You can run the below given command in Termux to fix it easily:** 
+You can run the below given command in Termux to fix it easily:
 ``` 
 termux-setup-storage && pkg update && pkg i git python wget -y && pkg upgrade && pip install --upgrade pip
 ```
 #### **5. Does deploying this on Heroku/Railway/Okteto cause any ban?**
-**No, this program comes in category of Cron-Job because this program just take the WARP CLIENT ID from user and arrange it in a particular format and start pinging it in an interval of 20 seconds. This program is lightweight and don't have any load on system. You can refer to [Issue #5](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/5) for more details on this.**
+No, this program comes in category of Cron-Job because program just takes the WARP CLIENT ID from user and arrange it in a particular format and start pinging it in an interval of 20 seconds. This program is lightweight and don't have any load on system. You can refer to [Issue #5](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/5) for more details on this.
 #### **6. I deployed it on a platform that allow setting Environment Variables, but program not accepting it?**
-**Before deploying it on any platform which allow users to set variables in system environment, just make sure you enable `ENV` mode & disable `INTERACTIVE_MODE`.**
+Before deploying it on any platform which allow users to set variables in system environment, just make sure you enable `ENV` mode & disable `INTERACTIVE_MODE`.
 #### **7. Why use this program? we can simply use any mod of WARP app?**
-**WARP+ is for lifting the speed cap imposed by Cloudflare on free users which is server-side limit and it can't be bypassed by just modifying client-side code. So, availabe mods of WARP is fake? yes, they are just showing premium branding while doing nothing in reality.**
+WARP+ is for lifting the speed cap imposed by Cloudflare on free users which is server-side limit and it can't be bypassed by just modifying client-side code. So, availabe mods of WARP is fake? yes, they are just showing premium branding while doing nothing in reality.
 
 <a name="how-to-use-this-data-on-pc"></a>
 
 ## **🖥️ How to use this Data on PC?**
-#### **Open the WARP app in your Phone and go to `Settings > Account > Key` and copy the License Key. Now enter that key in WARP app on Windows or MacOS or Linux.**
+#### **Open the WARP app in your Phone and go to *Settings > Account > Key* and copy the License Key. Now enter that key in WARP app on Windows or MacOS or Linux.**
 
 <a name="contact-us"></a>
 
