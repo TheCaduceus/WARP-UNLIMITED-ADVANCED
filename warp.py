@@ -1,48 +1,39 @@
-import asyncio
-import os
-import urllib.request
 from datetime import datetime
 from json import dumps
-from random import choice
+from random import choice, randint
 from string import ascii_letters, digits
-from sys import stdout
 from time import sleep
-from warnings import filterwarnings
+import httpx
 
-from nest_asyncio import apply
+WARP_CLIENT_ID = input("Enter your WARP Client ID:\n")
 
-apply()
-filterwarnings("ignore", category=DeprecationWarning)
-
-referrer = input("[#] Enter the WARP+ ID:\n")
-
-g = 0
-b = 0
+# Defaults
+SUCCESS_COUNT, FAIL_COUNT = 0, 0
 
 def genString(stringLength):
   try:
     letters = ascii_letters + digits
     return ''.join(choice(letters) for _ in range(stringLength))
-  except Exception as error:
-    print(error)
+  except Exception as error_code:
+    print(error_code)
 
 def digitString(stringLength):
   try:
     digit = digits
     return ''.join(choice(digit) for _ in range(stringLength))
-  except Exception as error:
-    print(error)
+  except Exception as error_code:
+    print(error_code)
 
 url = f"https://api.cloudflareclient.com/v0a{digitString(3)}/reg"
 
-async def run():
+while True:
   try:
     install_id = genString(22)
     body = {
       "key": f"{genString(43)}=",
       "install_id": install_id,
       "fcm_token": f"{install_id}:APA91b{genString(134)}",
-      "referrer": referrer,
+      "referrer": WARP_CLIENT_ID,
       "warp_enabled": False,
       "tos": f"{datetime.now().isoformat()[:-3]}+02:00",
       "type": "Android",
@@ -56,44 +47,18 @@ async def run():
       "Accept-Encoding": "gzip",
       "User-Agent": "okhttp/3.12.1"
     }
-    req = urllib.request.Request(url, data, headers)
-    response = urllib.request.urlopen(req)
-    return response.getcode()
-  except Exception as error:
-    return error
+    response = httpx.post(url, data=data, headers=headers).status_code
+  except Exception as error_code:
+    print(error_code)
 
-async def animation():
-  cooldown = 0.3
-  os.system("cls" if os.name == "nt" else "clear")
-  animation = ["[□□□□□□□□□□] 0%", "[■□□□□□□□□□] 10%", "[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
-  for i in range(len(animation)):
-    stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
-    stdout.flush()
-    if i == 2:
-      result = await run()
-      if result != 200:
-        cooldown = 0.1
-    await asyncio.sleep(cooldown)
-  return result
-
-while True:
-  anim = asyncio.get_event_loop()
-  anim_coroutine = animation()
-  result = anim.run_until_complete(anim_coroutine)
-  if result == 200:
-    g += 1
-    print(f"\n[•] WARP+ ID: {referrer}")
-    print(f"[✓] Added: {g} GB")
-    print(f"[#] Total: {g} Good {b} Bad")
-    for i in range(20,-1,-1):
-      stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
-      stdout.flush()
-      sleep(1)
+  if response == 200:
+    SUCCESS_COUNT += 1
+    print(f"PASSED: +1GB (total: {SUCCESS_COUNT}GB, failed: {FAIL_COUNT})")
   else:
-    b += 1
-    print("\n[×] Error:", result)
-    print(f"[#] Total: {g} Good {b} Bad")
-    for i in range(30,-1,-1):
-      stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
-      stdout.flush()
-      sleep(1)
+    print(f"FAILED: {response}")
+    FAIL_COUNT += 1
+  
+  # Cooldown
+  cooldown_time = randint(30,50)
+  print(f"Sleep: {cooldown_time} seconds.")
+  sleep(cooldown_time)
