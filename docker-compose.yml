@@ -5,11 +5,11 @@ services:
     image: ghcr.io/thecaduceus/warp-unlimited-docker:okteto
     container_name: warp-unlimited-okteto
     environment:
-      - WARP_ID=${WARP_ID}
+      - WARP_CLIENT_ID=${WARP_CLIENT_ID}
       - SEND_LOG=${SEND_LOG}
-      - BOT_TOKEN=${BOT_TOKEN}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
       - CHAT_ID=${CHAT_ID}
-      - HIDE_ID=${HIDE_ID}
+      - HIDE_WC_ID=${HIDE_WC_ID}
     ports:
       - 8080:8080
     restart: unless-stopped
