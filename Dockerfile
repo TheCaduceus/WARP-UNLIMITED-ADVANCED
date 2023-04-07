@@ -1,25 +1,11 @@
-FROM ubuntu:22.04
-
+FROM python:3.9-alpine
 
 WORKDIR /app
-RUN chmod 777 /app	
 
+COPY requirements.txt ./
 
-ENV TZone=Asia/Kolkata	
-RUN ln -snf "/usr/share/zoneinfo/$TZone" /etc/localtime	
-RUN echo "$TZone" > /etc/timezone	
-
-RUN apt-get update	
-RUN apt-get install -y tzdata	
-RUN apt-get -qq update	
-RUN apt-get -qq install -y git python3 python3-pip
-
-
-COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
-
+RUN pip install -r requirements.txt
 
 COPY . .
-
 
 CMD ["python3","warp-plus.py"]
