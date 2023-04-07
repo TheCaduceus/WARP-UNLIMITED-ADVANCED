@@ -71,7 +71,7 @@ while True:
           raise
       else:
         httpx.post(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/editMessageText?chat_id={CHAT_ID}&message_id={MSG_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0ADATA%20RECEIVED:%20%0A{SUCCESS_COUNT}GB%20%0AFAILED:%20%0A{FAIL_COUNT}")
-    elif not SEND_LOG and not HIDE_WC_ID:
+    elif SEND_LOG and not HIDE_WC_ID:
       if not MSG_ID:
         api_resp = httpx.post(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage?chat_id={CHAT_ID}&parse_mode=HTML&text=<b><u>WARP STATISTICS</u></b>%0AWARP%20ID:%20{WARP_CLIENT_ID}%0ADATA%20RECEIVED:%20%0A{SUCCESS_COUNT}GB%20%0AFAILED:%20%0A{FAIL_COUNT}")
         get_stats = api_resp.json()
