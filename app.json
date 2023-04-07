@@ -1,19 +1,19 @@
 {
 	"name": "WRAP+ UNLIMITED FOR LIFETIME",
-	"description": "Python Script to Get WRAP+ VPN unlimited for Lifetime ",
+	"description": "Python script to get WRAP+ VPN premium data for lifetime ",
 	"repository": "https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/tree/sys-env",
-        "website": "https://www.caduceus.ml/",
+        "website": "https://thecaduceus.eu.org",
         "success_url": "https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED",
 	"env": {
-		"WARP_ID": {
+		"WARP_CLIENT_ID": {
 			"description": "Enter your WARP CLIENT ID.",
 			"required": true
 		},
 		"SEND_LOG": {
-			"description": "Get notification on Telegram regarding total data generated, total attempts & failed attempts. 0 = No & 1 = Yes.",
+			"description": "Get notification on Telegram regarding total data generated, total attempts & failed attempts. True or False:",
 			"required": true	
 		},
-		"BOT_TOKEN": {
+		"TELEGRAM_BOT_TOKEN": {
 			"description": "Enter Telegram BOT API Token from @BotFather. Required if SEND_LOG is True.",
 			"required": false
 		},
@@ -21,8 +21,8 @@
 			"description": "Enter CHAT_ID on which you want log message to be sent. It can be Chat ID (mostly for private chats) like -1001877005515 or Chat Username like @mychannel or @mygroup.",
 			"required": false
 	        },
-	        "HIDE_ID": {
-			"description": "To hide your WARP CLIENT ID from log message sent to your chat. 0 = No & 1 = Yes.",
+	        "HIDE_WC_ID": {
+			"description": "To hide your WARP CLIENT ID from log message sent to your chat. True or False:",
 			"required": false
 		}
 	},
