@@ -41,12 +41,13 @@
 ## **🪧 Before you proceed** 
 **1.It doesn't matter if you have WARP or WARP+, this program works for both.** <br>
 **2.We are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using Official Cloudflare's API.**<br>
-**3.Recommended Python Version: `3.7.x`...`3.11.x`.**
+**3.Avoid hosting this program on platforms involving shared IPs to prevent response code 429 [Too many requests]. Prefer running this on your personal devices.**
+**4.Recommended Python Version: `3.7.x`...`3.11.x`.**
 
 <a name="how-to-use"></a>
 
 ## **⚙️ How to use ?**
-#### **0.First get your WARP CLIENT ID by navigating to *App > Settings > Advanced > Diagnostics* and copy the ID under *CLIENT CONFIGURATION* section *(note that you can get that ID only in the mobile app, not in the desktop app)***
+#### **0.First get your WARP Client ID by navigating to *App > Settings > Advanced > Diagnostics* and copy the ID under *CLIENT CONFIGURATION* section *(note that you can get that ID only in the mobile app, not in the desktop app)***
 <img src="Img/1.jpg" height="70%" width="40%" alt="1">
 
 <a name="variables"></a>
@@ -63,8 +64,8 @@
 <a name="run-on-google-colab"></a>
 
 ## **🕹️ Run on Google Colab**
-#### **1.Open Code on Google Colab: [Open NoteBook](https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/ipynb/Colab.ipynb)**  
-#### **2.Now enter your `WARP_CLIENT_ID` and run The WARP (1.1.1.1) Code as shown in the Image *(click on the Play button on top-left corner)***
+#### **1.Open code on Google Colab: [Open NoteBook](https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/ipynb/Colab.ipynb)**  
+#### **2.Now enter your WARP Client ID and run The WARP (1.1.1.1) Code as shown in the Image *(click on the Play button on top-left corner)***
 ![3](./Img/3.jpg)
 
 <a name="deploy-to-koyeb"></a>
@@ -260,9 +261,9 @@ warp-cli set-license $KEY_HERE
 
 ## **❓FAQ**
 #### **1.How many instances of the program I can run simultaneously for same account?**
-I will recommend to host/run 3 or less than 3 (< 3) instances for each account because Cloudflare's API have request limits. Hosting/Running too many instances can cause "Too many Requests" error which indicates that API is getting too many requestes from the same account and that's why there is a cooldown timer of 20 seconds to prevent this.
-#### **2.How to resolve "Too many request" error?**
-As already discussed above, Hosting/Running too many instances for same account cause this. So just switch off some instances and bring down the number to 3 or < 3 instances for the same account. Please refer to [Issue #3](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/issues/3) for more details on this.
+I will recommend to host/run 3 or less than 3 (< 3) instances for each account because Cloudflare's API have request limits. Hosting/Running too many instances can cause "429" error which indicates that API is getting too many requestes from the same account or IP and that's why there is a cooldown timer of 30-50 seconds to prevent this.
+#### **2.How to resolve "429" error?**
+First make sure you are running 3 or less than 3 (<3) instances of this program for same account and if this error still persist then possible reason can be that you or platform where you hosted this program is making use of shared IPs, prefer using dedicated IPs. Try running this in your personal devices.
 #### **3.Will this program cause any kind of ban from Cloudflare?**
 No, this program NOT cause ban because it just use the API provided by Cloudflare for referral system. Neither this program create any type of load or bypass any limit set by Cloudflare for their API nor it hacks anything or changes any official record illegally.
 #### **4.I deployed it on a platform that allow setting Environment Variables, but program not accepting it?**
@@ -273,16 +274,16 @@ WARP+ is for lifting the speed cap imposed by Cloudflare on free users which is 
 <a name="how-to-use-this-data-on-pc"></a>
 
 ## **🖥️ How to use this Data on PC?**
-#### **Open the WARP app in your Phone and go to *Settings > Account > Key* and copy the License Key. Now enter that key in WARP app on Windows or MacOS or Linux.**
+#### **Open the WARP app in your Phone and go to *Settings > Account > Key* and copy the license key, now enter that key in WARP app on Windows or MacOS or Linux.**
 
 <a name="contact-us"></a>
 
 ## **⛑ Contact Us**
-#### **Join our Update Channel at Telegram: [@TheCaduceusOfficial](https://t.me/TheCaduceusOfficial)**
-#### **Directly Contact the Developer using Telegram [@HelpAutomatted_Bot](https://telegram.me/HelpAutomatted_Bot)**
+#### **Join our update channel at Telegram: [@TheCaduceusOfficial](https://t.me/TheCaduceusOfficial)**
+#### **Directly contact the developer using [Telegram](https://telegram.me/TheCaduceusHere).**
 
 <a name="credits-thanks"></a>
 
 ## **❤️Credits & Thanks**
-**[Dr.Caduceus](https://github.com/TheCaduceus): For heavy modification as well as making New 10 Methods and this all in one Guide.**  
-**[ALI-B](https://github.com/ALIILAPRO): The Original Developer of the Base Script**
+**[Dr.Caduceus](https://github.com/TheCaduceus): For rewriting the script with httpx, adding Telegram notification, Docker & adding major paas platforms support.**<br>
+**[ALI-B](https://github.com/ALIILAPRO): For base repository (now disabled by GitHub).**
