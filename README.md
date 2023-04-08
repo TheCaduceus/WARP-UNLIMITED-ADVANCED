@@ -51,7 +51,7 @@
 
 <a name="variables"></a>
 ## **✏️ Variables**
-**Below given variables should be filled in `config.py` file or can be passed as Environment Variables (ENVs), added to this you can also enable `INTERACTIVE_MODE` to enter new values during each run.**
+**Below given variables should be filled in `config.py` file or can be passed as environment variables (ENVs), added to this you can also enable `INTERACTIVE_MODE` to enter new values during each run.**
 - **`ENV`: Set it to `True` to let program get values from system environment or `False` if you are filling it in `config.py` itself or in case of `INTERACTIVE_MODE`. `bool`**
 - **`INTERACTIVE_MODE`: Set it to `True` if you want program to ask for new values during each run or simply `False`. `bool`**
 - **`WARP_CLIENT_ID`: Enter your WARP Client ID. [How to get?](#how-to-use). `str`**
@@ -109,7 +109,7 @@
 #### **1.First create your Okteto account. You need one GitHub account as Okteto support only one Method to either create or login: [Create Account](https://cloud.okteto.com/#/login)**
 ![](./Img/1.1.png)
 
-#### **2.Now [import](https://github.com/new/import) this Repository and deploy it on Okteto.**
+#### **2.Now [import](https://github.com/new/import) this repository and deploy it on Okteto.**
 #### **3.After that, carefully add the values as discussed above in Okteto deployment page.**
 #### **4.Once done, click on Launch button to deploy your repository.**
 #### **5.Additionally, you can setup cron-job using [Cron-Job.org](https://cron-job.org) to automatically restart your program once it sleeps after 24 hours.**
@@ -140,6 +140,9 @@ git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED.git
 pip install -r requirements.txt
 ```
 #### **4.Fill `config.py` as [discussed here](#variables).**
+```
+nano config.py
+```
 #### **5.Run the program:**
 ```
 py warp-plus.py
@@ -266,20 +269,20 @@ I will recommend to host/run 3 or less than 3 (< 3) instances for each account b
 First make sure you are running 3 or less than 3 (<3) instances of this program for same account and if this error still persist then possible reason can be that you or platform where you hosted this program is making use of shared IPs, prefer using dedicated IPs. Try running this in your personal devices.
 #### **3.Will this program cause any kind of ban from Cloudflare?**
 No, this program NOT cause ban because it just use the API provided by Cloudflare for referral system. Neither this program create any type of load or bypass any limit set by Cloudflare for their API nor it hacks anything or changes any official record illegally.
-#### **4.I deployed it on a platform that allow setting Environment Variables, but program not accepting it?**
+#### **4.I deployed it on a platform that allow setting environment variables, but program not accepting it?**
 Before deploying it on any platform which allow users to set variables in system environment, just make sure you enable `ENV` mode & disable `INTERACTIVE_MODE`.
 #### **5.Why use this program? we can simply use any mod of WARP app?**
 WARP+ is for lifting the speed cap imposed by Cloudflare on free users which is server-side limit and it can't be bypassed by just modifying client-side code. So, availabe mods of WARP is fake? yes, they are just showing premium branding while doing nothing in reality.
 
 <a name="how-to-use-this-data-on-pc"></a>
 
-## **🖥️ How to use this Data on PC?**
-#### **Open the WARP app in your Phone and go to *Settings > Account > Key* and copy the license key, now enter that key in WARP app on Windows or MacOS or Linux.**
+## **🖥️ How to use this data on PC?**
+#### **Open the WARP app in your phone and go to *Settings > Account > Key* and copy the license key, now enter that key in WARP app on Windows or MacOS or Linux.**
 
 <a name="contact-us"></a>
 
 ## **⛑ Contact Us**
-#### **Join our update channel at Telegram: [@TheCaduceusOfficial](https://t.me/TheCaduceusOfficial)**
+#### **Join update channel at Telegram: [@TheCaduceusOfficial](https://t.me/TheCaduceusOfficial)**
 #### **Directly contact the developer using [Telegram](https://telegram.me/TheCaduceusHere).**
 
 <a name="credits-thanks"></a>
