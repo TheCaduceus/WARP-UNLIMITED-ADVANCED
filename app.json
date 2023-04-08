@@ -6,23 +6,23 @@
         "success_url": "https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED",
 	"env": {
 		"WARP_CLIENT_ID": {
-			"description": "Enter your WARP CLIENT ID.",
+			"description": "Enter your WARP Client ID.",
 			"required": true
 		},
 		"SEND_LOG": {
-			"description": "Get notification on Telegram regarding total data generated, total attempts & failed attempts. True or False:",
+			"description": "Get notification on Telegram regarding total data generated, total attempts & failed attempts. Value can be True or False only.",
 			"required": true	
 		},
 		"TELEGRAM_BOT_TOKEN": {
-			"description": "Enter Telegram BOT API Token from @BotFather. Required if SEND_LOG is True.",
+			"description": "Enter Telegram Bot Token from @BotFather. Required if SEND_LOG is True.",
 			"required": false
 		},
 	        "CHAT_ID": {
-			"description": "Enter CHAT_ID on which you want log message to be sent. It can be Chat ID (mostly for private chats) like -1001877005515 or Chat Username like @mychannel or @mygroup.",
+			"description": "Enter chat id of chat (channel or group) where you want to get log message from your bot like -1234567890 (for private chats) or @mychannel and @mygroup (for public chats). You can also pass ID of a particular user to get log message as personal message by bot but make sure to send /start command to bot as personal message (in order to authorize the bot).",
 			"required": false
 	        },
 	        "HIDE_WC_ID": {
-			"description": "To hide your WARP CLIENT ID from log message sent to your chat. True or False:",
+			"description": "To hide your WARP Client ID from log message. Value can be True or False only.",
 			"required": false
 		}
 	},
