@@ -24,7 +24,7 @@
 + [**→ 📈 Update Values (📲 For Mobile & 🖥️ For Windows/Linux)**](#update-values)
 + [**📥 Download Cloudflare WARP (1.1.1.1)**](#download-cloudflare-warp-1111)
 + [**❓FAQ**](#faq)
-+ [**🖥️ How to use this Data on PC ?**](#how-to-use-this-data-on-pc)
++ [**🖥️ How to use this data on PC ?**](#how-to-use-this-data-on-pc)
 + [**⛑ Contact Us**](#contact-us)
 + [**❤️ Credits & Thanks**](#credits-thanks)
 
