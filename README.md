@@ -9,7 +9,7 @@
 #### **Easily navigate through out the guide and pick the best method that suits you and your requirements!**
 + [**♻️ WARP UNLIMITED ADVANCED**](#warp-unlimited-new-methods)
 + [**📑 Features**](#features)
-+ [**🪧 Before you Proceed**](#before-you-proceed)
++ [**🪧 Before you proceed**](#before-you-proceed)
 + [**⚙️ How to use ? 😅 How to get WARP CLIENT ID ?**](#how-to-use)
 + [**→ 🕹️ Run on Google Colab**](#run-on-google-colab)
 + <b><a href="#deploy-to-koyeb">→ <img src="https://user-images.githubusercontent.com/87380104/205833766-633843a2-d802-4c72-8732-70d826d5c144.png" height="15" width="15">  Deploy on Koyeb (24x7)</a></b>
@@ -22,7 +22,6 @@
 + [**→ 🎲 Run on Replit**](#run-on-replit)
 + [**→ 🧰 Run on Jupyter Server**](#run-on-jupyter-server)
 + [**→ 📈 Update Values (📲 For Mobile & 🖥️ For Windows/Linux)**](#update-values)
-+ [**🎯 Points to be Remembered**](#points-to-be-remembered)
 + [**📥 Download Cloudflare WARP (1.1.1.1)**](#download-cloudflare-warp-1111)
 + [**❓FAQ**](#faq)
 + [**🖥️ How to use this Data on PC ?**](#how-to-use-this-data-on-pc)
@@ -40,7 +39,7 @@
 
 ## **🪧 Before you proceed** 
 **1.It doesn't matter if you have WARP or WARP+, this program works for both.** <br>
-**2.We are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using Official Cloudflare's API.**<br>
+**2.We are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using official Cloudflare's API.**<br>
 **3.Avoid hosting this program on platforms involving shared IPs to prevent response code 429 [Too many requests]. Prefer running this on your personal devices.**
 **4.Recommended Python Version: `3.7.x`...`3.11.x`.**
 
@@ -79,19 +78,19 @@
 ![image](https://user-images.githubusercontent.com/87380104/230634974-b846bf74-f424-49c6-b790-d19957f00315.png)
 #### **3.While deployment, you can choose `Nano` instance type since it requires <256 RAM.**
 ![image](https://user-images.githubusercontent.com/87380104/205841570-6a43c020-eecf-4574-8c53-41f9454b5d79.png)
-#### **⛔NOTE: This method uses ready-to-use Docker Image made specially for Koyeb, hence any change requires building of new image with NPM's `http-server` or `Flask` to listen on port `8000` & `8080`.**
+#### **⛔NOTE: This method uses ready-to-use Docker image made specially for Koyeb, hence any change requires building of new image with NPM's `http-server` or `Flask` to listen on port `8000` & `8080`.**
 
 <a name="host-on-heroku"></a>
 
 ## **⚡Host on Heroku**
-#### **1.First click the below deploy button.**
+#### **1.First click the following deploy button.**
 [![Deploy on Heroku](./Img/Heroku%20Deployment%20Button.png)](https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/tree/sys-env)
-#### **2.Now, enter the values as discussed above and click `Deploy` button.**
+#### **2.Now, enter the values as discussed above and click 'Deplo' button.**
 ![image](https://user-images.githubusercontent.com/87380104/230636731-f0ababe9-be29-46c5-813c-35ff34dc24db.png)
-#### **3.After Deployment, click `Manage App` button and then click `Resources Tab` and enable the dyno.**
+#### **3.After deployment, click "Manage App" button and then click "Resources Tab" and enable the dyno.**
 ![5](./Img/5.png)
 
-#### **4.Enjoy! now you will get 1GB per 20 Seconds for Lifetime while your Heroku Account exist.**
+#### **4.Done! now you can check logs.**
 
 <a name="host-on-railway"></a>
 
@@ -102,12 +101,12 @@
 #### **2.Now click the following Railway deployment button:**
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/e0er7k?referralCode=PFHpF8)
 
-#### **3.Now, enter the values as discussed above and click `Deploy` button.**
+#### **3.Now, enter the values as discussed above and click 'Deploy' button.**
 
 <a name="host-on-okteto"></a>
 
 ## **🪬 Host on Okteto**
-#### **1.First Create your Okteto Account. You need one GitHub account as Okteto supports only one Method to either Create or Login: [Create Account](https://cloud.okteto.com/#/login)**
+#### **1.First create your Okteto account. You need one GitHub account as Okteto support only one Method to either create or login: [Create Account](https://cloud.okteto.com/#/login)**
 ![](./Img/1.1.png)
 
 #### **2.Now [import](https://github.com/new/import) this Repository and deploy it on Okteto.**
@@ -155,15 +154,15 @@ cat runtime-log.txt
 ## **🧫 Deploy using GitHub Actions**
 #### **1.First fork this Repository.**
 ![](./Img/3.2.jpeg)
-#### **2.Now open the settings of your Forked Repository and click Secrets → Actions.**
+#### **2.Now open the settings of your forked repository and click Secrets → Actions.**
 ![](./Img/2.0.jpeg)
 #### **3.After doing that, create following values as secret + values [discussed here](#variables):**
-+ `HEROKU_API_KEY` - Enter your Heroku API Key as value.
++ `HEROKU_API_KEY` - Enter your Heroku API key as value.
 + `HEROKU_APP_NAME` - A unique app name in small letters only.
 + `HEROKU_EMAIL` - Your Heroku Email ID.
 
-#### **4.Go to Actions Tab then click `Deploy on Heroku` and `Run Workflow`. Now it will be automatically get deployed on given Heroku Account.**
-#### **5.It will take maximum 10 Seconds to start the Workflow and minimum 1-2 minutes to get deployed !**
+#### **4.Go to Actions Tab then click `Deploy on Heroku` and `Run Workflow`. Now it will automatically get deployed on given Heroku Account.**
+#### **5.It will take maximum 10 seconds to start the workflow and minimum 1-2 minutes to get deployed !**
 
 <a name="run-on-mobile-phone"></a>
 
@@ -178,19 +177,27 @@ pkg install python
 ```
 pkg install git
 ```
-3.Download Repository:
+3.Update all dependencies:
+```
+termux-setup-storage && pkg update -y && pkg i git python wget
+```
+4.Download Repository:
 ```
 git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED.git
 ```
-4.Install requirements:
+5.Install requirements:
 ```
 pip install -r requirements.txt
 ```
-5.Run the program:
+6.Change directory:
+```
+cd WARP-UNLIMITED-ADVANCED
+```
+7.Run the program:
 ```
 python warp.py
 ```
-#### **3. After doing above steps, enter your WARP CLIENT ID and get started.**
+#### **3. After doing above steps, enter your WARP Client ID.**
 
 <a name="run-on-replit"></a>
 
@@ -239,13 +246,6 @@ python -m notebook
 ```
 warp-cli set-license $KEY_HERE
 ```
-
-<a name="points-to-be-remembered"></a>
-
-## **🎯 Points to be Remembered**
-#### **1.You have to manually update the value in the app.**
-#### **2.On your device, the program will run and give you 1GB data / 20 Second while your machine is on and the terminal window is open.**
-#### **3.If you are hosting this program on your PC or Local System then confirm that it is connected to INTERNET CONNECTION.**
 
 <a name="download-cloudflare-warp-1111"></a>
 
