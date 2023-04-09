@@ -40,7 +40,7 @@
 ## **🪧 Before you proceed** 
 **1.It doesn't matter if you have WARP or WARP+, this program works for both.** <br>
 **2.We are not hacking or gaining access to any Cloudflare system or their servers nor we are changing any official records illegally. We are just using official Cloudflare's API.**<br>
-**3.Avoid hosting this program on platforms involving shared IPs to prevent response code 429 [Too many requests]. Prefer running this on your personal devices.**
+**3.Avoid hosting this program on platforms involving shared IPs to prevent response code 429 [Too many requests]. Prefer running this on your personal devices.**<br>
 **4.Recommended Python Version: `3.7.x`...`3.11.x`.**
 
 <a name="how-to-use"></a>
@@ -64,7 +64,7 @@
 
 ## **🕹️ Run on Google Colab**
 #### **1.Open code on Google Colab: [Open NoteBook](https://colab.research.google.com/github/TheCaduceus/WARP-UNLIMITED-ADVANCED/blob/main/ipynb/Colab.ipynb)**  
-#### **2.Now enter your WARP Client ID and run The WARP (1.1.1.1) Code as shown in the Image *(click on the Play button on top-left corner)***
+#### **2.Now enter your WARP Client ID and run The WARP (1.1.1.1) code as shown in the image *(click on the Play button on top-left corner)***
 ![3](./Img/3.jpg)
 
 <a name="deploy-to-koyeb"></a>
@@ -74,18 +74,18 @@
 <b>Run program totally for free on Koyeb with single click deployment button!</b>
 #### **1.Click the following one-click deployment button:**
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=docker&image=ghcr.io/thecaduceus/warp-unlimited-docker:koyeb&name=warpunlimitedadvanced&ports=8080;http;/&env[WARP_CLIENT_ID]=Enter-WARP-ID&env[SEND_LOG]=False&env[CHAT_ID]=Enter-CHAT-ID&env[TELEGRAM_BOT_TOKEN]=Enter--TOKEN&env[HIDE_WC_ID]=Enter-Value)
-#### **2.Fill the given variables as [discussed above](#variables) and click `Deploy`.**
+#### **2.Fill the given variables as [discussed above](#variables) and click 'Deploy'.**
 ![image](https://user-images.githubusercontent.com/87380104/230634974-b846bf74-f424-49c6-b790-d19957f00315.png)
-#### **3.While deployment, you can choose `Nano` instance type since it requires <256 RAM.**
+#### **3.While deployment, you can choose 'Nano' instance type since it requires <256 RAM.**
 ![image](https://user-images.githubusercontent.com/87380104/205841570-6a43c020-eecf-4574-8c53-41f9454b5d79.png)
-#### **⛔NOTE: This method uses ready-to-use Docker image made specially for Koyeb, hence any change requires building of new image with NPM's `http-server` or `Flask` to listen on port `8000` & `8080`.**
+#### **⛔NOTE: This method uses ready-to-use Docker image made specially for Koyeb, hence any change requires building of new image with NPM's 'http-server' or 'Flask' to listen on port `8000` & `8080`.**
 
 <a name="host-on-heroku"></a>
 
 ## **⚡Host on Heroku**
 #### **1.First click the following deploy button.**
 [![Deploy on Heroku](./Img/Heroku%20Deployment%20Button.png)](https://heroku.com/deploy?template=https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/tree/sys-env)
-#### **2.Now, enter the values as discussed above and click 'Deplo' button.**
+#### **2.Now, enter the values as discussed above and click 'Deploy' button.**
 ![image](https://user-images.githubusercontent.com/87380104/230636731-f0ababe9-be29-46c5-813c-35ff34dc24db.png)
 #### **3.After deployment, click "Manage App" button and then click "Resources Tab" and enable the dyno.**
 ![5](./Img/5.png)
@@ -101,7 +101,7 @@
 #### **2.Now click the following Railway deployment button:**
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/e0er7k?referralCode=PFHpF8)
 
-#### **3.Now, enter the values as discussed above and click 'Deploy' button.**
+#### **3.Enter the values as [discussed above](#variables) and click 'Deploy' button.**
 
 <a name="host-on-okteto"></a>
 
@@ -164,7 +164,7 @@ cat runtime-log.txt
 + `HEROKU_APP_NAME` - A unique app name in small letters only.
 + `HEROKU_EMAIL` - Your Heroku Email ID.
 
-#### **4.Go to Actions Tab then click `Deploy on Heroku` and `Run Workflow`. Now it will automatically get deployed on given Heroku Account.**
+#### **4.Go to Actions Tab then click "Deploy on Heroku" and "Run Workflow". Now it will automatically get deployed on given Heroku Account.**
 #### **5.It will take maximum 10 seconds to start the workflow and minimum 1-2 minutes to get deployed !**
 
 <a name="run-on-mobile-phone"></a>
@@ -243,7 +243,7 @@ python -m notebook
 ### **📲 For Mobile:**
 #### **Go to *Settings → Advanced → Connection Options → Press Reset Security Keys***
 ### **🖥️ For Windows:**
-#### **Just again enter your activation key!.***
+#### **Just again enter your activation key!**
 ### **🐧 For Linux:**
 #### **Get activation key in the mobile app, then open terminal and execute:**
 ```
@@ -288,5 +288,5 @@ WARP+ is for lifting the speed cap imposed by Cloudflare on free users which is 
 <a name="credits-thanks"></a>
 
 ## **❤️Credits & Thanks**
-**[Dr.Caduceus](https://github.com/TheCaduceus): For rewriting the script with httpx, adding Telegram notification, Docker & adding major paas platforms support.**<br>
+**[Dr.Caduceus](https://github.com/TheCaduceus): For rewriting the script with httpx, adding Telegram notification, Docker & adding major PAAS platforms support.**<br>
 **[ALI-B](https://github.com/ALIILAPRO): For base repository (now disabled by GitHub).**
