@@ -1,1 +1,1 @@
-worker: bash run.sh
+worker: python3 warp-plus.py
