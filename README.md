@@ -125,7 +125,7 @@ winget install Git.Git
 ```
 **For Linux: (APT)**
 ```
-sudo apt-get update && sudo apt-get install -y python3.10 git
+sudo apt-get update && sudo apt-get install -y python3.10 git pip
 ```
 **For Mac: (HomeBrew)**
 ```
